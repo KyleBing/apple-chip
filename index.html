@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/chip.css">
+   <script src="../../lib/js/vue.min.2.6.10.js"></script>
+</head>
+<body>
+<div id="app" @scroll="scroll" >
+
+   <div class="card-container" :style="`height: ${heightApp}px`">
+      <div class="copyright">
+
+         <img src="./imgs/logo.png" alt="Apple Chip LOGO">
+         <h1>Apple 处理器<br>参数大全</h1>
+
+         <div class="author">
+            <p>数据来源: <a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">Wikipedia</a></p>
+            <p>数据规整: <a class="link" href="https://kylebing.cn">KyleBing</a></p>
+            <p>最后更新: 2020/06/05</p>
+            <p>相关链接: <a class="link" href="https://kylebing.cn/tools/ipad">iPad参数大全</a></p>
+         </div>
+      </div>
+
+
+      <div class="chip" v-for="item in chips" :key="item">
+         <div class="chip-img">
+            <img :src="`./imgs/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+         </div>
+
+         <div class="chip-name">
+            <h2>{{item.name}}</h2>
+            <p>{{item.model}}</p>
+         </div>
+
+         <div class="info-list">
+            <div class="info-item">
+               <div class="key">CPU</div>
+               <div class="value" v-if="item.cpu.rate.length > 1"><span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x <span class="text-big">{{item.cpu.core}}</span></div>
+               <div class="value" v-else> <span class="text-big">{{item.cpu.rate[0]}}</span> GHz x <span class="text-big">{{item.cpu.core}}</span></div>
+            </div>
+            <div class="info-item">
+               <div class="key">GPU</div>
+               <div class="value">{{item.gpu}}</div>
+            </div>
+         </div>
+
+         <div class="info-list">
+            <div class="info-item">
+               <div class="key">内核架构</div>
+               <div class="value">{{item.isa}}</div>
+            </div>
+            <div class="info-item">
+               <div class="key">内核大小</div>
+               <div class="value">{{item.dieSize}} mm<sup>2</sup></div>
+            </div>
+            <div class="info-item">
+               <div class="key">技术工艺</div>
+               <div class="value">{{item.tech}} 纳米</div>
+            </div>
+         </div>
+
+         <div class="info-list">
+            <div class="info-item">
+               <div class="key">初始系统</div>
+               <div class="value">{{item.os.init}}</div>
+            </div>
+            <div class="info-item">
+               <div class="key">最新系统</div>
+               <div class="value">{{item.os.latest}}</div>
+            </div>
+         </div>
+
+         <div class="device">
+            <div class="device-title">运行设备</div>
+            <div class="device-list">
+               <div class="device-item" v-for="(device, index) in item.devices" :key="'device' + index">{{device}}</div>
+            </div>
+         </div>
+      </div>
+
+      <div class="gap"></div>
+   </div>
+</div>
+
+
+<script src="chip.js"></script>
+
+</body>
+</html>

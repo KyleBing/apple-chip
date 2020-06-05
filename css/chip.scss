@@ -1,0 +1,173 @@
+@import "../../../lib/css/reset";
+@import "../../../lib/css/utility";
+@import "../../../lib/css/variables";
+@import "font";
+
+
+$text-info: #808080;
+$text-main: #505257;
+
+$color-border: #d7d7d7;
+$color-border-light: #EDEDED;
+
+$bg-card: #F7F7F7;
+$bg: #EDEDED;
+
+body{
+  height: 3000px;
+  background-color: $bg;
+  color: $text-main;
+}
+
+.gap{
+  height: 40px;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+#app{
+  width: 100%;
+}
+
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  width: 350px;
+  padding: 100px 50px ;
+  img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+  h1{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+  .author{
+    color: $text-info;
+    letter-spacing: 1px;
+
+    p{
+      font-size: 0.8rem;
+    }
+  }
+}
+
+a.link{
+  &:hover{
+    color: $magenta;
+  }
+  &:active{
+    @include transform(translateY(2px));
+  }
+}
+
+.card-container {
+  overflow-x: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.chip{
+  background-color: $bg-card;
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 300px;
+  border: 1px solid $color-border;
+  @include box-shadow(1px 2px 5px rgba(0,0,0,0.1));
+
+  &-img{
+    padding: 30px;
+    img{
+      margin: 0 auto;
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &-name{
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid $color-border-light;
+    border-top: 1px solid $color-border-light;
+    h2{
+      color: black;
+      font-weight: normal;
+      font-family: 'LLPixel', sans-serif;
+      margin-bottom: 5px;
+    }
+    p{
+      color: $text-info;
+      font-family: 'PrestigeEliteStd', sans-serif;
+    }
+  }
+  .title{
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.info-list{
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  .info-item{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    line-height: 1.8;
+    .key{
+      color: $text-info;
+      flex-shrink: 0;
+    }
+    .value{
+      font-weight: bold;
+      color: $text-main;
+      text-align: right;
+      letter-spacing: 0.5px;
+      font-family: 'PTSans', sans-serif;
+    }
+  }
+}
+
+.device-title {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid $color-border-light;
+  border-top: 1px solid $color-border-light;
+}
+.device-list {
+  padding: 10px 20px;
+
+  .device-item {
+    font-weight: bold;
+    font-size: 0.8rem;
+    @include border-radius(3px);
+    line-height: 1.1;
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid $color-border-light;
+    color: $text-main;
+  }
+}
+
+
+
+.text-big{
+  font-size: 1.2rem !important;
+}

@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Impact";
+  src: url("../font/ImpactPureNumber.ttf");
+}
+
+@font-face {
+  font-family: "DS Digital";
+  src: url("../font/DSDigital.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../font/RobotoMono.ttf");
+}
+
+@font-face {
+  font-family: "PrestigeEliteStd";
+  src: url("../font/PrestigeEliteStd-Bd.otf");
+}
+
+@font-face {
+  font-family: "LLPixel";
+  src: url("../font/LLPixel_only_Letter.ttf");
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../font/PTSans-Caption.ttf");
+}
+
+.roboto-mono{
+  font-family: 'Roboto Mono', sans-serif !important;
+}
+
+.number{
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  font-family: 'DS Digital', sans-serif !important;
+}
+
+.impact{
+  font-family: 'Impact', sans-serif !important;
+}
+
+.code{
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+.bold{
+  font-weight: bold;
+}
