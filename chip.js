@@ -481,10 +481,9 @@ let app = new Vue({
   el: '#app',
   data: {
     heightApp: 0,
-    chips: Chips
+    chips: Chips.reverse()
   },
   mounted: function () {
-    this.heightApp = window.innerHeight
   },
   methods: {
   }
@@ -502,6 +501,8 @@ let app = new Vue({
 
 // PC 时
 if (!/Mobile/.test(navigator.userAgent)){
+  app.heightApp = window.innerHeight
+
   window.onscroll = event => {
     let scrollTop = document.documentElement.scrollTop;
     let scrollFull = 3000 - innerHeight;
@@ -512,6 +513,7 @@ if (!/Mobile/.test(navigator.userAgent)){
   }
 } else { // 手机端时
   document.querySelector('body').style.height = 'auto';
+  document.querySelector('.card-container').style.position = 'relative'
 }
 
 

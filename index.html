@@ -2,15 +2,20 @@
 <html lang="zh-CN">
 <head>
    <meta charset="UTF-8">
-   <title>Title</title>
+   <title>Apple 处理器参数大全</title>
+   <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
+   <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css">
+   <link rel="stylesheet" href="css/chip.css?v=20200605192244">
+   <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
+   <link rel="apple-touch-icon" href="imgs/logo_black.png">
+
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
 </head>
 <body>
 <div id="app" @scroll="scroll" >
 
-   <div class="card-container" :style="`height: ${heightApp}px`">
+   <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
 
          <img src="./imgs/logo.png" alt="Apple Chip LOGO">
@@ -86,7 +91,20 @@
 </div>
 
 
-<script src="chip.js"></script>
+<script src="chip.js?v=20200605192244"></script>
+
+<script>
+  setTimeout(()=>{
+    if (location.href.indexOf('http://a.kylebing.cn') !== -1 || location.href.indexOf('http://localhost') !== -1) {
+
+    } else {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?424010581994075b8b6b5ecc2d972de6";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    }
+  }, 1000)
+</script>
 
 </body>
 </html>

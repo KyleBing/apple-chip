@@ -164,7 +164,7 @@ a.link:active {
 .chip {
   background-color: #F7F7F7;
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 30px;
   width: 300px;
   border: 1px solid #d7d7d7;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);

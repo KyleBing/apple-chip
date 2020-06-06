@@ -82,7 +82,7 @@ a.link{
 .chip{
   background-color: $bg-card;
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 30px;
   width: 300px;
   border: 1px solid $color-border;
   @include box-shadow(1px 2px 5px rgba(0,0,0,0.1));
