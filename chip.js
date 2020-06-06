@@ -1,5 +1,5 @@
 
-const lastestOS = '最新';
+const latestOS = '最新';
 const Chips = [
   {
     name: 'A4',
@@ -261,7 +261,7 @@ const Chips = [
     transistorCount: '> 2', // 亿
     os:{
       init: 'iOS 9.0',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -285,7 +285,7 @@ const Chips = [
     transistorCount: '> 2', // 亿
     os:{
       init: 'iOS 9.0',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -307,7 +307,7 @@ const Chips = [
     transistorCount: '> 3', // 亿
     os:{
       init: 'iOS 9.1',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -332,7 +332,7 @@ const Chips = [
     transistorCount: '3.3', // 亿
     os:{
       init: 'iOS 10',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -355,7 +355,7 @@ const Chips = [
     transistorCount: '> 4', // 亿
     os:{
       init: 'iOS 10.3.2',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -378,7 +378,7 @@ const Chips = [
     transistorCount: '4.3', // 亿
     os:{
       init: 'iOS 11',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -403,7 +403,7 @@ const Chips = [
     transistorCount: '6.9', // 亿
     os:{
       init: 'iOS 12',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -425,7 +425,7 @@ const Chips = [
     transistorCount: '10', // 亿
     os:{
       init: 'iOS 12.1',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -447,7 +447,7 @@ const Chips = [
     transistorCount: '10', // 亿
     os:{
       init: 'iPadOS 13.4.1',
-      latest: lastestOS
+      latest: latestOS
     }
   },
   {
@@ -471,7 +471,7 @@ const Chips = [
     transistorCount: '8.5', // 亿
     os:{
       init: 'iOS 13',
-      latest: lastestOS
+      latest: latestOS
     }
   }
 ]
@@ -482,8 +482,6 @@ let app = new Vue({
   data: {
     heightApp: 0,
     chips: Chips.reverse()
-  },
-  mounted: function () {
   },
   methods: {
   }
@@ -503,7 +501,7 @@ let app = new Vue({
 if (!/Mobile/.test(navigator.userAgent)){
   app.heightApp = window.innerHeight
 
-  window.onscroll = event => {
+  window.onscroll = () => {
     let scrollTop = document.documentElement.scrollTop;
     let scrollFull = 3000 - innerHeight;
     let el = document.querySelector('.card-container');
@@ -518,6 +516,6 @@ if (!/Mobile/.test(navigator.userAgent)){
 
 
 
-window.onresize = event => {
+window.onresize = () => {
   app.heightApp = innerHeight
 }
