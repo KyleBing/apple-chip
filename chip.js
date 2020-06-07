@@ -16,8 +16,8 @@ const Chips = [
     devices: [
       'iPad 1',
       'iPhone 4',
-      'iPod Touch（4代）',
-      'Apple TV（2代）'
+      'iPod Touch ( 4代 )',
+      'Apple TV ( 2代 )'
     ],
     os:{
       init: '',
@@ -58,10 +58,10 @@ const Chips = [
     gpu: 'PowerVR SGX543MP2',
     release: '2012-03',
     devices: [
-      'Apple TV（3代）',
+      'Apple TV ( 3代 )',
       'iPad 2',
-      'iPod Touch（5代）',
-      'iPad Mini （1代）'
+      'iPod Touch ( 5代 )',
+      'iPad Mini  ( 1代 )'
     ],
     os:{
       init: '',
@@ -81,7 +81,7 @@ const Chips = [
     gpu: 'PowerVR SGX543MP2',
     release: '2013-03',
     devices: [
-      'Apple TV（3代）'
+      'Apple TV ( 3代 )'
     ],
     os:{
       init: '',
@@ -208,9 +208,9 @@ const Chips = [
     devices: [
       'iPhone 6',
       'iPhone 6 Plus',
-      'iPad Touch（6代）',
+      'iPad Touch ( 6代 )',
       'iPad Mini 4',
-      'Apple TV（4代）',
+      'Apple TV ( 4代 )',
       'HomePod'
     ],
     transistorCount: '≈ 2', // 亿
@@ -255,8 +255,8 @@ const Chips = [
     devices: [
       'iPhone 6S',
       'iPhone 6S Plus',
-      'iPhone SE（1代）',
-      'iPad（2017）'
+      'iPhone SE ( 1代 )',
+      'iPad ( 2017 )'
     ],
     transistorCount: '> 2', // 亿
     os:{
@@ -279,8 +279,8 @@ const Chips = [
     devices: [
       'iPhone 6S',
       'iPhone 6S Plus',
-      'iPhone SE（1代）',
-      'iPad（2017）'
+      'iPhone SE ( 1代 )',
+      'iPad ( 2017 )'
     ],
     transistorCount: '> 2', // 亿
     os:{
@@ -301,8 +301,8 @@ const Chips = [
     gpu: 'PowerVR GTA7850',
     release: '2015-09',
     devices: [
-      'iPad Pro（12.9寸, 1代）',
-      'iPad Pro（9.7寸）',
+      'iPad Pro ( 12.9寸, 1代 )',
+      'iPad Pro ( 9.7寸 )',
     ],
     transistorCount: '> 3', // 亿
     os:{
@@ -325,9 +325,9 @@ const Chips = [
     devices: [
       'iPhone 7',
       'iPhone 7 Plus',
-      'iPad（2018）',
-      'iPod Touch（7代）',
-      'iPad（2019）'
+      'iPad ( 2018 )',
+      'iPod Touch ( 7代 )',
+      'iPad ( 2019 )'
     ],
     transistorCount: '3.3', // 亿
     os:{
@@ -348,8 +348,8 @@ const Chips = [
     gpu: 'PowerVR GT7600 Plus',
     release: '2017-06',
     devices: [
-      'iPad Pro（10.5寸）',
-      'iPad Pro（12.9寸, 2代）',
+      'iPad Pro ( 10.5寸 )',
+      'iPad Pro ( 12.9寸, 2代 )',
       'Apple TV 4k'
     ],
     transistorCount: '> 4', // 亿
@@ -397,8 +397,8 @@ const Chips = [
       'iPhone XS',
       'iPhone XS Max',
       'iPhone XR',
-      'iPad Air（3代）',
-      'iPad Mini（5代）'
+      'iPad Air ( 3代 )',
+      'iPad Mini ( 5代 )'
     ],
     transistorCount: '6.9', // 亿
     os:{
@@ -419,8 +419,8 @@ const Chips = [
     gpu: 'Apple x6',
     release: '2018-10',
     devices: [
-      'iPad Pro（11寸, 1代）',
-      'iPad Pro（12.9寸, 3代）'
+      'iPad Pro ( 11寸, 1代 )',
+      'iPad Pro ( 12.9寸, 3代 )'
     ],
     transistorCount: '10', // 亿
     os:{
@@ -441,8 +441,8 @@ const Chips = [
     gpu: 'Apple x8',
     release: '2020-03',
     devices: [
-      'iPad Pro（11寸, 2代）',
-      'iPad Pro（12.9, 4代）'
+      'iPad Pro ( 11寸, 2代 )',
+      'iPad Pro ( 12.9, 4代 )'
     ],
     transistorCount: '10', // 亿
     os:{
@@ -466,7 +466,7 @@ const Chips = [
       'iPhone 11',
       'iPhone 11 Pro',
       'iPhone 11 Pro Max',
-      'iPhone SE（2代）'
+      'iPhone SE ( 2代 )'
     ],
     transistorCount: '8.5', // 亿
     os:{
