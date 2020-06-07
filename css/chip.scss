@@ -4,8 +4,10 @@
 @import "font";
 
 
+$text-info-invalid: #d2d2d2;
 $text-info: #808080;
 $text-main: #505257;
+$text-copyright: #8e8d91;
 
 $color-border: #d7d7d7;
 $color-border-light: #EDEDED;
@@ -127,6 +129,11 @@ a.link{
     align-items: center;
     display: flex;
     line-height: 1.8;
+    &.invalid{
+      .key{
+        color: $text-info-invalid;
+      }
+    }
     .key{
       color: $text-info;
       flex-shrink: 0;
@@ -150,7 +157,6 @@ a.link{
 }
 .device-list {
   padding: 10px 20px;
-
   .device-item {
     font-weight: bold;
     font-size: 0.8rem;
@@ -166,8 +172,43 @@ a.link{
   }
 }
 
-
-
 .text-big{
   font-size: 1.2rem !important;
+}
+
+
+@media (max-width: 768px){
+  .card-container{
+    padding: 10px;
+  }
+
+  .chip{
+    &-img{
+      padding: 5px;
+
+    }
+    &-name{
+      padding: 10px;
+      line-height: 1;
+      h2{
+        font-size: 1.1rem ;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .info-list {
+    font-size: 0.8rem;
+    padding: 5px 20px;
+
+    .info-item {
+      margin-bottom: 0;
+    }
+  }
+
+  .copyright{
+    padding: 40px 30px;
+  }
 }

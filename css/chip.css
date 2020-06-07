@@ -6,61 +6,74 @@
   font-family: inherit;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: "PingFang SC", "Microsoft Yahei UI", "Microsoft Yahei", "Helvetica", sans-serif;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 table {
-  border-collapse: collapse; }
+  border-collapse: collapse;
+}
 
 select, input {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 code,
 kbd,
 pre,
 samp,
 tt {
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "Courier New", Courier, monospace;
+}
 
 :focus,
 :active {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  outline: none; }
+  outline: none;
+}
 
 ::-webkit-scrollbar {
   z-index: 50;
   width: 5px;
-  height: 5px; }
+  height: 5px;
+}
 
 ::-webkit-scrollbar-track {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  background-color: rgba(0, 0, 0, 0); }
+  background-color: rgba(0, 0, 0, 0);
+}
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-color: #ccc;
-  transition: all .2s;
-  height: 3px; }
+  transition: all 0.2s;
+  height: 3px;
+}
 
 :hover::-webkit-scrollbar-thumb {
   background-color: #aaa;
-  transition: all .2s; }
+  transition: all 0.2s;
+}
 
 ::-webkit-scrollbar-button {
-  display: none; }
+  display: none;
+}
 
 ::-webkit-scrollbar-corner {
-  display: none; }
+  display: none;
+}
 
 /*
   Extension
@@ -69,54 +82,69 @@ tt {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 @font-face {
   font-family: "Impact";
-  src: url("../font/ImpactPureNumber.ttf"); }
+  src: url("../font/ImpactPureNumber.ttf");
+}
 @font-face {
   font-family: "DS Digital";
-  src: url("../font/DSDigital.ttf"); }
+  src: url("../font/DSDigital.ttf");
+}
 @font-face {
   font-family: "Roboto Mono";
-  src: url("../font/RobotoMono.ttf"); }
+  src: url("../font/RobotoMono.ttf");
+}
 @font-face {
   font-family: "PrestigeEliteStd";
-  src: url("../font/PrestigeEliteStd-Bd.otf"); }
+  src: url("../font/PrestigeEliteStd-Bd.otf");
+}
 @font-face {
   font-family: "LLPixel";
-  src: url("../font/LLPixel_only_Letter.ttf"); }
+  src: url("../font/LLPixel_only_Letter.ttf");
+}
 @font-face {
   font-family: "PTSans";
-  src: url("../font/PTSans-Caption.ttf"); }
+  src: url("../font/PTSans-Caption.ttf");
+}
 .roboto-mono {
-  font-family: 'Roboto Mono', sans-serif !important; }
+  font-family: "Roboto Mono", sans-serif !important;
+}
 
 .number {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  font-family: 'DS Digital', sans-serif !important; }
+  font-family: "DS Digital", sans-serif !important;
+}
 
 .impact {
-  font-family: 'Impact', sans-serif !important; }
+  font-family: "Impact", sans-serif !important;
+}
 
 .code {
-  font-family: 'Roboto Mono', sans-serif; }
+  font-family: "Roboto Mono", sans-serif;
+}
 
 .bold {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 body {
   height: 3000px;
   background-color: #EDEDED;
-  color: #505257; }
+  color: #505257;
+}
 
 .gap {
   height: 40px;
   flex-shrink: 0;
-  width: 40px; }
+  width: 40px;
+}
 
 #app {
-  width: 100%; }
+  width: 100%;
+}
 
 .copyright {
   display: flex;
@@ -125,30 +153,37 @@ body {
   flex-flow: column nowrap;
   flex-shrink: 0;
   width: 350px;
-  padding: 100px 50px; }
-  .copyright img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 50px; }
-  .copyright h1 {
-    margin-bottom: 100px;
-    text-align: center;
-    font-size: 1.9rem;
-    font-weight: bold; }
-  .copyright .author {
-    color: #808080;
-    letter-spacing: 1px; }
-    .copyright .author p {
-      font-size: 0.8rem; }
+  padding: 100px 50px;
+}
+.copyright img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+}
+.copyright h1 {
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.copyright .author {
+  color: #808080;
+  letter-spacing: 1px;
+}
+.copyright .author p {
+  font-size: 0.8rem;
+}
 
 a.link:hover {
-  color: #FF2D70; }
+  color: #FF2D70;
+}
 a.link:active {
   -webkit-transform: translateY(2px);
   -moz-transform: translateY(2px);
   -ms-transform: translateY(2px);
   -o-transform: translateY(2px);
-  transform: translateY(2px); }
+  transform: translateY(2px);
+}
 
 .card-container {
   overflow-x: auto;
@@ -159,7 +194,8 @@ a.link:active {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  width: 100%; }
+  width: 100%;
+}
 
 .chip {
   background-color: #F7F7F7;
@@ -169,75 +205,125 @@ a.link:active {
   border: 1px solid #d7d7d7;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); }
-  .chip-img {
-    padding: 30px; }
-    .chip-img img {
-      margin: 0 auto;
-      display: block;
-      width: 100px;
-      height: 100px; }
-  .chip-name {
-    padding: 15px;
-    text-align: center;
-    background-color: white;
-    border-bottom: 1px solid #EDEDED;
-    border-top: 1px solid #EDEDED; }
-    .chip-name h2 {
-      color: black;
-      font-weight: normal;
-      font-family: 'LLPixel', sans-serif;
-      margin-bottom: 5px; }
-    .chip-name p {
-      color: #808080;
-      font-family: 'PrestigeEliteStd', sans-serif; }
-  .chip .title {
-    text-align: center;
-    font-size: 2rem; }
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.chip-img {
+  padding: 30px;
+}
+.chip-img img {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.chip-name {
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1px solid #EDEDED;
+  border-top: 1px solid #EDEDED;
+}
+.chip-name h2 {
+  color: black;
+  font-weight: normal;
+  font-family: "LLPixel", sans-serif;
+  margin-bottom: 5px;
+}
+.chip-name p {
+  color: #808080;
+  font-family: "PrestigeEliteStd", sans-serif;
+}
+.chip .title {
+  text-align: center;
+  font-size: 2rem;
+}
 
 .info-list {
   font-size: 0.8rem;
-  padding: 10px 20px; }
-  .info-list .info-item {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    line-height: 1.8; }
-    .info-list .info-item .key {
-      color: #808080;
-      flex-shrink: 0; }
-    .info-list .info-item .value {
-      font-weight: bold;
-      color: #505257;
-      text-align: right;
-      letter-spacing: 0.5px;
-      font-family: 'PTSans', sans-serif; }
+  padding: 10px 20px;
+}
+.info-list .info-item {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  line-height: 1.8;
+}
+.info-list .info-item.invalid .key {
+  color: #d2d2d2;
+}
+.info-list .info-item .key {
+  color: #808080;
+  flex-shrink: 0;
+}
+.info-list .info-item .value {
+  font-weight: bold;
+  color: #505257;
+  text-align: right;
+  letter-spacing: 0.5px;
+  font-family: "PTSans", sans-serif;
+}
 
 .device-title {
   background-color: white;
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #EDEDED;
-  border-top: 1px solid #EDEDED; }
+  border-top: 1px solid #EDEDED;
+}
 
 .device-list {
-  padding: 10px 20px; }
-  .device-list .device-item {
-    font-weight: bold;
-    font-size: 0.8rem;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    line-height: 1.1;
-    background-color: white;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    display: inline-block;
-    padding: 6px 10px;
-    border: 1px solid #EDEDED;
-    color: #505257; }
+  padding: 10px 20px;
+}
+.device-list .device-item {
+  font-weight: bold;
+  font-size: 0.8rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  line-height: 1.1;
+  background-color: white;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid #EDEDED;
+  color: #505257;
+}
 
 .text-big {
-  font-size: 1.2rem !important; }
+  font-size: 1.2rem !important;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    padding: 10px;
+  }
+
+  .chip-img {
+    padding: 5px;
+  }
+  .chip-name {
+    padding: 10px;
+    line-height: 1;
+  }
+  .chip-name h2 {
+    font-size: 1.1rem;
+  }
+  .chip-name p {
+    font-size: 0.8rem;
+  }
+
+  .info-list {
+    font-size: 0.8rem;
+    padding: 5px 20px;
+  }
+  .info-list .info-item {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    padding: 40px 30px;
+  }
+}
 
 /*# sourceMappingURL=chip.css.map */

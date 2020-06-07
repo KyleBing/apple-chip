@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
    <meta charset="UTF-8">
-   <title>Apple 处理器参数大全</title>
+   <title>Apple A系列处理器参数大全</title>
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
       <div class="copyright">
 
          <img src="./imgs/logo.png" alt="Apple Chip LOGO">
-         <h1>Apple 处理器<br>参数大全</h1>
+         <h1>Apple 处理器<br>A系列<br>参数大全</h1>
 
          <div class="author">
             <p>数据来源: <a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">Wikipedia</a></p>
@@ -43,7 +43,9 @@
          <div class="info-list">
             <div class="info-item">
                <div class="key">CPU</div>
-               <div class="value" v-if="item.cpu.rate.length > 1"><span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x <span class="text-big">{{item.cpu.core}}</span></div>
+               <div class="value" v-if="item.cpu.rate.length > 1">
+                  <span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x <span class="text-big">{{item.cpu.core}}</span>
+               </div>
                <div class="value" v-else> <span class="text-big">{{item.cpu.rate[0]}}</span> GHz x <span class="text-big">{{item.cpu.core}}</span></div>
             </div>
             <div class="info-item">
@@ -65,19 +67,33 @@
                <div class="key">技术工艺</div>
                <div class="value">{{item.tech}} 纳米</div>
             </div>
+            <div :class="['info-item', {'invalid': !item.transistorCount}]">
+               <div class="key">晶体管数</div>
+               <div class="value" v-if="item.transistorCount">{{item.transistorCount}} 亿</div>
+            </div>
          </div>
 
          <div class="info-list">
             <div class="info-item">
+               <div class="key">发布时间</div>
+               <div class="value">{{item.release}}</div>
+            </div>
+         </div>
+
+         <div class="info-list">
+            <div :class="['info-item', {'invalid': !item.os.init}]">
                <div class="key">初始系统</div>
                <div class="value">{{item.os.init}}</div>
             </div>
-            <div class="info-item">
+            <div :class="['info-item', {'invalid': !item.os.latest}]">
                <div class="key">最新系统</div>
                <div class="value">{{item.os.latest}}</div>
             </div>
          </div>
 
+
+
+         <!--设备列表-->
          <div class="device">
             <div class="device-title">运行设备</div>
             <div class="device-list">
