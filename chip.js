@@ -166,7 +166,7 @@ const Chips = [
       'iPad Mini 2',
       'iPad Mini 3'
     ],
-    transistorCount: '≈ 1', // 亿
+    transistorCount: '≈ 10', // 亿
     os:{
       init: 'iOS 7.0',
       latest: 'iOS 12, iPadOS 13'
@@ -187,7 +187,7 @@ const Chips = [
     devices: [
       'iPad Air 1',
     ],
-    transistorCount: '≈ 1', // 亿
+    transistorCount: '≈ 10', // 亿
     os:{
       init: 'iOS 7.03',
       latest: 'iPadOS 12'
@@ -213,7 +213,7 @@ const Chips = [
       'Apple TV ( 4代 )',
       'HomePod'
     ],
-    transistorCount: '≈ 2', // 亿
+    transistorCount: '≈ 20', // 亿
     os:{
       init: 'iOS 8.0',
       latest: 'iOS 12, iPadOS 13'
@@ -234,7 +234,7 @@ const Chips = [
     devices: [
       'iPad Air 2'
     ],
-    transistorCount: '≈ 3', // 亿
+    transistorCount: '≈ 30', // 亿
     os:{
       init: 'iOS 8.1',
       latest: 'iOS 12, iPadOS 13'
@@ -258,7 +258,7 @@ const Chips = [
       'iPhone SE ( 1代 )',
       'iPad ( 2017 )'
     ],
-    transistorCount: '> 2', // 亿
+    transistorCount: '> 20', // 亿
     os:{
       init: 'iOS 9.0',
       latest: latestOS
@@ -282,7 +282,7 @@ const Chips = [
       'iPhone SE ( 1代 )',
       'iPad ( 2017 )'
     ],
-    transistorCount: '> 2', // 亿
+    transistorCount: '> 20', // 亿
     os:{
       init: 'iOS 9.0',
       latest: latestOS
@@ -304,7 +304,7 @@ const Chips = [
       'iPad Pro ( 12.9寸, 1代 )',
       'iPad Pro ( 9.7寸 )',
     ],
-    transistorCount: '> 3', // 亿
+    transistorCount: '> 30', // 亿
     os:{
       init: 'iOS 9.1',
       latest: latestOS
@@ -329,7 +329,7 @@ const Chips = [
       'iPod Touch ( 7代 )',
       'iPad ( 2019 )'
     ],
-    transistorCount: '3.3', // 亿
+    transistorCount: '33', // 亿
     os:{
       init: 'iOS 10',
       latest: latestOS
@@ -352,7 +352,7 @@ const Chips = [
       'iPad Pro ( 12.9寸, 2代 )',
       'Apple TV 4k'
     ],
-    transistorCount: '> 4', // 亿
+    transistorCount: '> 40', // 亿
     os:{
       init: 'iOS 10.3.2',
       latest: latestOS
@@ -375,7 +375,7 @@ const Chips = [
       'iPhone 8 Plus',
       'iPhone X',
     ],
-    transistorCount: '4.3', // 亿
+    transistorCount: '43', // 亿
     os:{
       init: 'iOS 11',
       latest: latestOS
@@ -400,7 +400,7 @@ const Chips = [
       'iPad Air ( 3代 )',
       'iPad Mini ( 5代 )'
     ],
-    transistorCount: '6.9', // 亿
+    transistorCount: '69', // 亿
     os:{
       init: 'iOS 12',
       latest: latestOS
@@ -422,7 +422,7 @@ const Chips = [
       'iPad Pro ( 11寸, 1代 )',
       'iPad Pro ( 12.9寸, 3代 )'
     ],
-    transistorCount: '10', // 亿
+    transistorCount: '100', // 亿
     os:{
       init: 'iOS 12.1',
       latest: latestOS
@@ -444,7 +444,7 @@ const Chips = [
       'iPad Pro ( 11寸, 2代 )',
       'iPad Pro ( 12.9, 4代 )'
     ],
-    transistorCount: '10', // 亿
+    transistorCount: '100', // 亿
     os:{
       init: 'iPadOS 13.4.1',
       latest: latestOS
@@ -468,7 +468,7 @@ const Chips = [
       'iPhone 11 Pro Max',
       'iPhone SE ( 2代 )'
     ],
-    transistorCount: '8.5', // 亿
+    transistorCount: '85', // 亿
     os:{
       init: 'iOS 13',
       latest: latestOS
