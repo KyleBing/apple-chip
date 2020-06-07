@@ -1,3 +1,7 @@
+/*****************************
+ Create Date: 20200605175639
+ Update Date: 20200607163850
+ *****************************/
 
 const latestOS = '最新';
 const Chips = [
@@ -483,7 +487,26 @@ let app = new Vue({
     heightApp: 0,
     chips: Chips.reverse()
   },
-  methods: {
+  mounted: function () {
+    console.log(document.querySelector('.chip').offsetHeight)
+    this.$nextTick().then(()=>{
+      let heightChip = document.querySelector('.chip').offsetHeight;
+      if (heightChip < innerHeight) {
+        this.heightApp = innerHeight;
+        window.onscroll = () => {
+          let scrollTop = document.documentElement.scrollTop;
+          let scrollFull = 3000 - innerHeight;
+          let el = document.querySelector('.card-container');
+          let scrollSpace = el.scrollWidth - window.innerWidth;
+          let scrollLeft = (scrollTop / scrollFull) * scrollSpace
+          el.scrollTo(scrollLeft,0)
+        }
+      } else {
+        document.querySelector('body').style.height = 'auto';
+        document.querySelector('.card-container').style.position = 'relative'
+      }
+    })
+
   }
 })
 
@@ -497,22 +520,7 @@ let app = new Vue({
   }
 }*/
 
-// PC 时
-if (!/Mobile/.test(navigator.userAgent)){
-  app.heightApp = window.innerHeight
 
-  window.onscroll = () => {
-    let scrollTop = document.documentElement.scrollTop;
-    let scrollFull = 3000 - innerHeight;
-    let el = document.querySelector('.card-container');
-    let scrollSpace = el.scrollWidth - window.innerWidth;
-    let scrollLeft = (scrollTop / scrollFull) * scrollSpace
-    el.scrollTo(scrollLeft,0)
-  }
-} else { // 手机端时
-  document.querySelector('body').style.height = 'auto';
-  document.querySelector('.card-container').style.position = 'relative'
-}
 
 
 
