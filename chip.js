@@ -491,7 +491,7 @@ let app = new Vue({
     console.log(document.querySelector('.chip').offsetHeight)
     this.$nextTick().then(()=>{
       let heightChip = document.querySelector('.chip').offsetHeight;
-      if (heightChip < innerHeight) {
+      if (heightChip < innerHeight && !/Mobile/.test(navigator.userAgent)) {
         this.heightApp = innerHeight;
         window.onscroll = () => {
           let scrollTop = document.documentElement.scrollTop;
