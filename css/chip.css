@@ -133,7 +133,7 @@ tt {
 body {
   height: 3000px;
   background-color: #EDEDED;
-  color: #505257;
+  color: #3d3d40;
 }
 
 .gap {
@@ -153,18 +153,26 @@ body {
   flex-flow: column nowrap;
   flex-shrink: 0;
   width: 350px;
-  padding: 100px 50px;
+  padding: 50px;
 }
 .copyright img {
   width: 100px;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .copyright h1 {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   text-align: center;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: bold;
+}
+.copyright .description {
+  font-size: 0.9rem;
+  color: #808080;
+  margin-bottom: 50px;
+}
+.copyright .description p {
+  margin-bottom: 5px;
 }
 .copyright .author {
   color: #808080;
@@ -217,7 +225,7 @@ a.link:active {
   height: 100px;
 }
 .chip-name {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   background-color: white;
   border-bottom: 1px solid #EDEDED;
@@ -238,9 +246,16 @@ a.link:active {
   font-size: 2rem;
 }
 
+.info-list-group {
+  padding: 10px 20px;
+}
+
 .info-list {
   font-size: 0.8rem;
-  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+.info-list:last-child {
+  margin-bottom: 0;
 }
 .info-list .info-item {
   justify-content: space-between;
@@ -257,7 +272,7 @@ a.link:active {
 }
 .info-list .info-item .value {
   font-weight: bold;
-  color: #505257;
+  color: #3d3d40;
   text-align: right;
   letter-spacing: 0.5px;
   font-family: "PTSans", sans-serif;
@@ -287,7 +302,7 @@ a.link:active {
   display: inline-block;
   padding: 6px 10px;
   border: 1px solid #EDEDED;
-  color: #505257;
+  color: #3d3d40;
 }
 
 .text-big {
@@ -300,7 +315,7 @@ a.link:active {
   }
 
   .chip-img {
-    padding: 10px;
+    padding: 20px;
   }
   .chip-name {
     padding: 10px;
@@ -323,6 +338,9 @@ a.link:active {
 
   .copyright {
     padding: 40px 30px;
+  }
+  .copyright h1 {
+    font-size: 1.5rem;
   }
 }
 

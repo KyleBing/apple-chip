@@ -485,12 +485,13 @@ let app = new Vue({
   el: '#app',
   data: {
     heightApp: 0,
+    inMobile: false,
     chips: Chips.reverse()
   },
   mounted: function () {
     console.log(document.querySelector('.chip').offsetHeight)
     this.$nextTick().then(()=>{
-      let heightChip = document.querySelector('.chip').offsetHeight;
+      let heightChip = document.querySelector('.chip').offsetHeight + 40;
       if (heightChip < innerHeight && !/Mobile/.test(navigator.userAgent)) {
         this.heightApp = innerHeight;
         window.onscroll = () => {
@@ -502,6 +503,7 @@ let app = new Vue({
           el.scrollTo(scrollLeft,0)
         }
       } else {
+        this.inMobile = true;
         document.querySelector('body').style.height = 'auto';
         document.querySelector('.card-container').style.position = 'relative'
       }
@@ -510,20 +512,8 @@ let app = new Vue({
   }
 })
 
-
-/*if (!/Mobile/.test(navigator.userAgent)){
-  window.onwheel = event => {
-    console.log(event);
-    let el = document.getElementById('app');
-    let scrollSpace = el.scrollWidth - window.innerWidth;
-    el.scrollTo(el.scrollLeft + event.deltaY,0)
-  }
-}*/
-
-
-
-
-
 window.onresize = () => {
-  app.heightApp = innerHeight
+  if (!app.inMobile) {
+    app.heightApp = innerHeight
+  }
 }

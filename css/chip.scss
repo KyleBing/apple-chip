@@ -6,7 +6,7 @@
 
 $text-info-invalid: #d2d2d2;
 $text-info: #808080;
-$text-main: #505257;
+$text-main: #3d3d40;
 $text-copyright: #8e8d91;
 
 $color-border: #d7d7d7;
@@ -38,17 +38,25 @@ body{
   flex-flow: column nowrap;
   flex-shrink: 0;
   width: 350px;
-  padding: 100px 50px ;
+  padding: 50px ;
   img{
     width: 100px;
     height: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   h1{
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     font-weight: bold;
+  }
+  .description{
+    font-size: 0.9rem;
+    color: $text-info;
+    margin-bottom: 50px;
+    p{
+      margin-bottom: 5px;
+    }
   }
   .author{
     color: $text-info;
@@ -99,7 +107,7 @@ a.link{
     }
   }
   &-name{
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     background-color: white;
     border-bottom: 1px solid $color-border-light;
@@ -121,9 +129,15 @@ a.link{
   }
 }
 
+.info-list-group{
+  padding: 10px 20px;
+}
 .info-list{
   font-size: 0.8rem;
-  padding: 10px 20px;
+  margin-bottom: 15px;
+  &:last-child{
+    margin-bottom: 0;
+  }
   .info-item{
     justify-content: space-between;
     align-items: center;
@@ -184,8 +198,7 @@ a.link{
 
   .chip{
     &-img{
-      padding: 10px;
-
+      padding: 20px;
     }
     &-name{
       padding: 10px;
@@ -210,5 +223,8 @@ a.link{
 
   .copyright{
     padding: 40px 30px;
+    h1{
+      font-size: 1.5rem;
+    }
   }
 }
