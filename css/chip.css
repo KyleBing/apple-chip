@@ -152,7 +152,7 @@ body {
   justify-content: flex-start;
   flex-flow: column nowrap;
   flex-shrink: 0;
-  width: 350px;
+  width: 300px;
   padding: 50px;
 }
 .copyright img {
@@ -314,6 +314,9 @@ a.link:active {
     padding: 10px;
   }
 
+  .chip {
+    width: 280px;
+  }
   .chip-img {
     padding: 20px;
   }
@@ -330,7 +333,7 @@ a.link:active {
 
   .info-list {
     font-size: 0.8rem;
-    padding: 5px 20px;
+    margin-bottom: 10px;
   }
   .info-list .info-item {
     margin-bottom: 0;

@@ -37,7 +37,7 @@ body{
   justify-content: flex-start;
   flex-flow: column nowrap;
   flex-shrink: 0;
-  width: 350px;
+  width: 300px;
   padding: 50px ;
   img{
     width: 100px;
@@ -197,6 +197,7 @@ a.link{
   }
 
   .chip{
+    width: 280px;
     &-img{
       padding: 20px;
     }
@@ -214,7 +215,7 @@ a.link{
 
   .info-list {
     font-size: 0.8rem;
-    padding: 5px 20px;
+    margin-bottom: 10px;
 
     .info-item {
       margin-bottom: 0;
