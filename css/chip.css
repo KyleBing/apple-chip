@@ -251,7 +251,7 @@ a.link:active {
 }
 
 .info-list {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin-bottom: 15px;
 }
 .info-list:last-child {
@@ -342,6 +342,30 @@ a.link:active {
   .copyright h1 {
     font-size: 1.5rem;
   }
+}
+.full-screen {
+  cursor: pointer;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 100;
+}
+.full-screen-btn {
+  width: 30px;
+}
+.full-screen-btn img {
+  display: block;
+  width: 100%;
+}
+.full-screen-tip {
+  font-size: 12px;
+  color: #999;
+}
+.full-screen-tip-mobile {
+  left: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  color: #999;
 }
 
 /*# sourceMappingURL=chip.css.map */

@@ -6,7 +6,7 @@
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20200620100029">
+   <link rel="stylesheet" href="css/chip.css?v=20200621211116">
    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
    <link rel="apple-touch-icon" href="imgs/logo_black.png">
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -17,11 +17,11 @@
    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
 
-         <img src="./imgs/logo.png?v=20200620100029" alt="Apple Chip LOGO">
+         <img src="./imgs/logo.png?v=20200621211116" alt="Apple Chip LOGO">
          <h1>苹果A系列处理器<br>参数大全</h1>
 
          <div class="description">
-            <p>处理器型号中带末尾带字母的都是用在 iPad 上的，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
+            <p>处理器型号中末尾带字母的都是用在 iPad 上的，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
             <p>毕竟用在不同设备上的，手机上要考虑功耗等，两种芯片都是对应设备最优化了，没有可比性。</p>
          </div>
 
@@ -110,10 +110,22 @@
 
       <div class="gap"></div>
    </div>
+
+   <!--进入全屏按钮-->
+   <div v-if="showFullScreenBtn"
+        v-show="!didEnteredFullScreen"
+        class="full-screen full-screen-btn"
+        @click="enterFullScreen">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAkCAYAAADGrhlwAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAANKADAAQAAAABAAAAJAAAAAAel1i7AAAA30lEQVRYCe1YwQ2EMAw7TrdHV+kO3aSDdJMO1Uk4HVI/UKuSdTUoCp9CROrYDgiyxRj3l6HjbYjLQcUJPd3Rz7nAWus5NLxOKQ3j/wqydVwI9YJaa/30lnWGH0IY1gUJ5ZyHCargDB856C8FlUMsjjvEKqfKM+fQ5t9yqt4hccy1nBMiO0GW5g7JpCaB3CFSOFmaOySTmgSy79DvTxD9DZKiLUlDddp3aImcwk3dIaHYFBQcY6G5V0eZzc36few6w0f7QkKlFJRzxFdPTmf4qDhzz5DPFJDVT4mbazlzhL7+TyWpzAcGkAAAAABJRU5ErkJggg==" alt="fullscreen-button" title="进入全屏模式">
+   </div>
+
+   <!--TIPS-->
+   <p v-show="didEnteredFullScreen" class="full-screen full-screen-tip">Esc 退出全屏模式</p>
+
 </div>
 
 
-<script src="chip.js?v=20200620100029"></script>
+<script src="chip.js?v=20200621211116"></script>
 
 <script>
   setTimeout(()=>{

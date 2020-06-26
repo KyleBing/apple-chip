@@ -484,12 +484,27 @@ const Chips = [
 let app = new Vue({
   el: '#app',
   data: {
+    // full screen 相关
+    showFullScreenBtn: false,
+    didEnteredFullScreen: false,
+    // 浏览器参数
+    portraitMode: false,
+    mobileMode: false,
+
+
     heightApp: 0,
     inMobile: false,
     chips: Chips.reverse()
   },
   mounted: function () {
-    console.log(document.querySelector('.chip').offsetHeight)
+    // 全屏相关
+    let chromeCore = /Chrome/i.test(navigator.userAgent);
+    let mobileMode = /Mobile/i.test(navigator.userAgent);
+    this.portraitMode = window.innerWidth > window.innerHeight;
+    this.mobileMode = mobileMode;
+    this.showFullScreenBtn = chromeCore && !mobileMode;
+
+
     this.$nextTick().then(()=>{
       let heightChip = document.querySelector('.chip').offsetHeight + 40;
       if (heightChip < innerHeight && !/Mobile/.test(navigator.userAgent)) {
@@ -509,6 +524,12 @@ let app = new Vue({
       }
     })
 
+  },
+  methods: {
+    // 全屏显示
+    enterFullScreen: function () {
+      document.documentElement.requestFullscreen();
+    }
   }
 })
 
@@ -516,4 +537,10 @@ window.onresize = () => {
   if (!app.inMobile) {
     app.heightApp = innerHeight
   }
+}
+
+
+// 当全屏模式变化时
+document.documentElement.onfullscreenchange  = () => {
+  app.didEnteredFullScreen = Boolean(document.fullscreenElement)
 }
