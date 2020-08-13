@@ -133,7 +133,7 @@ tt {
 body {
   height: 3000px;
   background-color: #EDEDED;
-  color: #3d3d40;
+  color: #202122;
 }
 
 .gap {
@@ -177,7 +177,7 @@ body {
 }
 .copyright .description p a {
   font-weight: bold;
-  color: #3d3d40;
+  color: #202122;
 }
 .copyright .description p a:hover {
   color: #FF2D70;
@@ -280,7 +280,7 @@ a.link:active {
 }
 .info-list .info-item .value {
   font-weight: bold;
-  color: #3d3d40;
+  color: #202122;
   text-align: right;
   letter-spacing: 0.5px;
   font-family: "PTSans", sans-serif;
@@ -310,7 +310,7 @@ a.link:active {
   display: inline-block;
   padding: 6px 10px;
   border: 1px solid #EDEDED;
-  color: #3d3d40;
+  color: #202122;
 }
 
 .text-big {
