@@ -70,7 +70,7 @@
                </div>
                <div class="info-item">
                   <div class="key">技术工艺</div>
-                  <div class="value">{{item.techCompany}} - {{item.tech}} 纳米</div>
+                  <div class="value"><span v-if="item.techCompany">{{item.techCompany}} - </span>{{item.tech}} 纳米</div>
                </div>
                <div :class="['info-item', {'invalid': !item.transistorCount}]">
                   <div class="key">晶体管数</div>
