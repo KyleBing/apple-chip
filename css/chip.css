@@ -168,7 +168,7 @@ body {
 }
 .copyright .description {
   font-size: 0.9rem;
-  color: #808080;
+  color: #6f6f6f;
   margin-bottom: 50px;
 }
 .copyright .description p {
@@ -183,7 +183,7 @@ body {
   color: #FF2D70;
 }
 .copyright .author {
-  color: #808080;
+  color: #6f6f6f;
   letter-spacing: 1px;
 }
 .copyright .author p {
@@ -246,7 +246,7 @@ a.link:active {
   margin-bottom: 5px;
 }
 .chip-name p {
-  color: #808080;
+  color: #6f6f6f;
   font-family: "PrestigeEliteStd", sans-serif;
 }
 .chip .title {
@@ -275,7 +275,7 @@ a.link:active {
   color: #d2d2d2;
 }
 .info-list .info-item .key {
-  color: #808080;
+  color: #6f6f6f;
   flex-shrink: 0;
 }
 .info-list .info-item .value {
