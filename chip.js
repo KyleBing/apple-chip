@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20200607163850
+ Update Date: 20200813123827
  *****************************/
 
 const latestOS = '最新';
@@ -9,6 +9,7 @@ const Chips = [
     name: 'A4',
     model: 'APL0398',
     tech: '45', // nm
+    techCompany: '',
     dieSize: '53.3', // mm
     isa: 'ARMv7',
     cpu: {
@@ -32,6 +33,7 @@ const Chips = [
     name: 'A5',
     model: 'APL0498',
     tech: '45', // nm
+    techCompany: '',
     dieSize: '122.2', // mm
     isa: 'ARMv7',
         cpu: {
@@ -53,6 +55,7 @@ const Chips = [
     name: 'A5',
     model: 'APL2498',
     tech: '32', // nm
+    techCompany: 'HKMG',
     dieSize: '69.6', // mm
     isa: 'ARMv7',
         cpu: {
@@ -76,6 +79,7 @@ const Chips = [
     name: 'A5',
     model: 'APL7498',
     tech: '32', // nm
+    techCompany: 'HKMG',
     dieSize: '37.8', // mm
     isa: 'ARMv7',
         cpu: {
@@ -96,6 +100,7 @@ const Chips = [
     name: 'A5X',
     model: 'APL5498',
     tech: '45', // nm
+    techCompany: '',
     dieSize: '165', // mm
     isa: 'ARMv7',
         cpu: {
@@ -116,6 +121,7 @@ const Chips = [
     name: 'A6',
     model: 'APL0598',
     tech: '32', // nm
+    techCompany: 'HKMG',
     dieSize: '96.71', // mm
     isa: 'ARMv7s',
         cpu: {
@@ -137,6 +143,7 @@ const Chips = [
     name: 'A6X',
     model: 'APL5598',
     tech: '32', // nm
+    techCompany: 'HKMG',
     dieSize: '123', // mm
     isa: 'ARMv7s',
         cpu: {
@@ -157,6 +164,7 @@ const Chips = [
     name: 'A7',
     model: 'APL0698',
     tech: '28', // nm
+    techCompany: 'HKMG',
     dieSize: '102', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -180,6 +188,7 @@ const Chips = [
     name: 'A7',
     model: 'APL5698',
     tech: '28', // nm
+    techCompany: 'HKMG',
     dieSize: '102', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -201,6 +210,7 @@ const Chips = [
     name: 'A8',
     model: 'APL1011',
     tech: '20', // nm
+    techCompany: '台积电',
     dieSize: '89', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -227,6 +237,7 @@ const Chips = [
     name: 'A8X',
     model: 'APL1012',
     tech: '20', // nm
+    techCompany: '台积电',
     dieSize: '128', // mm
     isa: 'ARMv8.0-A',
     cpu: {
@@ -248,6 +259,7 @@ const Chips = [
     name: 'A9',
     model: 'APL0898',
     tech: '14', // nm
+    techCompany: '三星',
     dieSize: '96', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -272,6 +284,7 @@ const Chips = [
     name: 'A9',
     model: 'APL1022',
     tech: '16', // nm
+    techCompany: '台积电',
     dieSize: '104.5', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -296,6 +309,7 @@ const Chips = [
     name: 'A9X',
     model: 'APL1021',
     tech: '16', // nm
+    techCompany: '台积电',
     dieSize: '143.9', // mm
     isa: 'ARMv8.0-A',
         cpu: {
@@ -318,6 +332,7 @@ const Chips = [
     name: 'A10 Fusion',
     model: 'APL1W24',
     tech: '16', // nm
+    techCompany: '台积电',
     dieSize: '125', // mm
     isa: 'ARMv8.1-A',
         cpu: {
@@ -343,6 +358,7 @@ const Chips = [
     name: 'A10X Fusion',
     model: 'APL1071',
     tech: '10', // nm
+    techCompany: '台积电',
     dieSize: '96.4', // mm
     isa: 'ARMv8.1-A',
     cpu: {
@@ -366,6 +382,7 @@ const Chips = [
     name: 'A11 Bionic',
     model: 'APL1W72',
     tech: '10', // nm
+    techCompany: '台积电',
     dieSize: '87.66', // mm
     isa: 'ARMv8.2-A',
         cpu: {
@@ -389,6 +406,7 @@ const Chips = [
     name: 'A12 Bionic',
     model: 'APL1W81',
     tech: '7', // nm
+    techCompany: '台积电 N7',
     dieSize: '83.27', // mm
     isa: 'ARMv8.3-A',
         cpu: {
@@ -414,6 +432,7 @@ const Chips = [
     name: 'A12X Bionic',
     model: 'APL1083',
     tech: '7', // nm
+    techCompany: '台积电 N7',
     dieSize: '≈ 135', // mm
     isa: 'ARMv8.3-A',
         cpu: {
@@ -436,6 +455,7 @@ const Chips = [
     name: 'A12Z Bionic',
     model: 'APL1083',
     tech: '7', // nm
+    techCompany: '台积电 N7',
     dieSize: '≈ 135', // mm
     isa: 'ARMv8.3-A',
         cpu: {
@@ -458,6 +478,7 @@ const Chips = [
     name: 'A13 Bionic',
     model: 'APL1W85',
     tech: '7', // nm
+    techCompany: '台积电 N7P',
     dieSize: '98.48', // mm
     isa: 'ARMv8.4-A',
         cpu: {

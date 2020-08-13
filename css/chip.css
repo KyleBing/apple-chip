@@ -172,7 +172,15 @@ body {
   margin-bottom: 50px;
 }
 .copyright .description p {
-  margin-bottom: 5px;
+  text-indent: 2rem;
+  margin-bottom: 8px;
+}
+.copyright .description p a {
+  font-weight: bold;
+  color: #3d3d40;
+}
+.copyright .description p a:hover {
+  color: #FF2D70;
 }
 .copyright .author {
   color: #808080;
@@ -354,11 +362,25 @@ a.link:active {
   z-index: 100;
 }
 .full-screen-btn {
+  opacity: 0.3;
   width: 30px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .full-screen-btn img {
   display: block;
   width: 100%;
+}
+.full-screen-btn:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .full-screen-tip {
   font-size: 12px;

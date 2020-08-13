@@ -55,7 +55,15 @@ body{
     color: $text-info;
     margin-bottom: 50px;
     p{
-      margin-bottom: 5px;
+      text-indent: 2rem;
+      margin-bottom: 8px;
+      a{
+        font-weight: bold;
+        color: $text-main;
+        &:hover{
+          color: #FF2D70;
+        }
+      }
     }
   }
   .author{
@@ -237,11 +245,16 @@ a.link{
   bottom: 10px;
   z-index: 100;
   &-btn {
+    opacity: 0.3;
     width: 30px;
-
+    @include transition(all 0.3s);
     img {
       display: block;
       width: 100%;
+    }
+    &:hover{
+      opacity: 1;
+      @include transition(all 0.3s)
     }
   }
   &-tip{

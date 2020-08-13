@@ -6,7 +6,7 @@
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20200626140412">
+   <link rel="stylesheet" href="css/chip.css?v=20200813123738">
    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
    <link rel="apple-touch-icon" href="imgs/logo_black.png">
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -17,19 +17,19 @@
    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
 
-         <img src="./imgs/logo.png?v=20200626140412" alt="Apple Chip LOGO">
+         <img src="./imgs/logo.png?v=20200813123738" alt="Apple Chip LOGO">
          <h1>苹果A系列处理器<br>参数大全</h1>
 
          <div class="description">
             <p>处理器型号中末尾带字母的都是用在 iPad 上的，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
             <p>毕竟用在不同设备上的，手机上要考虑功耗等，两种芯片都是对应设备最优化了，没有可比性。</p>
+            <p>欢迎查看另外两个实用的页面：<a class="link" href="https://kylebing.cn/tools/ipad">《iPad 参数大全》</a> <a href="https://kylebing.cn/apple">《苹果产品图》</a></p>
          </div>
 
          <div class="author">
             <p>数据来源: <a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">Wikipedia</a></p>
-            <p>相关链接: <a class="link" href="https://kylebing.cn/tools/ipad">iPad参数大全</a></p>
-            <p>作者主页: <a class="link" href="https://kylebing.cn">kylebing.cn</a></p>
-            <p>最后更新: 2020/06/20</p>
+            <p>作者主页: <a class="link" href="https://kylebing.cn">KyleBing.cn</a></p>
+            <p>最后更新: 2020/08/13</p>
          </div>
       </div>
 
@@ -70,7 +70,7 @@
                </div>
                <div class="info-item">
                   <div class="key">技术工艺</div>
-                  <div class="value">{{item.tech}} 纳米</div>
+                  <div class="value">{{item.techCompany}} - {{item.tech}} 纳米</div>
                </div>
                <div :class="['info-item', {'invalid': !item.transistorCount}]">
                   <div class="key">晶体管数</div>
@@ -91,7 +91,7 @@
                   <div class="value">{{item.os.init}}</div>
                </div>
                <div :class="['info-item', {'invalid': !item.os.latest}]">
-                  <div class="key">最新系统</div>
+                  <div class="key">最终系统</div>
                   <div class="value">{{item.os.latest}}</div>
                </div>
             </div>
@@ -125,7 +125,7 @@
 </div>
 
 
-<script src="chip.js?v=20200626140412"></script>
+<script src="chip.js?v=20200813123738"></script>
 
 <script>
   setTimeout(()=>{
