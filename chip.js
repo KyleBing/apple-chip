@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20200813123827
+ Update Date: 20200916080139
  *****************************/
 
 const latestOS = '最新';
@@ -496,6 +496,28 @@ const Chips = [
     transistorCount: '85', // 亿
     os:{
       init: 'iOS 13',
+      latest: latestOS
+    }
+  },
+  {
+    name: 'A14 Bionic',
+    model: '--',
+    tech: '5', // nm
+    techCompany: '台积电 N5',
+    dieSize: '--', // mm
+    isa: '--',
+    cpu: {
+      rate: [0],
+      core: 6
+    },
+    gpu: 'Apple x4',
+    release: '2020-09',
+    devices: [
+      'iPad Air (4代)'
+    ],
+    transistorCount: '118', // 亿
+    os:{
+      init: 'iPadOS',
       latest: latestOS
     }
   }
