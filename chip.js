@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20200916080139
+ Update Date: 20200917083909
  *****************************/
 
 const latestOS = '最新';
@@ -501,13 +501,13 @@ const Chips = [
   },
   {
     name: 'A14 Bionic',
-    model: '--',
+    model: 'APL1W87',
     tech: '5', // nm
     techCompany: '台积电 N5',
     dieSize: '--', // mm
     isa: '--',
     cpu: {
-      rate: [0],
+      rate: [3.09],
       core: 6
     },
     gpu: 'Apple x4',
@@ -517,7 +517,7 @@ const Chips = [
     ],
     transistorCount: '118', // 亿
     os:{
-      init: 'iPadOS',
+      init: 'iPadOS 14',
       latest: latestOS
     }
   }
