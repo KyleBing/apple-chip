@@ -45,7 +45,7 @@ body{
     margin-bottom: 30px;
   }
   h1{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 1.6rem;
     font-weight: bold;
@@ -211,23 +211,23 @@ a.link{
   margin-bottom: 50px;
 }
 .btn{
+  background-color: lighten($text-main, 20%);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   display: block;
   padding: 10px 15px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid $color-border;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 2px 2px 4px rgba(0,0,0,0.08), inset 1px 1px 1px white;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  //box-shadow: 2px 2px 4px rgba(0,0,0,0.08), inset 1px 1px 1px white;
 
   h3{
-    color: $text-main;
+    color: white;
     font-size: 1rem;
     line-height: 1.2;
     margin-bottom: 3px;
@@ -235,15 +235,15 @@ a.link{
   }
   .desc{
     line-height: 1.2;
-    color: $text-info;
+    color: $text-info-invalid;
     font-size: 0.7rem;
   }
 
 
   &:hover{
-    background-color: #fff;
-    transition: background-color 0.3s;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    background-color: lighten($text-main, 10%);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
   }
   &:active{
     box-shadow: 1px 1px 5px rgba(0,0,0,0.05);

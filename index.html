@@ -6,7 +6,7 @@
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20201010135054">
+   <link rel="stylesheet" href="css/chip.css?v=20201010162141">
    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
    <link rel="apple-touch-icon" href="imgs/logo_black.png">
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -17,20 +17,8 @@
    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
 
-         <img src="./imgs/logo.png?v=20201010135054" alt="Apple Chip LOGO">
+         <img src="./imgs/logo.png?v=20201010162141" alt="Apple Chip LOGO">
          <h1>苹果{{models}}系列处理器<br>参数大全</h1>
-
-
-         <!--DESCRIPTION-->
-         <div class="description" v-if="models === 'A'">
-            <p>处理器型号中末尾带字母的都是用在 iPad 上的，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
-            <p>毕竟用在不同设备上的，手机上要考虑功耗等，两种芯片都是对应设备最优化了，没有可比性。</p>
-            <p>欢迎查看另一个页面：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">《iPad 参数大全》</a></p>
-         </div>
-
-         <div class="description" v-else>
-            <p>S 系列处理器是用在 Apple Watch 上的</p>
-         </div>
 
          <!--OPERATIONS-->
          <div class="btns">
@@ -46,10 +34,23 @@
             </div>
          </div>
 
+         <!--DESCRIPTION-->
+         <div class="description" v-if="models === 'A'">
+            <p>末尾带字母的用在 iPad 上，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
+            <p>毕竟用在不同设备上的，手机上要考虑功耗等，两种芯片都是对应设备最优化了。</p>
+            <p>其它：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">《iPad 参数大全》</a></p>
+         </div>
+
+         <div class="description" v-else>
+            <p>S 系列处理器是用在 Apple Watch 上的</p>
+         </div>
+
+
+
          <div class="author">
             <p>数据来源: <a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">Wikipedia</a></p>
             <p>作者主页: <a class="link" href="https://kylebing.cn">KyleBing.cn</a></p>
-            <p>最后更新: 2020/09/17</p>
+            <p>最后更新: 2020/10/10</p>
          </div>
       </div>
 
@@ -150,7 +151,7 @@
 </div>
 
 
-<script src="chip.js?v=20201010135054"></script>
+<script src="chip.js?v=20201010162141"></script>
 
 <script>
   setTimeout(() => {
