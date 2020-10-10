@@ -53,8 +53,8 @@ body{
   .description{
     font-size: 0.9rem;
     color: $text-info;
-    margin-bottom: 50px;
-    p{
+    margin-bottom: 10px;
+    > p{
       text-indent: 2rem;
       margin-bottom: 8px;
       a{
@@ -107,11 +107,13 @@ a.link{
 
   &-img{
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
     img{
-      margin: 0 auto;
       display: block;
       width: 100px;
-      height: 100px;
     }
   }
   &-name{
@@ -155,6 +157,12 @@ a.link{
       .key{
         color: $text-info-invalid;
       }
+      .value{
+        color: $text-info-invalid;
+        &:before{
+          content: '--';
+        }
+      }
     }
     .key{
       color: $text-info;
@@ -197,6 +205,52 @@ a.link{
 .text-big{
   font-size: 1.2rem !important;
 }
+
+
+.btns{
+  margin-bottom: 50px;
+}
+.btn{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: block;
+  padding: 10px 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid $color-border;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.08), inset 1px 1px 1px white;
+
+  h3{
+    color: $text-main;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 3px;
+    font-weight: bold;
+  }
+  .desc{
+    line-height: 1.2;
+    color: $text-info;
+    font-size: 0.7rem;
+  }
+
+
+  &:hover{
+    background-color: #fff;
+    transition: background-color 0.3s;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+  }
+  &:active{
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+    transform: translateY(2px);
+  }
+}
+
 
 
 @media (max-width: 768px){
@@ -268,3 +322,4 @@ a.link{
     color: #999;
   }
 }
+

@@ -1,10 +1,10 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20200917083909
+ Update Date: 20201010135102
  *****************************/
 
 const latestOS = '最新';
-const Chips = [
+const chipsModelA = [
   {
     name: 'A4',
     model: 'APL0398',
@@ -504,8 +504,8 @@ const Chips = [
     model: 'APL1W87',
     tech: '5', // nm
     techCompany: '台积电 N5',
-    dieSize: '--', // mm
-    isa: '--',
+    dieSize: '', // mm
+    isa: '',
     cpu: {
       rate: [3.09],
       core: 6
@@ -522,22 +522,176 @@ const Chips = [
     }
   }
 ]
+const chipsModelS = [
+  {
+    name: 'S1',
+    model: 'APL0778',
+    tech: '28', // nm
+    techCompany: 'HKMG',
+    dieSize: '32', // mm
+    isa: 'ARMv7k',
+    cpu: {
+      rate: [0.52],
+      core: 1
+    },
+    gpu: 'PowerVR Series 5',
+    release: '2015-04',
+    devices: [
+      'Apple Watch (1代)',
+    ],
+    os:{
+      init: 'watchOS 1.0',
+      latest: 'watchOS 4.3.2'
+    }
+  },
+  {
+    name: 'S1P',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: 'ARMv7k',
+    cpu: {
+      rate: [0.52],
+      core: 2
+    },
+    gpu: 'PowerVR Series 6',
+    release: '2016-09',
+    devices: [
+      'Apple Watch Series 1',
+    ],
+    os:{
+      init: 'watchOS 3.0',
+      latest: 'watchOS 6.x'
+    }
+  },
+  {
+    name: 'S2',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: 'ARMv7k',
+    cpu: {
+      rate: [0.52],
+      core: 2
+    },
+    gpu: 'PowerVR Series 6',
+    release: '2016-09',
+    devices: [
+      'Apple Watch Series 2',
+    ],
+    os:{
+      init: 'watchOS 3.0',
+      latest: 'watchOS 6.x'
+    }
+  },
+  {
+    name: 'S3',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: 'ARMv7k',
+    cpu: {
+      rate: [],
+      core: 2
+    },
+    gpu: '',
+    release: '2017-09',
+    devices: [
+      'Apple Watch Series 3',
+    ],
+    os:{
+      init: 'watchOS 4.0',
+      latest: latestOS
+    }
+  },
+  {
+    name: 'S4',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: 'ARMv8-A ILP32',
+    cpu: {
+      rate: [],
+      core: 2
+    },
+    gpu: 'Apple G11M',
+    release: '2018-09',
+    devices: [
+      'Apple Watch Series 4',
+    ],
+    os:{
+      init: 'watchOS 5.0',
+      latest: latestOS
+    }
+  },
+  {
+    name: 'S5',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: 'ARMv8-A ILP32',
+    cpu: {
+      rate: [],
+      core: 2
+    },
+    gpu: 'Apple G11M',
+    release: '2019-09',
+    devices: [
+      'Apple Watch Series 5',
+      'Apple Watch Series SE',
+    ],
+    os:{
+      init: 'watchOS 6.0',
+      latest: latestOS
+    }
+  },
+  {
+    name: 'S6',
+    model: '',
+    tech: '', // nm
+    techCompany: '',
+    dieSize: '', // mm
+    isa: '',
+    cpu: {
+      rate: [],
+      core: 2
+    },
+    gpu: '',
+    release: '2020-09',
+    devices: [
+      'Apple Watch Series 6',
+    ],
+    os:{
+      init: 'watchOS 7.0',
+      latest: latestOS
+    }
+  },
+]
+
+
+let chipsA = chipsModelA.reverse();
+let chipsS = chipsModelS.reverse();
 
 
 let app = new Vue({
   el: '#app',
   data: {
+
     // full screen 相关
     showFullScreenBtn: false,
     didEnteredFullScreen: false,
     // 浏览器参数
     portraitMode: false,
     mobileMode: false,
-
-
+    models: 'A',
     heightApp: 0,
     inMobile: false,
-    chips: Chips.reverse()
+    chips: chipsA
   },
   mounted: function () {
     // 全屏相关
@@ -546,32 +700,42 @@ let app = new Vue({
     this.portraitMode = window.innerWidth > window.innerHeight;
     this.mobileMode = mobileMode;
     this.showFullScreenBtn = chromeCore && !mobileMode;
-
-
-    this.$nextTick().then(()=>{
-      let heightChip = document.querySelector('.chip').offsetHeight + 40;
-      if (heightChip < innerHeight && !/Mobile/.test(navigator.userAgent)) {
-        this.heightApp = innerHeight;
-        window.onscroll = () => {
-          let scrollTop = document.documentElement.scrollTop;
-          let scrollFull = 3000 - innerHeight;
-          let el = document.querySelector('.card-container');
-          let scrollSpace = el.scrollWidth - window.innerWidth;
-          let scrollLeft = (scrollTop / scrollFull) * scrollSpace
-          el.scrollTo(scrollLeft,0)
-        }
-      } else {
-        this.inMobile = true;
-        document.querySelector('body').style.height = 'auto';
-        document.querySelector('.card-container').style.position = 'relative'
-      }
-    })
-
+    this.relocate(); // relocate items
   },
   methods: {
     // 全屏显示
     enterFullScreen: function () {
       document.documentElement.requestFullscreen();
+    },
+    switchModels: function () {
+      if (this.models === 'A'){
+        this.chips = chipsS;
+        this.models = 'S';
+      } else {
+        this.chips = chipsA;
+        this.models = 'A';
+      }
+      this.relocate();
+    },
+    relocate: function (){
+      this.$nextTick().then(()=>{
+        let heightChip = document.querySelector('.chip').offsetHeight + 40;
+        if (heightChip < innerHeight && !/Mobile/.test(navigator.userAgent)) {
+          this.heightApp = innerHeight;
+          window.onscroll = () => {
+            let scrollTop = document.documentElement.scrollTop;
+            let scrollFull = 3000 - innerHeight;
+            let el = document.querySelector('.card-container');
+            let scrollSpace = el.scrollWidth - window.innerWidth;
+            let scrollLeft = (scrollTop / scrollFull) * scrollSpace
+            el.scrollTo(scrollLeft,0)
+          }
+        } else {
+          this.inMobile = true;
+          document.querySelector('body').style.height = 'auto';
+          document.querySelector('.card-container').style.position = 'relative'
+        }
+      })
     }
   }
 })
