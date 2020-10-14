@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20201010135102
+ Update Date: 20201014084525
  *****************************/
 
 const latestOS = '最新';
@@ -513,7 +513,11 @@ const chipsModelA = [
     gpu: 'Apple x4',
     release: '2020-09',
     devices: [
-      'iPad Air (4代)'
+      'iPad Air (4代)',
+      'iPhone 12',
+      'iPhone 12 Mini',
+      'iPhone 12 Pro',
+      'iPhone 12 Pro Max',
     ],
     transistorCount: '118', // 亿
     os:{
