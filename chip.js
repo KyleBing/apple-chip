@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20201014084525
+ Update Date: 20201016173432
  *****************************/
 
 const latestOS = '最新';
@@ -507,7 +507,7 @@ const chipsModelA = [
     dieSize: '', // mm
     isa: '',
     cpu: {
-      rate: [3.09],
+      rate: [2.99],
       core: 6
     },
     gpu: 'Apple x4',
@@ -521,7 +521,7 @@ const chipsModelA = [
     ],
     transistorCount: '118', // 亿
     os:{
-      init: 'iPadOS 14',
+      init: 'iOS 14',
       latest: latestOS
     }
   }
