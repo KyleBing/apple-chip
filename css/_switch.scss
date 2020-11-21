@@ -1,0 +1,20 @@
+.type-switch{
+  padding: 30px 20px;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  display: flex;
+  justify-content: space-between;
+  .switch{
+    cursor: pointer;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    img{
+      display: block;
+      width: 100%;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

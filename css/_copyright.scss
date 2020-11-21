@@ -1,0 +1,32 @@
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  flex-shrink: 0;
+  padding: 60px 40px ;
+  .title{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    img{
+      width: 95px;
+      height: 95px;
+      margin-bottom: 30px;
+    }
+    h1{
+      color: $text-title;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.author{
+  text-align: center;
+  color: $text-copyright;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  font-size: 0.7rem;
+}

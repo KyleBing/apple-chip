@@ -1,0 +1,30 @@
+
+$text-info-invalid: #d2d2d2;
+$text-info: #6f6f6f;
+$text-main: #202122;
+$text-title: #3D3D40;
+$text-copyright: #979797;
+
+$color-border: #d7d7d7;
+$color-border-light: #EDEDED;
+
+$bg-card: #F7F7F7;
+$bg: #EDEDED;
+
+
+
+$timer: 10px;
+// common
+@for $item from 1 through 7 {
+  .mt-#{$item}{margin-top: $timer * $item !important;}
+  .mb-#{$item}{margin-bottom: $timer * $item !important;}
+  .ml-#{$item}{margin-left: $timer * $item !important;}
+  .mr-#{$item}{margin-right: $timer * $item !important;}
+  .m-#{$item}{margin: $timer * $item !important;}
+
+  .pt-#{$item}{padding-top: $timer * $item !important;}
+  .pb-#{$item}{padding-bottom: $timer * $item !important;}
+  .pl-#{$item}{padding-left: $timer * $item !important;}
+  .pr-#{$item}{padding-right: $timer * $item !important;}
+  .p-#{$item}{padding: $timer * $item !important;}
+}

@@ -1,22 +1,13 @@
 @import "../../../lib/css/reset";
 @import "../../../lib/css/utility";
 @import "../../../lib/css/variables";
+
 @import "font";
-
-
-$text-info-invalid: #d2d2d2;
-$text-info: #6f6f6f;
-$text-main: #202122;
-$text-copyright: #8e8d91;
-
-$color-border: #d7d7d7;
-$color-border-light: #EDEDED;
-
-$bg-card: #F7F7F7;
-$bg: #EDEDED;
+@import "variables";
+@import "switch";
+@import "copyright";
 
 body{
-  height: 3000px;
   background-color: $bg;
   color: $text-main;
 }
@@ -29,51 +20,6 @@ body{
 
 #app{
   width: 100%;
-}
-
-.copyright{
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: column nowrap;
-  flex-shrink: 0;
-  width: 300px;
-  padding: 50px ;
-  img{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 30px;
-  }
-  h1{
-    margin-bottom: 40px;
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
-  .description{
-    font-size: 0.8rem;
-    color: $text-info;
-    margin-bottom: 10px;
-    > p{
-      text-indent: 2rem;
-      margin-bottom: 8px;
-      a{
-        font-weight: bold;
-        color: $text-main;
-        &:hover{
-          color: #FF2D70;
-        }
-      }
-    }
-  }
-  .author{
-    color: $text-info;
-    letter-spacing: 1px;
-
-    p{
-      font-size: 0.8rem;
-    }
-  }
 }
 
 a.link{
@@ -92,7 +38,8 @@ a.link{
   top: 0;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: stretch;
   width: 100%;
 }
@@ -211,39 +158,46 @@ a.link{
   margin-bottom: 50px;
 }
 .btn{
-  background-color: lighten($text-main, 20%);
+  //background-color: lighten($text-main, 20%);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   display: block;
-  padding: 10px 15px;
+  padding: 8px 13px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
-  //box-shadow: 2px 2px 4px rgba(0,0,0,0.08), inset 1px 1px 1px white;
+  border: 1px solid $color-border;
 
   h3{
-    color: white;
+    color: $text-main;
     font-size: 1rem;
     line-height: 1.2;
     margin-bottom: 3px;
     font-weight: bold;
   }
   .desc{
+    color: $text-info;
     line-height: 1.2;
-    color: $text-info-invalid;
     font-size: 0.7rem;
   }
 
 
   &:hover{
+    color: white;
     background-color: lighten($text-main, 10%);
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    h3{
+      color: white;
+    }
+    .desc{
+      color: $text-info-invalid;
+    }
   }
   &:active{
     box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
@@ -300,7 +254,7 @@ a.link{
   z-index: 100;
   &-btn {
     opacity: 0.3;
-    width: 30px;
+    width: 25px;
     @include transition(all 0.3s);
     img {
       display: block;

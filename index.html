@@ -6,7 +6,7 @@
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20201021160016">
+   <link rel="stylesheet" href="css/chip.css?v=20201121131355">
    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
    <link rel="apple-touch-icon" href="imgs/logo_black.png">
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -18,56 +18,42 @@
 </head>
 <body>
 <div id="app" @scroll="scroll" v-cloak>
-
    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
-
-         <img src="./imgs/logo.png?v=20201021160016" alt="Apple Chip LOGO">
-         <h1>苹果{{models}}系列处理器<br>参数大全</h1>
-
-         <!--OPERATIONS-->
-         <div class="btns">
-            <div class="btn" @click="switchModels">
-               <div v-if="models === 'A'">
-                  <h3>查看 S 系列</h3>
-                  <p class="desc">Apple Watch 上的处理器</p>
-               </div>
-               <div v-else>
-                  <h3>查看 A 系列</h3>
-                  <p class="desc">iPhone iPad 上的处理器</p>
-               </div>
-            </div>
+         <div class="title mb-6">
+<!--            <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
+            <img src="./imgs/logo.png" alt="Apple Chip LOGO">
+            <h1>苹果{{model}}系列处理器<br>参数大全</h1>
          </div>
 
-         <!--DESCRIPTION-->
-         <div class="description" v-if="models === 'A'">
-            <p>末尾带字母的用在 iPad 上，同年代同型号芯片，iPad 上的芯片要比用在 iPhone 上的强很多，尺寸也大很多。</p>
-            <p>毕竟用在不同设备上的，手机上要考虑功耗等，两种芯片都是对应设备最优化了。</p>
-            <p>其它：<a class="link" target="_blank" href="https://kylebing.cn/tools/ipad">《iPad 参数大全》</a></p>
-            <p>其它：<a class="link" target="_blank" href="https://kylebing.cn/tools/iphone">《iPhone 参数大全》</a></p>
+         <div class="type-switch mb-6">
+            <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
+            <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
+            <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
          </div>
-
-         <div class="description" v-else>
-            <p>S 系列处理器是用在 Apple Watch 上的</p>
-         </div>
-
-
 
          <div class="author">
-            <p>数据来源: <a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">wikipedia</a></p>
-            <p>作者主页: <a class="link" href="https://kylebing.cn">kylebing.cn</a></p>
-            <p>我的邮箱: <a class="link" href="mailto:kylebing@163.com">kylebing@163.com</a></p>
-            <p>最后更新: 2020/10/14</p>
+            <p><a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">wikipedia</a> ·
+               <a class="link" href="https://kylebing.cn">kylebing</a> ·
+               <span>2020/11/21</span>
+            </p>
+            <p>
+               <a class="link" href="https://kylebing.cn/tools/iphone">iPhone 参数</a> ·
+               <a class="link" href="https://kylebing.cn/tools/ipad">iPad 参数</a>
+            </p>
          </div>
       </div>
 
-
+      <!-- CHIP LIST -->
       <div class="chip" v-for="item in chips" :key="item">
-         <div v-if="models === 'A'" class="chip-img">
-            <img :src="`./imgs/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+         <div v-if="model === 'A'" class="chip-img">
+            <img :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+         </div>
+         <div v-else-if="model === 'S'" class="chip-img">
+            <img :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
          </div>
          <div v-else class="chip-img">
-            <img :src="`./imgs/S/${item.name}.png`" :alt="item.name">
+            <img :src="`./imgs/chips/M/${item.name}.jpg`" :alt="item.name">
          </div>
 
          <div class="chip-name">
@@ -149,7 +135,7 @@
         v-show="!didEnteredFullScreen"
         class="full-screen full-screen-btn"
         @click="enterFullScreen">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAkCAYAAADGrhlwAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAANKADAAQAAAABAAAAJAAAAAAel1i7AAAA30lEQVRYCe1YwQ2EMAw7TrdHV+kO3aSDdJMO1Uk4HVI/UKuSdTUoCp9CROrYDgiyxRj3l6HjbYjLQcUJPd3Rz7nAWus5NLxOKQ3j/wqydVwI9YJaa/30lnWGH0IY1gUJ5ZyHCargDB856C8FlUMsjjvEKqfKM+fQ5t9yqt4hccy1nBMiO0GW5g7JpCaB3CFSOFmaOySTmgSy79DvTxD9DZKiLUlDddp3aImcwk3dIaHYFBQcY6G5V0eZzc36few6w0f7QkKlFJRzxFdPTmf4qDhzz5DPFJDVT4mbazlzhL7+TyWpzAcGkAAAAABJRU5ErkJggg==" alt="fullscreen-button" title="进入全屏模式">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAYAAACq0qNuAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAXqADAAQAAAABAAAAXgAAAADsPCiCAAABm0lEQVR4Ae3cQWoCARQD0Np7CT16wYO129lMdpnI+FwJnyb2NYuC6OPrpo/n8+fvnX+173d+cXd+beBHf13w4EcCo1qLH8E/Rr0fU3v235XFjyYAHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JjGotHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JqCVAgAABAgQIECBAgAABAgQIECBAgMBHCTzOvk/l9fr1XTbFKXgjpIibosEnneINfBE3RYNPOsUb+CJuigafdIo38EXcFA0+6RRv4Iu4KRp80inewBdxUzT4pFO8gS/ipmjwSad4A1/ETdHgk07xBr6Im6LBJ53iDXwRN0WDTzrFG/gibooGn3SKN/BF3BQNPukUb+CLuCkafNIp3sAXcVM0+KRTvIEv4qZo8EmneANfxE3R4JNO8Qa+iJuiTz8Rkn7oyttdP5li8Veu6NAF/oBx5VPwV2ofusAfMK58Cv5K7UPXPznoDA8I21eUAAAAAElFTkSuQmCC" alt="fullscreen-button" title="进入全屏模式">
    </div>
 
    <!--TIPS-->
@@ -158,7 +144,7 @@
 </div>
 
 
-<script src="chip.js?v=20201021160016"></script>
+<script src="chip.js?v=20201121131355"></script>
 
 <script>
   setTimeout(() => {
