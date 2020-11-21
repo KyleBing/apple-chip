@@ -685,7 +685,7 @@ const chipsModelM = [
       dieSize: '', // mm
       isa: 'ARMv8-A, AArch64',
       cpu: {
-         rate: 3.2,
+         rate: [3.2],
          core: 8
       },
       gpu: 'Apple x8',
