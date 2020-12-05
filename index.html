@@ -6,7 +6,7 @@
    <meta name='description' content="苹果处理器详细参数汇总, iPad Pro, iPad Air, iPad Mini, iPad">
    <meta name='keywords' content="苹果处理器详细参数汇总,iPad Pro,iPad Air,iPad Mini,iPad">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20201121173440">
+   <link rel="stylesheet" href="css/chip.css?v=20201205195528">
    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
    <link rel="apple-touch-icon" href="imgs/logo_black.png">
    <script src="../../lib/js/vue.min.2.6.10.js"></script>
@@ -20,17 +20,21 @@
 <div id="app" @scroll="scroll" v-cloak>
    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
       <div class="copyright">
-         <div class="title mb-6">
-<!--            <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
-            <img src="./imgs/logo.png" alt="Apple Chip LOGO">
-            <h1>苹果{{model}}系列处理器<br>参数大全</h1>
+
+         <div>
+            <div class="title mb-6">
+               <!--            <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
+               <img src="./imgs/logo.png" alt="Apple Chip LOGO">
+               <h1>苹果{{model}}系列处理器<br>参数大全</h1>
+            </div>
+
+            <div class="type-switch mb-6">
+               <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
+               <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
+               <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
+            </div>
          </div>
 
-         <div class="type-switch mb-6">
-            <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
-            <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
-            <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
-         </div>
 
          <div class="author">
             <p><a class="link" href="https://en.wikipedia.org/wiki/Apple-designed_processors">wikipedia</a> ·
@@ -144,7 +148,7 @@
 </div>
 
 
-<script src="chip.js?v=20201121173440"></script>
+<script src="chip.js?v=20201205195528"></script>
 
 <script>
   setTimeout(() => {

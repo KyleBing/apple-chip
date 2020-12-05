@@ -38,6 +38,7 @@
   }
 
   .device-list{
+    padding: 10px 15px;
     .device-item{
       font-size: 0.7rem;
     }
@@ -46,14 +47,37 @@
     font-size: 0.9rem ;
   }
 
+  .text-big{
+    font-size: 1rem;
+  }
+
   .copyright{
-    padding: 40px 30px;
-    h1{
-      font-size: 1.5rem;
+    padding: 60px 30px 30px;
+    .title{
+      img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+      }
+      h1{
+        font-size: 1.3rem;
+      }
     }
   }
-}
 
-.text-big{
-  font-size: 1rem;
+
+
+  .author{
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+    font-size: 0.7rem;
+  }
+
+  .type-switch{
+    padding: 20px 15px;
+    .switch{
+      width: 40px;
+      height: 40px;
+    }
+  }
 }

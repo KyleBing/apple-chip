@@ -755,24 +755,29 @@ let app = new Vue({
          this.$nextTick().then(() => {
             let heightChip = document.querySelector('.chip').offsetHeight + 40;
             console.log(heightChip)
-            if (heightChip < innerHeight && !this.mobileMode) {
-               // pc
+            if (heightChip < innerHeight) { // .card 高度小于屏幕高度时
+               document.querySelector('.card-container').style.position = 'fixed';
                this.heightApp = innerHeight;
-               let scrollFull = 200 * this.chips.length;
-               let heightPage = scrollFull + innerHeight; // 计算可滚动长度
-               document.querySelector('body').style.height = heightPage + 'px';
-               window.onscroll = () => {
-                  let scrollTop = document.documentElement.scrollTop; // 文档上卷的高度
-                  let container = document.querySelector('.card-container');
-                  let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
-                  let scrollLeft = (scrollTop / scrollFull) * scrollSpace
-                  container.scrollTo(scrollLeft, 0);
+               // pc
+               if (!this.mobileMode){
+                  let scrollFull = 200 * this.chips.length;
+                  let heightPage = scrollFull + innerHeight; // 计算可滚动长度
+                  document.querySelector('body').style.height = heightPage + 'px';
+                  window.onscroll = () => {
+                     let scrollTop = document.documentElement.scrollTop; // 文档上卷的高度
+                     let container = document.querySelector('.card-container');
+                     let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
+                     let scrollLeft = (scrollTop / scrollFull) * scrollSpace
+                     container.scrollTo(scrollLeft, 0);
+                  }
+               } else {
+                  window.onscroll = null
                }
             } else {
-               // mobile
-               this.inMobile = true;
                document.querySelector('body').style.height = 'auto';
-               document.querySelector('.card-container').style.position = 'relative'
+               document.querySelector('.card-container').style.position = 'relative';
+               window.onscroll = null
+
             }
          })
       }
@@ -780,7 +785,8 @@ let app = new Vue({
 })
 
 window.onresize = () => {
-   if (!app.inMobile) { // pc
+   let heightChip = document.querySelector('.chip').offsetHeight + 40;
+   if (heightChip < innerHeight) { // pc
       app.heightApp = innerHeight
    }
 }
