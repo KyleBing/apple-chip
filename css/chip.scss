@@ -150,7 +150,7 @@ a.link{
 }
 
 .text-big{
-  font-size: 1.2rem !important;
+  font-size: 1.2rem;
 }
 
 
@@ -207,44 +207,6 @@ a.link{
 
 
 
-@media (max-width: 768px){
-  .card-container{
-    padding: 10px;
-  }
-
-  .chip{
-    width: 280px;
-    &-img{
-      padding: 20px;
-    }
-    &-name{
-      padding: 10px;
-      line-height: 1;
-      h2{
-        font-size: 1.1rem ;
-      }
-      p{
-        font-size: 0.8rem;
-      }
-    }
-  }
-
-  .info-list {
-    font-size: 0.8rem;
-    margin-bottom: 10px;
-
-    .info-item {
-      margin-bottom: 0;
-    }
-  }
-
-  .copyright{
-    padding: 40px 30px;
-    h1{
-      font-size: 1.5rem;
-    }
-  }
-}
 
 .full-screen{
   cursor: pointer;
@@ -277,3 +239,4 @@ a.link{
   }
 }
 
+@import "mobile";

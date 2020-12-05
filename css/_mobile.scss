@@ -1,0 +1,59 @@
+@media (max-width: 768px){
+  .card-container{
+    padding: 10px;
+  }
+
+  .chip{
+    width: 250px;
+    &-img{
+      height: auto;
+      padding: 20px;
+      img{
+        width: 80px;
+      }
+    }
+    &-name{
+      padding: 10px;
+      line-height: 1;
+      h2{
+        font-size: 1.1rem ;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .info-list-group{
+    padding: 10px 15px;
+  }
+  .info-list {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+
+    .info-item {
+      line-height: 1.8;
+      margin-bottom: 0;
+    }
+  }
+
+  .device-list{
+    .device-item{
+      font-size: 0.7rem;
+    }
+  }
+  .device-title{
+    font-size: 0.9rem ;
+  }
+
+  .copyright{
+    padding: 40px 30px;
+    h1{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.text-big{
+  font-size: 1rem;
+}
