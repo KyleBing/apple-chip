@@ -7,6 +7,8 @@
 @import "switch";
 @import "copyright";
 
+$show-value-dash: false; // show key-value connect lines
+
 body{
   background-color: $bg;
   color: $text-main;
@@ -96,11 +98,17 @@ a.link{
     margin-bottom: 0;
   }
   .info-item{
+    position: relative;
     justify-content: space-between;
     align-items: center;
     display: flex;
     line-height: 1.8;
     &.invalid{
+      @if $show-value-dash {
+        &::after{
+          content: none;
+        }
+      }
       .key{
         color: $text-info-invalid;
       }
@@ -112,15 +120,35 @@ a.link{
       }
     }
     .key{
+      @if $show-value-dash {
+        padding-right: 20px;
+        z-index: 10;
+        background-color: $bg-card;
+      }
       color: $text-info;
       flex-shrink: 0;
     }
     .value{
+      @if $show-value-dash {
+        padding-left: 20px;
+        z-index: 10;
+        background-color: $bg-card;
+      }
       font-weight: bold;
       color: $text-main;
       text-align: right;
       letter-spacing: 0.5px;
       font-family: 'PTSans', sans-serif;
+    }
+    @if $show-value-dash {
+      &::after{
+        z-index: 1;
+        content: '';
+        width: 100%;
+        display: block;
+        border-bottom: 1px dashed #e4e4e4;
+        position: absolute;
+      }
     }
   }
 }
@@ -150,6 +178,7 @@ a.link{
 }
 
 .text-big{
+  font-family: inherit;
   font-size: 1.2rem;
 }
 
