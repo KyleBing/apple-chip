@@ -682,7 +682,7 @@ const chipsModelM = [
       model: 'APL1102',
       tech: '5', // nm
       techCompany: '台积电',
-      dieSize: '', // mm
+      dieSize: '119', // mm
       isa: 'ARMv8-A, AArch64',
       cpu: {
          rate: [3.2],
