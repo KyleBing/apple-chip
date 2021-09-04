@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20201121130435
+ Update Date: 20210904091940
  *****************************/
 
 const latestOS = '最新';
@@ -19,7 +19,7 @@ const chipsModelA = [
       gpu: 'PowerVR SGX535',
       release: '2010-03',
       devices: [
-         'iPad 1',
+         'iPad 1 ( 2010 )',
          'iPhone 4',
          'iPod Touch ( 4代 )',
          'Apple TV ( 2代 )'
@@ -43,7 +43,7 @@ const chipsModelA = [
       gpu: 'PowerVR SGX543MP2',
       release: '2011-03',
       devices: [
-         'iPad 2',
+         'iPad 2 ( 2011 )',
          'iPhone 4S'
       ],
       os: {
@@ -66,9 +66,9 @@ const chipsModelA = [
       release: '2012-03',
       devices: [
          'Apple TV ( 3代 )',
-         'iPad 2',
+         'iPad 2 ( 2011 )',
          'iPod Touch ( 5代 )',
-         'iPad Mini  ( 1代 )'
+         'iPad Mini 1 ( 2012 )'
       ],
       os: {
          init: '',
@@ -110,7 +110,7 @@ const chipsModelA = [
       gpu: 'PowerVR SGX543MP4',
       release: '2012-03',
       devices: [
-         'iPad 3',
+         'iPad 3 ( 2012 )',
       ],
       os: {
          init: '',
@@ -153,7 +153,7 @@ const chipsModelA = [
       gpu: 'PowerVR SGX554MP4',
       release: '2012-10',
       devices: [
-         'iPad 4',
+         'iPad 4 ( 2012 )',
       ],
       os: {
          init: '',
@@ -175,8 +175,8 @@ const chipsModelA = [
       release: '2013-09',
       devices: [
          'iPhone 5S',
-         'iPad Mini 2',
-         'iPad Mini 3'
+         'iPad Mini 2 ( 2013 )',
+         'iPad Mini 3 ( 2014 )'
       ],
       transistorCount: '≈ 10', // 亿
       os: {
@@ -198,7 +198,7 @@ const chipsModelA = [
       gpu: 'PowerVR G6430',
       release: '2013-10',
       devices: [
-         'iPad Air 1',
+         'iPad Air 1 ( 2013 )',
       ],
       transistorCount: '≈ 10', // 亿
       os: {
@@ -247,7 +247,7 @@ const chipsModelA = [
       gpu: 'PowerVR GXA6850',
       release: '2014-10',
       devices: [
-         'iPad Air 2'
+         'iPad Air 2 ( 2014 )'
       ],
       transistorCount: '≈ 30', // 亿
       os: {
@@ -272,7 +272,7 @@ const chipsModelA = [
          'iPhone 6S',
          'iPhone 6S Plus',
          'iPhone SE ( 1代 )',
-         'iPad ( 2017 )'
+         'iPad 5 ( 2017 )'
       ],
       transistorCount: '> 20', // 亿
       os: {
@@ -297,7 +297,7 @@ const chipsModelA = [
          'iPhone 6S',
          'iPhone 6S Plus',
          'iPhone SE ( 1代 )',
-         'iPad ( 2017 )'
+         'iPad 5 ( 2017 )'
       ],
       transistorCount: '> 20', // 亿
       os: {
@@ -319,8 +319,8 @@ const chipsModelA = [
       gpu: 'PowerVR GTA7850',
       release: '2015-09',
       devices: [
-         'iPad Pro ( 12.9寸, 1代 )',
-         'iPad Pro ( 9.7寸 )',
+         'iPad Pro 1 ( 12.9寸 2015 )',
+         'iPad Pro 1 ( 9.7寸 2016 )',
       ],
       transistorCount: '> 30', // 亿
       os: {
@@ -344,9 +344,9 @@ const chipsModelA = [
       devices: [
          'iPhone 7',
          'iPhone 7 Plus',
-         'iPad ( 2018 )',
          'iPod Touch ( 7代 )',
-         'iPad ( 2019 )'
+         'iPad 6 ( 2018 )',
+         'iPad 7 ( 2019 )'
       ],
       transistorCount: '33', // 亿
       os: {
@@ -368,8 +368,8 @@ const chipsModelA = [
       gpu: 'PowerVR GT7600 Plus',
       release: '2017-06',
       devices: [
-         'iPad Pro ( 10.5寸 )',
-         'iPad Pro ( 12.9寸, 2代 )',
+         'iPad Pro 2 ( 10.5寸 2017 )',
+         'iPad Pro 2 ( 12.9寸 2017 )',
          'Apple TV 4k'
       ],
       transistorCount: '> 40', // 亿
@@ -419,8 +419,8 @@ const chipsModelA = [
          'iPhone XS',
          'iPhone XS Max',
          'iPhone XR',
-         'iPad Air ( 3代 )',
-         'iPad Mini ( 5代 )'
+         'iPad Air 3 ( 2019 )',
+         'iPad Mini 5 ( 2019 )'
       ],
       transistorCount: '69', // 亿
       os: {
@@ -442,8 +442,8 @@ const chipsModelA = [
       gpu: 'Apple x6',
       release: '2018-10',
       devices: [
-         'iPad Pro ( 11寸, 1代 )',
-         'iPad Pro ( 12.9寸, 3代 )'
+         'iPad Pro 3 ( 11寸 2018 )',
+         'iPad Pro 3 ( 12.9寸 2018 )'
       ],
       transistorCount: '100', // 亿
       os: {
@@ -465,8 +465,8 @@ const chipsModelA = [
       gpu: 'Apple x8',
       release: '2020-03',
       devices: [
-         'iPad Pro ( 11寸, 2代 )',
-         'iPad Pro ( 12.9, 4代 )'
+         'iPad Pro 4 ( 11寸 2020 )',
+         'iPad Pro 4 ( 12.9寸 2020 )'
       ],
       transistorCount: '100', // 亿
       os: {
@@ -491,7 +491,7 @@ const chipsModelA = [
          'iPhone 11',
          'iPhone 11 Pro',
          'iPhone 11 Pro Max',
-         'iPhone SE ( 2代 )'
+         'iPhone SE ( 2代 2020 )'
       ],
       transistorCount: '85', // 亿
       os: {
@@ -504,16 +504,16 @@ const chipsModelA = [
       model: 'APL1W87',
       tech: '5', // nm
       techCompany: '台积电 N5',
-      dieSize: '', // mm
-      isa: '',
+      dieSize: '88', // mm
+      isa: 'ARMv8.5-A',
       cpu: {
-         rate: [2.99],
+         rate: [3.1],
          core: 6
       },
       gpu: 'Apple x4',
       release: '2020-09',
       devices: [
-         'iPad Air (4代)',
+         'iPad Air 4 (2020 )',
          'iPhone 12',
          'iPhone 12 Mini',
          'iPhone 12 Pro',
@@ -693,7 +693,9 @@ const chipsModelM = [
       devices: [
          'MacBook Air 2020',
          'MacBook Pro 2020 (13\')',
-         'MacBook Mini 2020'
+         'MacBook Mini 2020',
+         'iPad Pro 5 ( 11寸 2021 )',
+         'iPad Pro 5 ( 12.9寸 2021 )'
       ],
       transistorCount: '160', // 亿
       os: {
