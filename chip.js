@@ -524,6 +524,31 @@ const chipsModelA = [
          init: 'iOS 14',
          latest: latestOS
       }
+   },
+   {
+      name: 'A15 Bionic',
+      model: 'unknow',
+      tech: '5', // nm
+      techCompany: '台积电 N5',
+      dieSize: '--', // mm
+      isa: 'ARMv8.5-A',
+      cpu: {
+         rate: [0],
+         core: 6
+      },
+      gpu: 'Apple x4',
+      release: '2021-09',
+      devices: [
+         'iPhone 13',
+         'iPhone 13 Mini',
+         'iPhone 13 Pro',
+         'iPhone 13 Pro Max',
+      ],
+      transistorCount: '--', // 亿
+      os: {
+         init: 'iOS 15',
+         latest: latestOS
+      }
    }
 ]
 const chipsModelS = [
