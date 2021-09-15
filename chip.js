@@ -531,12 +531,12 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5',
       dieSize: '--', // mm
-      isa: 'ARMv8.5-A',
+      isa: '--',
       cpu: {
          rate: [0],
          core: 6
       },
-      gpu: 'Apple x4',
+      gpu: 'Apple x5',
       release: '2021-09',
       devices: [
          'iPhone 13',
@@ -544,7 +544,7 @@ const chipsModelA = [
          'iPhone 13 Pro',
          'iPhone 13 Pro Max',
       ],
-      transistorCount: '--', // 亿
+      transistorCount: '150', // 亿
       os: {
          init: 'iOS 15',
          latest: latestOS
