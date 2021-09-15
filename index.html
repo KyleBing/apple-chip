@@ -1,156 +1,156 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-   <meta charset="UTF-8">
-   <title>Apple A,S,M 系列处理器参数大全</title>
-   <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
-   <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/chip.css?v=20210915094736">
-   <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
-   <link rel="apple-touch-icon" href="imgs/logo_black.png">
-   <script src="../../lib/js/vue.min.2.6.10.js"></script>
-   <style>
-      [v-cloak]{
-         display: none;
-      }
-   </style>
+    <meta charset="UTF-8">
+    <title>Apple A,S,M 系列处理器参数大全</title>
+    <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
+    <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/chip.css?v=20210915094736">
+    <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
+    <link rel="apple-touch-icon" href="imgs/logo_black.png">
+    <script src="../../lib/js/vue.min.2.6.10.js"></script>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 <div id="app" @scroll="scroll" v-cloak>
-   <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
-      <div class="copyright">
+    <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
+        <div class="copyright">
 
-         <div>
-            <div class="title mb-6">
-<!--               <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
-               <img src="./imgs/logo.png" alt="Apple Chip LOGO">
-               <h1>苹果 {{model}} 系列处理器<br>参数大全</h1>
+            <div>
+                <div class="title mb-6">
+                    <!--               <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
+                    <img src="./imgs/logo.png" alt="Apple Chip LOGO">
+                    <h1>苹果 {{model}} 系列处理器<br>参数大全</h1>
+                </div>
+
+                <div class="type-switch mb-6">
+                    <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
+                    <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
+                    <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
+                </div>
             </div>
 
-            <div class="type-switch mb-6">
-               <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
-               <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
-               <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
+
+            <div class="author">
+                <p><a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Apple-designed_processors">wikipedia</a> ·
+                    <a class="link" href="https://kylebing.cn">kylebing</a>
+                </p>
+                <p>
+                    <a class="link" href="https://kylebing.cn/tools/iphone">iPhone 参数</a> ·
+                    <a class="link" href="https://kylebing.cn/tools/ipad">iPad 参数</a>
+                </p>
+                <p>
+                    <a class="link" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=z8HZ3Ujdp5k_RAGpDfdKVPc1WlCbanHl&jump_from=webapi">QQ群: 920084833</a>
+                </p>
+                <p>·</p>
+                <p>
+                    <span>2020/06/05</span> ~
+                    <span>2021/09/15</span>
+                </p>
             </div>
-         </div>
+        </div>
 
-
-         <div class="author">
-            <p><a class="link" target="_blank" href="https://en.wikipedia.org/wiki/Apple-designed_processors">wikipedia</a> ·
-               <a class="link" href="https://kylebing.cn">kylebing</a>
-            </p>
-            <p>
-               <a class="link" href="https://kylebing.cn/tools/iphone">iPhone 参数</a> ·
-               <a class="link" href="https://kylebing.cn/tools/ipad">iPad 参数</a>
-            </p>
-            <p>
-               <a class="link" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=z8HZ3Ujdp5k_RAGpDfdKVPc1WlCbanHl&jump_from=webapi">QQ群: 920084833</a>
-            </p>
-            <p>·</p>
-            <p>
-               <span>2020/06/05</span> ~
-               <span>2021/09/15</span>
-            </p>
-         </div>
-      </div>
-
-      <!-- CHIP LIST -->
-      <div class="chip" v-for="item in chips" :key="item">
-         <div v-if="model === 'A'" class="chip-img">
-            <img :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
-         </div>
-         <div v-else-if="model === 'S'" class="chip-img">
-            <img :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
-         </div>
-         <div v-else class="chip-img">
-            <img :src="`./imgs/chips/M/${item.name}.jpg`" :alt="item.name">
-         </div>
-
-         <div class="chip-name">
-            <h2>{{item.name}}</h2>
-            <p>{{item.model}}</p>
-         </div>
-
-         <div class="info-list-group">
-            <div class="info-list">
-               <div class="info-item">
-                  <div class="key">CPU</div>
-                  <div class="value" v-if="item.cpu.rate.length > 1">
-                     <span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x
-                     <span class="text-big">{{item.cpu.core}}</span>
-                  </div>
-                  <div class="value" v-else>
-                     <span class="text-big">{{item.cpu.rate[0]}}</span><span v-if="item.cpu.rate[0]"> GHz</span> x
-                     <span class="text-big">{{item.cpu.core}}</span></div>
-               </div>
-               <div :class="['info-item', {'invalid': !item.gpu}]">
-                  <div class="key">GPU</div>
-                  <div class="value">{{item.gpu}}</div>
-               </div>
+        <!-- CHIP LIST -->
+        <div class="chip" v-for="item in chips" :key="item">
+            <div v-if="model === 'A'" class="chip-img">
+                <img :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+            </div>
+            <div v-else-if="model === 'S'" class="chip-img">
+                <img :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
+            </div>
+            <div v-else class="chip-img">
+                <img :src="`./imgs/chips/M/${item.name}.jpg`" :alt="item.name">
             </div>
 
-            <div class="info-list">
-               <div :class="['info-item', {'invalid': !item.isa}]">
-                  <div class="key">内核架构</div>
-                  <div class="value">{{item.isa}}</div>
-               </div>
-               <div :class="['info-item', {'invalid': !item.dieSize}]">
-                  <div class="key">内核大小</div>
-                  <div class="value">{{item.dieSize}} mm<sup>2</sup></div>
-               </div>
-               <div :class="['info-item', {'invalid': !item.tech}]">
-                  <div class="key">技术工艺</div>
-                  <div class="value"><span v-if="item.techCompany">{{item.techCompany}} - </span>{{item.tech}} 纳米</div>
-               </div>
-               <div :class="['info-item', {'invalid': !item.transistorCount}]">
-                  <div class="key">晶体管数</div>
-                  <div class="value" v-if="item.transistorCount">{{item.transistorCount}} 亿</div>
-               </div>
+            <div class="chip-name">
+                <h2>{{item.name}}</h2>
+                <p>{{item.model}}</p>
             </div>
 
-            <div class="info-list">
-               <div class="info-item">
-                  <div class="key">发布时间</div>
-                  <div class="value">{{item.release}}</div>
-               </div>
+            <div class="info-list-group">
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="key">CPU</div>
+                        <div class="value" v-if="item.cpu.rate.length > 1">
+                            <span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x
+                            <span class="text-big">{{item.cpu.core}}</span>
+                        </div>
+                        <div class="value" v-else>
+                            <span class="text-big">{{item.cpu.rate[0]}}</span><span v-if="item.cpu.rate[0]"> GHz</span> x
+                            <span class="text-big">{{item.cpu.core}}</span></div>
+                    </div>
+                    <div :class="['info-item', {'invalid': !item.gpu}]">
+                        <div class="key">GPU</div>
+                        <div class="value">{{item.gpu}}</div>
+                    </div>
+                </div>
+
+                <div class="info-list">
+                    <div :class="['info-item', {'invalid': !item.isa}]">
+                        <div class="key">内核架构</div>
+                        <div class="value">{{item.isa}}</div>
+                    </div>
+                    <div :class="['info-item', {'invalid': !item.dieSize}]">
+                        <div class="key">内核大小</div>
+                        <div class="value">{{item.dieSize}} mm<sup>2</sup></div>
+                    </div>
+                    <div :class="['info-item', {'invalid': !item.tech}]">
+                        <div class="key">技术工艺</div>
+                        <div class="value"><span v-if="item.techCompany">{{item.techCompany}} - </span>{{item.tech}} 纳米</div>
+                    </div>
+                    <div :class="['info-item', {'invalid': !item.transistorCount}]">
+                        <div class="key">晶体管数</div>
+                        <div class="value" v-if="item.transistorCount">{{item.transistorCount}} 亿</div>
+                    </div>
+                </div>
+
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="key">发布时间</div>
+                        <div class="value">{{item.release}}</div>
+                    </div>
+                </div>
+
+                <div class="info-list">
+                    <div :class="['info-item', {'invalid': !item.os.init}]">
+                        <div class="key">初始系统</div>
+                        <div class="value">{{item.os.init}}</div>
+                    </div>
+                    <div :class="['info-item', {'invalid': !item.os.latest}]">
+                        <div class="key">最终系统</div>
+                        <div class="value">{{item.os.latest}}</div>
+                    </div>
+                </div>
             </div>
 
-            <div class="info-list">
-               <div :class="['info-item', {'invalid': !item.os.init}]">
-                  <div class="key">初始系统</div>
-                  <div class="value">{{item.os.init}}</div>
-               </div>
-               <div :class="['info-item', {'invalid': !item.os.latest}]">
-                  <div class="key">最终系统</div>
-                  <div class="value">{{item.os.latest}}</div>
-               </div>
+
+            <!--设备列表-->
+            <div class="device">
+                <div class="device-title">运行设备</div>
+                <div class="device-list">
+                    <div class="device-item" v-for="(device, index) in item.devices" :key="'device' + index">{{device}}</div>
+                </div>
             </div>
-         </div>
+        </div>
 
+        <div class="gap"></div>
+    </div>
 
-         <!--设备列表-->
-         <div class="device">
-            <div class="device-title">运行设备</div>
-            <div class="device-list">
-               <div class="device-item" v-for="(device, index) in item.devices" :key="'device' + index">{{device}}</div>
-            </div>
-         </div>
-      </div>
+    <!--进入全屏按钮-->
+    <div v-if="showFullScreenBtn"
+         v-show="!didEnteredFullScreen"
+         class="full-screen full-screen-btn"
+         @click="enterFullScreen">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAYAAACq0qNuAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAXqADAAQAAAABAAAAXgAAAADsPCiCAAABm0lEQVR4Ae3cQWoCARQD0Np7CT16wYO129lMdpnI+FwJnyb2NYuC6OPrpo/n8+fvnX+173d+cXd+beBHf13w4EcCo1qLH8E/Rr0fU3v235XFjyYAHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JjGotHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JqCVAgAABAgQIECBAgAABAgQIECBAgMBHCTzOvk/l9fr1XTbFKXgjpIibosEnneINfBE3RYNPOsUb+CJuigafdIo38EXcFA0+6RRv4Iu4KRp80inewBdxUzT4pFO8gS/ipmjwSad4A1/ETdHgk07xBr6Im6LBJ53iDXwRN0WDTzrFG/gibooGn3SKN/BF3BQNPukUb+CLuCkafNIp3sAXcVM0+KRTvIEv4qZo8EmneANfxE3R4JNO8Qa+iJuiTz8Rkn7oyttdP5li8Veu6NAF/oBx5VPwV2ofusAfMK58Cv5K7UPXPznoDA8I21eUAAAAAElFTkSuQmCC" alt="fullscreen-button" title="进入全屏模式">
+    </div>
 
-      <div class="gap"></div>
-   </div>
-
-   <!--进入全屏按钮-->
-   <div v-if="showFullScreenBtn"
-        v-show="!didEnteredFullScreen"
-        class="full-screen full-screen-btn"
-        @click="enterFullScreen">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAABeCAYAAACq0qNuAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAXqADAAQAAAABAAAAXgAAAADsPCiCAAABm0lEQVR4Ae3cQWoCARQD0Np7CT16wYO129lMdpnI+FwJnyb2NYuC6OPrpo/n8+fvnX+173d+cXd+beBHf13w4EcCo1qLH8E/Rr0fU3v235XFjyYAHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JjGotHvxIYFRr8eBHAqNaiwc/EhjVWjz4kcCo1uLBjwRGtRYPfiQwqrV48COBUa3Fgx8JqCVAgAABAgQIECBAgAABAgQIECBAgMBHCTzOvk/l9fr1XTbFKXgjpIibosEnneINfBE3RYNPOsUb+CJuigafdIo38EXcFA0+6RRv4Iu4KRp80inewBdxUzT4pFO8gS/ipmjwSad4A1/ETdHgk07xBr6Im6LBJ53iDXwRN0WDTzrFG/gibooGn3SKN/BF3BQNPukUb+CLuCkafNIp3sAXcVM0+KRTvIEv4qZo8EmneANfxE3R4JNO8Qa+iJuiTz8Rkn7oyttdP5li8Veu6NAF/oBx5VPwV2ofusAfMK58Cv5K7UPXPznoDA8I21eUAAAAAElFTkSuQmCC" alt="fullscreen-button" title="进入全屏模式">
-   </div>
-
-   <!--TIPS-->
-   <p v-show="didEnteredFullScreen" class="full-screen full-screen-tip">Esc 退出全屏模式</p>
+    <!--TIPS-->
+    <p v-show="didEnteredFullScreen" class="full-screen full-screen-tip">Esc 退出全屏模式</p>
 
 </div>
 
@@ -158,14 +158,14 @@
 <script src="chip.js?v=20210915094736"></script>
 
 <script>
-   setTimeout(() => {
-      if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
-         let hm = document.createElement("script");
-         hm.src = "https://hm.baidu.com/hm.js?424010581994075b8b6b5ecc2d972de6";
-         let s = document.getElementsByTagName("script")[0];
-         s.parentNode.insertBefore(hm, s);
-      }
-   }, 1000)
+    setTimeout(() => {
+        if (!/^http:\/\/(a\.kylebing\.cn|localhost|192\.168\.\d{1,3}\.\d{1,3})/i.test(location.href)) {
+            let hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?424010581994075b8b6b5ecc2d972de6";
+            let s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        }
+    }, 1000)
 </script>
 
 </body>
