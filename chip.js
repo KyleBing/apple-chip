@@ -491,7 +491,8 @@ const chipsModelA = [
          'iPhone 11',
          'iPhone 11 Pro',
          'iPhone 11 Pro Max',
-         'iPhone SE ( 2代 2020 )'
+         'iPhone SE ( 2代 2020 )',
+         'iPad 9 ( 2021 )'
       ],
       transistorCount: '85', // 亿
       os: {
@@ -543,6 +544,7 @@ const chipsModelA = [
          'iPhone 13 Mini',
          'iPhone 13 Pro',
          'iPhone 13 Pro Max',
+         'iPad Mini 6 ( 2021 )',
       ],
       transistorCount: '150', // 亿
       os: {
