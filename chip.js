@@ -12,10 +12,9 @@ const chipsModelA = [
       techCompany: '',
       dieSize: '53.3', // mm
       isa: 'ARMv7',
-      cpu: {
-         rate: [0.8, 1.0],
-         core: 1
-      },
+      cpu: [
+         {rate: [0.8, 1.0], core: 1}
+      ],
       gpu: 'PowerVR SGX535',
       release: '2010-03',
       devices: [
@@ -36,10 +35,9 @@ const chipsModelA = [
       techCompany: '',
       dieSize: '122.2', // mm
       isa: 'ARMv7',
-      cpu: {
-         rate: [0.8, 1.0],
-         core: 2
-      },
+      cpu: [
+         {rate: [0.8, 1.0], core: 2}
+      ],
       gpu: 'PowerVR SGX543MP2',
       release: '2011-03',
       devices: [
@@ -58,10 +56,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '69.6', // mm
       isa: 'ARMv7',
-      cpu: {
-         rate: [0.8, 1.0],
-         core: 2
-      },
+      cpu: [
+         {rate: [0.8, 1.0], core: 2}
+      ],
       gpu: 'PowerVR SGX543MP2',
       release: '2012-03',
       devices: [
@@ -82,10 +79,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '37.8', // mm
       isa: 'ARMv7',
-      cpu: {
-         rate: [0.8, 1.0],
-         core: 1
-      },
+      cpu: [
+         {rate: [0.8, 1.0], core: 1}
+      ],
       gpu: 'PowerVR SGX543MP2',
       release: '2013-03',
       devices: [
@@ -103,10 +99,9 @@ const chipsModelA = [
       techCompany: '',
       dieSize: '165', // mm
       isa: 'ARMv7',
-      cpu: {
-         rate: [1.0],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.0], core: 2}
+      ],
       gpu: 'PowerVR SGX543MP4',
       release: '2012-03',
       devices: [
@@ -124,10 +119,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '96.71', // mm
       isa: 'ARMv7s',
-      cpu: {
-         rate: [1.3],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.3], core: 2}
+      ],
       gpu: 'PowerVR SGX543MP3',
       release: '2012-09',
       devices: [
@@ -146,10 +140,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '123', // mm
       isa: 'ARMv7s',
-      cpu: {
-         rate: [1.4],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.4], core: 2}
+      ],
       gpu: 'PowerVR SGX554MP4',
       release: '2012-10',
       devices: [
@@ -167,10 +160,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.3],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.3], core: 2}
+      ],
       gpu: 'PowerVR G6430',
       release: '2013-09',
       devices: [
@@ -191,10 +183,9 @@ const chipsModelA = [
       techCompany: 'HKMG',
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.4],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.4], core: 2}
+      ],
       gpu: 'PowerVR G6430',
       release: '2013-10',
       devices: [
@@ -213,10 +204,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '89', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.1, 1.5],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.1, 1.5], core: 2}
+      ],
       gpu: 'PowerVR GXA6450',
       release: '2014-09',
       devices: [
@@ -240,10 +230,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '128', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.5],
-         core: 3
-      },
+      cpu: [
+         {rate: [1.5], core: 3}
+      ],
       gpu: 'PowerVR GXA6850',
       release: '2014-10',
       devices: [
@@ -262,10 +251,9 @@ const chipsModelA = [
       techCompany: '三星',
       dieSize: '96', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.85],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.85], core: 2}
+      ],
       gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
@@ -287,10 +275,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '104.5', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [1.85],
-         core: 2
-      },
+      cpu: [
+         {rate: [1.85], core: 2}
+      ],
       gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
@@ -312,10 +299,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '143.9', // mm
       isa: 'ARMv8.0-A',
-      cpu: {
-         rate: [2.16, 2.26],
-         core: 2
-      },
+      cpu: [
+         {rate: [2.16, 2.26], core: 2}
+      ],
       gpu: 'PowerVR GTA7850',
       release: '2015-09',
       devices: [
@@ -335,10 +321,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '125', // mm
       isa: 'ARMv8.1-A',
-      cpu: {
-         rate: [2.34],
-         core: 4
-      },
+      cpu: [
+         {rate: [2.34], core: 4}
+      ],
       gpu: 'PowerVR GT7600 Plus',
       release: '2016-09',
       devices: [
@@ -361,10 +346,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '96.4', // mm
       isa: 'ARMv8.1-A',
-      cpu: {
-         rate: [2.36],
-         core: 6
-      },
+      cpu: [
+         {rate: [2.36], core: 6}
+      ],
       gpu: 'PowerVR GT7600 Plus',
       release: '2017-06',
       devices: [
@@ -385,10 +369,9 @@ const chipsModelA = [
       techCompany: '台积电',
       dieSize: '87.66', // mm
       isa: 'ARMv8.2-A',
-      cpu: {
-         rate: [2.39],
-         core: 6
-      },
+      cpu: [
+         {rate: [2.39], core: 6}
+      ],
       gpu: 'Apple x3',
       release: '2017-09',
       devices: [
@@ -409,10 +392,9 @@ const chipsModelA = [
       techCompany: '台积电 N7',
       dieSize: '83.27', // mm
       isa: 'ARMv8.3-A',
-      cpu: {
-         rate: [2.49],
-         core: 6
-      },
+      cpu: [
+         {rate: [2.49], core: 6}
+      ],
       gpu: 'Apple x4',
       release: '2018-09',
       devices: [
@@ -435,10 +417,9 @@ const chipsModelA = [
       techCompany: '台积电 N7',
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
-      cpu: {
-         rate: [2.49],
-         core: 8
-      },
+      cpu: [
+         {rate: [2.49], core: 8}
+      ],
       gpu: 'Apple x6',
       release: '2018-10',
       devices: [
@@ -458,10 +439,9 @@ const chipsModelA = [
       techCompany: '台积电 N7',
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
-      cpu: {
-         rate: [2.49],
-         core: 8
-      },
+      cpu: [
+          {rate: [2.49], core: 8}
+      ],
       gpu: 'Apple x8',
       release: '2020-03',
       devices: [
@@ -507,10 +487,9 @@ const chipsModelA = [
       techCompany: '台积电 N5',
       dieSize: '88', // mm
       isa: 'ARMv8.5-A',
-      cpu: {
-         rate: [3.1],
-         core: 6
-      },
+      cpu: [
+          {rate: [3.1], core: 6}
+      ],
       gpu: 'Apple x4',
       release: '2020-09',
       devices: [
@@ -528,15 +507,15 @@ const chipsModelA = [
    },
    {
       name: 'A15 Bionic',
-      model: 'unknow',
+      model: 'APL1W05',
       tech: '5', // nm
-      techCompany: '台积电 N5',
+      techCompany: '台积电 N5P',
       dieSize: '--', // mm
       isa: '--',
-      cpu: {
-         rate: [0],
-         core: 6
-      },
+      cpu: [
+         {rate: [3.2], core: 2},
+         {rate: [1.823], core: 4}
+      ],
       gpu: 'Apple x5',
       release: '2021-09',
       devices: [
@@ -561,10 +540,9 @@ const chipsModelS = [
       techCompany: 'HKMG',
       dieSize: '32', // mm
       isa: 'ARMv7k',
-      cpu: {
-         rate: [0.52],
-         core: 1
-      },
+      cpu: [
+         {rate: [0.52], core: 1}
+      ],
       gpu: 'PowerVR Series 5',
       release: '2015-04',
       devices: [
@@ -582,10 +560,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: 'ARMv7k',
-      cpu: {
-         rate: [0.52],
-         core: 2
-      },
+      cpu: [
+         {rate: [0.52], core: 2}
+      ],
       gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
@@ -603,10 +580,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: 'ARMv7k',
-      cpu: {
-         rate: [0.52],
-         core: 2
-      },
+      cpu: [
+         {rate: [0.52], core: 2}
+      ],
       gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
@@ -624,10 +600,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: 'ARMv7k',
-      cpu: {
-         rate: [],
-         core: 2
-      },
+      cpu: [
+         {rate: [], core: 2}
+      ],
       gpu: '',
       release: '2017-09',
       devices: [
@@ -645,10 +620,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
-      cpu: {
-         rate: [],
-         core: 2
-      },
+      cpu: [
+         {rate: [], core: 2}
+      ],
       gpu: 'Apple G11M',
       release: '2018-09',
       devices: [
@@ -666,10 +640,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
-      cpu: {
-         rate: [],
-         core: 2
-      },
+      cpu: [
+         {rate: [], core: 2}
+      ],
       gpu: 'Apple G11M',
       release: '2019-09',
       devices: [
@@ -688,10 +661,9 @@ const chipsModelS = [
       techCompany: '',
       dieSize: '', // mm
       isa: '',
-      cpu: {
-         rate: [],
-         core: 2
-      },
+      cpu: [
+         {rate: [], core: 2}
+      ],
       gpu: '',
       release: '2020-09',
       devices: [
@@ -711,10 +683,9 @@ const chipsModelM = [
       techCompany: '台积电',
       dieSize: '119', // mm
       isa: 'ARMv8-A, AArch64',
-      cpu: {
-         rate: [3.2],
-         core: 8
-      },
+      cpu: [
+         {rate: [3.2], core: 8}
+      ],
       gpu: 'Apple x8',
       release: '2020-11-17',
       devices: [
