@@ -691,7 +691,7 @@ const chipsModelM = [
       devices: [
          'MacBook Air 2020',
          'MacBook Pro 2020 (13\')',
-         'MacBook Mini 2020',
+         'Mac Mini 2020',
          'iPad Pro 5 ( 11寸 2021 )',
          'iPad Pro 5 ( 12.9寸 2021 )'
       ],
