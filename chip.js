@@ -811,7 +811,8 @@ const chipsModelM = [
       dieSize: '119', // mm
       isa: 'ARMv8-A, AArch64',
       cpu: [
-         {rate: [3.2], core: 8}
+         {rate: [0.6, 3.2], core: 4},
+         {rate: [0.6, 2.064], core: 4}
       ],
       ai: {
          core: '16',
