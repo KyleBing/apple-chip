@@ -15,6 +15,10 @@ const chipsModelA = [
       cpu: [
          {rate: [0.8, 1.0], core: 1}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX535',
       release: '2010-03',
       devices: [
@@ -38,6 +42,10 @@ const chipsModelA = [
       cpu: [
          {rate: [0.8, 1.0], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX543MP2',
       release: '2011-03',
       devices: [
@@ -59,6 +67,10 @@ const chipsModelA = [
       cpu: [
          {rate: [0.8, 1.0], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX543MP2',
       release: '2012-03',
       devices: [
@@ -82,6 +94,10 @@ const chipsModelA = [
       cpu: [
          {rate: [0.8, 1.0], core: 1}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX543MP2',
       release: '2013-03',
       devices: [
@@ -102,6 +118,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.0], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX543MP4',
       release: '2012-03',
       devices: [
@@ -122,6 +142,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.3], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX543MP3',
       release: '2012-09',
       devices: [
@@ -143,6 +167,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.4], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR SGX554MP4',
       release: '2012-10',
       devices: [
@@ -163,6 +191,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.3], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR G6430',
       release: '2013-09',
       devices: [
@@ -186,6 +218,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.4], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR G6430',
       release: '2013-10',
       devices: [
@@ -207,6 +243,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.1, 1.5], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GXA6450',
       release: '2014-09',
       devices: [
@@ -233,6 +273,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.5], core: 3}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GXA6850',
       release: '2014-10',
       devices: [
@@ -254,6 +298,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.85], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
@@ -278,6 +326,10 @@ const chipsModelA = [
       cpu: [
          {rate: [1.85], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
@@ -302,6 +354,10 @@ const chipsModelA = [
       cpu: [
          {rate: [2.16, 2.26], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GTA7850',
       release: '2015-09',
       devices: [
@@ -322,8 +378,13 @@ const chipsModelA = [
       dieSize: '125', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {rate: [2.34], core: 4}
+         {rate: [2.34], core: 2},
+         {rate: [1.092], core: 4}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GT7600 Plus',
       release: '2016-09',
       devices: [
@@ -347,8 +408,13 @@ const chipsModelA = [
       dieSize: '96.4', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {rate: [2.36], core: 6}
+         {rate: [2.36], core: 3},
+         {rate: [1.3], core: 3},
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR GT7600 Plus',
       release: '2017-06',
       devices: [
@@ -370,9 +436,14 @@ const chipsModelA = [
       dieSize: '87.66', // mm
       isa: 'ARMv8.2-A',
       cpu: [
-         {rate: [2.39], core: 6}
+         {rate: [2.39], core: 2},
+         {rate: [1.19], core: 4},
       ],
-      gpu: 'Apple x3',
+      ai: {
+         core: '2',
+         rate: '600 GOPS'
+      },
+      gpu: 'Apple × 3',
       release: '2017-09',
       devices: [
          'iPhone 8',
@@ -393,9 +464,14 @@ const chipsModelA = [
       dieSize: '83.27', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {rate: [2.49], core: 6}
+         {rate: [2.49], core: 2},
+         {rate: [1.59], core: 4},
       ],
-      gpu: 'Apple x4',
+      ai: {
+         core: '8',
+         rate: '5TOPS'
+      },
+      gpu: 'Apple × 4',
       release: '2018-09',
       devices: [
          'iPhone XS',
@@ -418,9 +494,14 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {rate: [2.49], core: 8}
+         {rate: [2.49], core: 4},
+         {rate: [1.59], core: 4},
       ],
-      gpu: 'Apple x6',
+      ai: {
+         core: '8',
+         rate: '5TOPS'
+      },
+      gpu: 'Apple × 6',
       release: '2018-10',
       devices: [
          'iPad Pro 3 ( 11寸 2018 )',
@@ -440,9 +521,14 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-          {rate: [2.49], core: 8}
+          {rate: [2.49], core: 4},
+          {rate: [1.59], core: 4},
       ],
-      gpu: 'Apple x8',
+      ai: {
+         core: '8',
+         rate: '5TOPS'
+      },
+      gpu: 'Apple × 8',
       release: '2020-03',
       devices: [
          'iPad Pro 4 ( 11寸 2020 )',
@@ -461,11 +547,15 @@ const chipsModelA = [
       techCompany: '台积电 N7P',
       dieSize: '98.48', // mm
       isa: 'ARMv8.4-A',
-      cpu: {
-         rate: [2.65],
-         core: 6
+      cpu: [
+         {rate: [2.65], core: 2},
+         {rate: [1.8], core: 4},
+      ],
+      ai: {
+         core: '8',
+         rate: '5 TOPS'
       },
-      gpu: 'Apple x4',
+      gpu: 'Apple × 4',
       release: '2019-09',
       devices: [
          'iPhone 11',
@@ -488,9 +578,14 @@ const chipsModelA = [
       dieSize: '88', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-          {rate: [3.1], core: 6}
+          {rate: [3.09], core: 2},
+          {rate: [1.823], core: 4}
       ],
-      gpu: 'Apple x4',
+      ai: {
+         core: '16',
+         rate: '11 TOPS'
+      },
+      gpu: 'Apple × 4',
       release: '2020-09',
       devices: [
          'iPad Air 4 (2020 )',
@@ -511,12 +606,16 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5P',
       dieSize: '--', // mm
-      isa: '--',
+      isa: 'ARMv8.5-A',
       cpu: [
          {rate: [3.2], core: 2},
          {rate: [1.823], core: 4}
       ],
-      gpu: 'Apple x5',
+      ai: {
+         core: '16',
+         rate: '15.8 TOPS'
+      },
+      gpu: 'Apple × 5',
       release: '2021-09',
       devices: [
          'iPhone 13',
@@ -543,6 +642,10 @@ const chipsModelS = [
       cpu: [
          {rate: [0.52], core: 1}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR Series 5',
       release: '2015-04',
       devices: [
@@ -563,6 +666,10 @@ const chipsModelS = [
       cpu: [
          {rate: [0.52], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
@@ -583,6 +690,10 @@ const chipsModelS = [
       cpu: [
          {rate: [0.52], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
@@ -603,6 +714,10 @@ const chipsModelS = [
       cpu: [
          {rate: [], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: '',
       release: '2017-09',
       devices: [
@@ -623,7 +738,11 @@ const chipsModelS = [
       cpu: [
          {rate: [], core: 2}
       ],
-      gpu: 'Apple G11M',
+      ai: {
+         core: '',
+         rate: ''
+      },
+      gpu: 'Apple × 11M',
       release: '2018-09',
       devices: [
          'Apple Watch Series 4',
@@ -643,7 +762,11 @@ const chipsModelS = [
       cpu: [
          {rate: [], core: 2}
       ],
-      gpu: 'Apple G11M',
+      ai: {
+         core: '',
+         rate: ''
+      },
+      gpu: 'Apple × 11M',
       release: '2019-09',
       devices: [
          'Apple Watch Series 5',
@@ -664,6 +787,10 @@ const chipsModelS = [
       cpu: [
          {rate: [], core: 2}
       ],
+      ai: {
+         core: '',
+         rate: ''
+      },
       gpu: '',
       release: '2020-09',
       devices: [
@@ -686,7 +813,11 @@ const chipsModelM = [
       cpu: [
          {rate: [3.2], core: 8}
       ],
-      gpu: 'Apple x8',
+      ai: {
+         core: '16',
+         rate: '11 TOPS'
+      },
+      gpu: 'Apple × 8',
       release: '2020-11-17',
       devices: [
          'MacBook Air 2020',

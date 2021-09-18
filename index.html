@@ -6,10 +6,10 @@
     <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/chip.css?v=20210918112734">
+    <link rel="stylesheet" href="css/chip.css?v=20210918174131">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
-    <script src="../../lib/js/vue.min.2.6.10.js"></script>
+    <script src="../../lib/js/vue_2.66.js"></script>
     <style>
         [v-cloak]{
             display: none;
@@ -17,13 +17,13 @@
     </style>
 </head>
 <body>
-<div id="app" @scroll="scroll" v-cloak>
+<div id="app" v-cloak>
     <div class="card-container" :style="heightApp === 0? '': `height: ${heightApp}px`">
         <div class="copyright">
 
             <div>
                 <div class="title mb-6">
-                    <!--               <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
+<!--                   <img :src="`./imgs/logo/${model}.png`" alt="Apple Chip LOGO">-->
                     <img src="./imgs/logo.png" alt="Apple Chip LOGO">
                     <h1>苹果 {{model}} 系列处理器<br>参数大全</h1>
                 </div>
@@ -50,13 +50,13 @@
                 <p>·</p>
                 <p>
                     <span>2020/06/05</span> ~
-                    <span>2021/09/15</span>
+                    <span>2021/09/18</span>
                 </p>
             </div>
         </div>
 
         <!-- CHIP LIST -->
-        <div class="chip" v-for="item in chips" :key="item">
+        <div class="chip" v-for="(item, index) in chips" :key="`item.name-${index}`">
             <div v-if="model === 'A'" class="chip-img">
                 <img :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
             </div>
@@ -76,17 +76,26 @@
                 <div class="info-list">
                     <div class="info-item">
                         <div class="key">CPU</div>
-                        <div class="value" v-if="item.cpu.rate.length > 1">
-                            <span class="text-big">{{item.cpu.rate[0]}}-{{item.cpu.rate[1]}}</span>GHz x
-                            <span class="text-big">{{item.cpu.core}}</span>
+                        <div class="value-group">
+                            <div v-for="(cpu, index) in item.cpu" :key="index" class="value" v-if="cpu.rate.length > 1">
+                                <span class="text-big">{{cpu.rate[0]}}-{{cpu.rate[1]}}</span>GHz ×
+                                <span class="text-big">{{cpu.core}}</span>
+                            </div>
+                            <div class="value" v-else>
+                                <span class="text-big">{{cpu.rate[0]}}</span><span v-if="cpu.rate[0]"> GHz</span> ×
+                                <span class="text-big">{{cpu.core}}</span>
+                            </div>
                         </div>
-                        <div class="value" v-else>
-                            <span class="text-big">{{item.cpu.rate[0]}}</span><span v-if="item.cpu.rate[0]"> GHz</span> x
-                            <span class="text-big">{{item.cpu.core}}</span></div>
+
                     </div>
                     <div :class="['info-item', {'invalid': !item.gpu}]">
                         <div class="key">GPU</div>
                         <div class="value">{{item.gpu}}</div>
+                    </div>
+
+                    <div :class="['info-item',  {'invalid': !item.ai.rate}]">
+                        <div class="key">AI</div>
+                        <div class="value" v-if="item.ai.rate">× {{item.ai.core}} {{item.ai.rate}}</div>
                     </div>
                 </div>
 
@@ -155,7 +164,7 @@
 </div>
 
 
-<script src="chip.js?v=20210918112734"></script>
+<script src="chip.js?v=20210918174131"></script>
 
 <script>
     setTimeout(() => {

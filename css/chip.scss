@@ -100,7 +100,7 @@ a.link{
   .info-item{
     position: relative;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     line-height: 1.8;
     &.invalid{
@@ -128,6 +128,11 @@ a.link{
       color: $text-info;
       flex-shrink: 0;
     }
+    .value-group{
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
     .value{
       @if $show-value-dash {
         padding-left: 20px;
