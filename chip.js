@@ -892,15 +892,16 @@ let app = new Vue({
                this.heightApp = innerHeight;
                // pc
                if (!this.mobileMode){
-                  let scrollFull = 200 * this.chips.length;
-                  let heightPage = scrollFull + innerHeight; // 计算可滚动长度
-                  document.querySelector('body').style.height = heightPage + 'px';
-                  window.onscroll = () => {
-                     let scrollTop = document.documentElement.scrollTop; // 文档上卷的高度
-                     let container = document.querySelector('.card-container');
+                  document.querySelector('#app').style.height = innerHeight + 'px'
+                  window.onwheel = event => {
+                     console.log(event.deltaY)
+                     let container = document.querySelector('.card-container')
+                     let scrollLeft = container.scrollLeft; // 文档左卷的高度
+                     let direction = event.deltaY > 0 ? 1 : -1
                      let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
-                     let scrollLeft = (scrollTop / scrollFull) * scrollSpace
-                     container.scrollTo(scrollLeft, 0);
+                     let afterScrollLeft = scrollLeft > scrollSpace?  scrollLeft: scrollLeft + 100 * direction
+                     // console.log(scrollLeft, afterScrollLeft)
+                     container.scrollTo(afterScrollLeft, 0);
                   }
                } else {
                   window.onscroll = null
