@@ -785,7 +785,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {rate: [], core: 2}
+         {rate: [1.8], core: 2}
       ],
       ai: {
          core: '',
@@ -798,6 +798,30 @@ const chipsModelS = [
       ],
       os: {
          init: 'watchOS 7.0',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'S7',
+      model: '',
+      tech: '', // nm
+      techCompany: '',
+      dieSize: '', // mm
+      isa: '',
+      cpu: [
+         {rate: [1.8], core: 2}
+      ],
+      ai: {
+         core: '',
+         rate: ''
+      },
+      gpu: '',
+      release: '2021-09',
+      devices: [
+         'Apple Watch Series 7',
+      ],
+      os: {
+         init: 'watchOS 8.0',
          latest: latestOS
       }
    },
