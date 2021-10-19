@@ -674,7 +674,7 @@ a.link:active {
   background-color: white;
   margin-right: 10px;
   text-align: center;
-  border: 1px solid #EDEDED;
+  border: 1px solid #e7e7e7;
 }
 .gpu-list .gpu:last-child, .gpu-list .cpu:last-child, .cpu-list .gpu:last-child, .cpu-list .cpu:last-child {
   margin-right: 0;
