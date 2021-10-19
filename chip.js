@@ -13,13 +13,15 @@ const chipsModelA = [
       dieSize: '53.3', // mm
       isa: 'ARMv7',
       cpu: [
-         {rate: [0.8, 1.0], core: 1}
+         {fire: {rate: [0.8, 1.0], core: 1}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR SGX535', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX535',
       release: '2010-03',
       devices: [
          'iPad 1 ( 2010 )',
@@ -40,13 +42,15 @@ const chipsModelA = [
       dieSize: '122.2', // mm
       isa: 'ARMv7',
       cpu: [
-         {rate: [0.8, 1.0], core: 2}
+         {fire: {rate: [0.8, 1.0], core: 2}, ice: {}}
       ],
+      gpu: [
+         {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
+      ] ,
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX543MP2',
       release: '2011-03',
       devices: [
          'iPad 2 ( 2011 )',
@@ -65,13 +69,15 @@ const chipsModelA = [
       dieSize: '69.6', // mm
       isa: 'ARMv7',
       cpu: [
-         {rate: [0.8, 1.0], core: 2}
+         {fire: {rate: [0.8, 1.0], core: 2}, ice: {}}
       ],
+      gpu: [
+         {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
+      ] ,
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX543MP2',
       release: '2012-03',
       devices: [
          'Apple TV ( 3代 )',
@@ -92,13 +98,15 @@ const chipsModelA = [
       dieSize: '37.8', // mm
       isa: 'ARMv7',
       cpu: [
-         {rate: [0.8, 1.0], core: 1}
+         {fire: {rate: [0.8, 1.0], core: 1}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX543MP2',
       release: '2013-03',
       devices: [
          'Apple TV ( 3代 )'
@@ -116,13 +124,15 @@ const chipsModelA = [
       dieSize: '165', // mm
       isa: 'ARMv7',
       cpu: [
-         {rate: [1.0], core: 2}
+         {fire: {rate: [1.0], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR SGX543MP4', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX543MP4',
       release: '2012-03',
       devices: [
          'iPad 3 ( 2012 )',
@@ -140,13 +150,15 @@ const chipsModelA = [
       dieSize: '96.71', // mm
       isa: 'ARMv7s',
       cpu: [
-         {rate: [1.3], core: 2}
+         {fire: {rate: [1.3], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR SGX543MP3', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX543MP3',
       release: '2012-09',
       devices: [
          'iPhone 5',
@@ -165,13 +177,15 @@ const chipsModelA = [
       dieSize: '123', // mm
       isa: 'ARMv7s',
       cpu: [
-         {rate: [1.4], core: 2}
+         {fire: {rate: [1.4], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR SGX554MP4', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR SGX554MP4',
       release: '2012-10',
       devices: [
          'iPad 4 ( 2012 )',
@@ -189,13 +203,15 @@ const chipsModelA = [
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.3], core: 2}
+         {fire: {rate: [1.3], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR G6430', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR G6430',
       release: '2013-09',
       devices: [
          'iPhone 5S',
@@ -216,13 +232,15 @@ const chipsModelA = [
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.4], core: 2}
+         {fire: {rate: [1.4], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR G6430', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR G6430',
       release: '2013-10',
       devices: [
          'iPad Air 1 ( 2013 )',
@@ -241,13 +259,15 @@ const chipsModelA = [
       dieSize: '89', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.1, 1.5], core: 2}
+         {fire: {rate: [1.1, 1.5], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GXA6450', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GXA6450',
       release: '2014-09',
       devices: [
          'iPhone 6',
@@ -271,13 +291,15 @@ const chipsModelA = [
       dieSize: '128', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.5], core: 3}
+         {fire: {rate: [1.5], core: 3}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GXA6850', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GXA6850',
       release: '2014-10',
       devices: [
          'iPad Air 2 ( 2014 )'
@@ -296,13 +318,15 @@ const chipsModelA = [
       dieSize: '96', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.85], core: 2}
+         {fire: {rate: [1.85], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GT7600', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
          'iPhone 6S',
@@ -324,13 +348,15 @@ const chipsModelA = [
       dieSize: '104.5', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [1.85], core: 2}
+         {fire: {rate: [1.85], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GT7600', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GT7600',
       release: '2015-09',
       devices: [
          'iPhone 6S',
@@ -352,13 +378,15 @@ const chipsModelA = [
       dieSize: '143.9', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {rate: [2.16, 2.26], core: 2}
+         {fire: {rate: [2.16, 2.26], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GTA7850', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GTA7850',
       release: '2015-09',
       devices: [
          'iPad Pro 1 ( 12.9寸 2015 )',
@@ -378,14 +406,15 @@ const chipsModelA = [
       dieSize: '125', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {rate: [2.34], core: 2},
-         {rate: [1.092], core: 4}
+         {fire: {rate: [2.34], core: 2}, ice: {rate: [1.092], core: 4}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GT7600 Plus', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GT7600 Plus',
       release: '2016-09',
       devices: [
          'iPhone 7',
@@ -408,14 +437,15 @@ const chipsModelA = [
       dieSize: '96.4', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {rate: [2.36], core: 3},
-         {rate: [1.3], core: 3},
+         {fire: {rate: [2.36], core: 3}, ice: {rate: [1.3], core: 3}}
+      ],
+      gpu: [
+         {brand: 'PowerVR GT7600 Plus', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR GT7600 Plus',
       release: '2017-06',
       devices: [
          'iPad Pro 2 ( 10.5寸 2017 )',
@@ -436,14 +466,15 @@ const chipsModelA = [
       dieSize: '87.66', // mm
       isa: 'ARMv8.2-A',
       cpu: [
-         {rate: [2.39], core: 2},
-         {rate: [1.19], core: 4},
+         {fire: {rate: [2.39], core: 2}, ice: {rate: [1.19], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 3, info: ''}
       ],
       ai: {
          core: '2',
          rate: '600 GOPS'
       },
-      gpu: 'Apple × 3',
       release: '2017-09',
       devices: [
          'iPhone 8',
@@ -464,14 +495,15 @@ const chipsModelA = [
       dieSize: '83.27', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {rate: [2.49], core: 2},
-         {rate: [1.59], core: 4},
+         {fire: {rate: [2.49], core: 2}, ice: {rate: [1.59], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 4, info: ''}
       ],
       ai: {
          core: '8',
          rate: '5TOPS'
       },
-      gpu: 'Apple × 4',
       release: '2018-09',
       devices: [
          'iPhone XS',
@@ -494,14 +526,15 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {rate: [2.49], core: 4},
-         {rate: [1.59], core: 4},
+         {fire: {rate: [2.49], core: 4}, ice: {rate: [1.59], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 6, info: ''}
       ],
       ai: {
          core: '8',
          rate: '5TOPS'
       },
-      gpu: 'Apple × 6',
       release: '2018-10',
       devices: [
          'iPad Pro 3 ( 11寸 2018 )',
@@ -521,14 +554,15 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-          {rate: [2.49], core: 4},
-          {rate: [1.59], core: 4},
+         {fire: {rate: [2.49], core: 4}, ice: {rate: [1.59], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 8, info: ''}
       ],
       ai: {
          core: '8',
          rate: '5TOPS'
       },
-      gpu: 'Apple × 8',
       release: '2020-03',
       devices: [
          'iPad Pro 4 ( 11寸 2020 )',
@@ -548,14 +582,15 @@ const chipsModelA = [
       dieSize: '98.48', // mm
       isa: 'ARMv8.4-A',
       cpu: [
-         {rate: [2.65], core: 2},
-         {rate: [1.8], core: 4},
+         {fire: {rate: [2.65], core: 2}, ice: {rate: [1.8], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 4, info: ''}
       ],
       ai: {
          core: '8',
          rate: '5 TOPS'
       },
-      gpu: 'Apple × 4',
       release: '2019-09',
       devices: [
          'iPhone 11',
@@ -578,14 +613,15 @@ const chipsModelA = [
       dieSize: '88', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-          {rate: [3.09], core: 2},
-          {rate: [1.823], core: 4}
+         {fire: {rate: [3.09], core: 2}, ice: {rate: [1.823], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 4, info: ''}
       ],
       ai: {
          core: '16',
          rate: '11 TOPS'
       },
-      gpu: 'Apple × 4',
       release: '2020-09',
       devices: [
          'iPad Air 4 (2020 )',
@@ -608,14 +644,15 @@ const chipsModelA = [
       dieSize: '--', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {rate: [3.2], core: 2},
-         {rate: [1.823], core: 4}
+         {fire: {rate: [3.2], core: 2}, ice: {rate: [1.823], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 5, info: ''}
       ],
       ai: {
          core: '16',
          rate: '15.8 TOPS'
       },
-      gpu: 'Apple × 5',
       release: '2021-09',
       devices: [
          'iPhone 13',
@@ -640,13 +677,15 @@ const chipsModelS = [
       dieSize: '32', // mm
       isa: 'ARMv7k',
       cpu: [
-         {rate: [0.52], core: 1}
+         {fire: {rate: [0.52], core: 1}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR Series 5', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR Series 5',
       release: '2015-04',
       devices: [
          'Apple Watch (1代)',
@@ -664,13 +703,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {rate: [0.52], core: 2}
+         {fire: {rate: [0.52], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR Series 6', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
          'Apple Watch Series 1',
@@ -688,13 +729,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {rate: [0.52], core: 2}
+         {fire: {rate: [0.52], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'PowerVR Series 6', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'PowerVR Series 6',
       release: '2016-09',
       devices: [
          'Apple Watch Series 2',
@@ -712,13 +755,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {rate: [], core: 2}
+         {fire: {rate: [], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: '', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: '',
       release: '2017-09',
       devices: [
          'Apple Watch Series 3',
@@ -736,13 +781,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
-         {rate: [], core: 2}
+         {fire: {rate: [], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'Apple G11M', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'Apple × 11M',
       release: '2018-09',
       devices: [
          'Apple Watch Series 4',
@@ -760,13 +807,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
-         {rate: [], core: 2}
+         {fire: {rate: [], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: 'Apple G11M', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: 'Apple × 11M',
       release: '2019-09',
       devices: [
          'Apple Watch Series 5',
@@ -785,13 +834,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {rate: [1.8], core: 2}
+         {fire: {rate: [1.8], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: '', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: '',
       release: '2020-09',
       devices: [
          'Apple Watch Series 6',
@@ -809,13 +860,15 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {rate: [1.8], core: 2}
+         {fire: {rate: [1.8], core: 2}, ice: {}}
+      ],
+      gpu: [
+         {brand: '', core: 0, info: ''}
       ],
       ai: {
          core: '',
          rate: ''
       },
-      gpu: '',
       release: '2021-09',
       devices: [
          'Apple Watch Series 7',
@@ -833,16 +886,18 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '119', // mm
-      isa: 'ARMv8-A, AArch64',
+      isa: 'ARMv8.5-A',
       cpu: [
-         {rate: [0.6, 3.2], core: 4},
-         {rate: [0.6, 2.064], core: 4}
+         {fire:{rate: [0.6, 3.2], core: 4},ice: {rate: [0.6, 2.064], core: 4}}
+      ],
+      gpu: [
+         {brand: 'Apple', core: 7, info: '112 EUs, 896 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 8, info: '128 EUs, 1024 ALUs @1278Mhz'},
       ],
       ai: {
          core: '16',
          rate: '11 TOPS'
       },
-      gpu: 'Apple × 8',
       release: '2020-11-17',
       devices: [
          'MacBook Air 2020',
@@ -852,6 +907,65 @@ const chipsModelM = [
          'iPad Pro 5 ( 12.9寸 2021 )'
       ],
       transistorCount: '160', // 亿
+      os: {
+         init: 'macOS Big Sur',
+         latest: 'macOS Big Sur'
+      }
+   },
+   {
+      name: 'M1 Pro',
+      model: '',
+      tech: '5', // nm
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.5-A',
+      cpu: [
+         {fire:{rate: [], core: 6},ice: {rate: [], core: 2}},
+         {fire:{rate: [], core: 8},ice: {rate: [], core: 2}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 14, info: '224 EUs, 1792 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 16, info: '256 EUs, 2048 ALUs @1278Mhz'},
+      ],
+      ai: {
+         core: '16',
+         rate: '11 TOPS'
+      },
+      release: '2020-10-19',
+      devices: [
+         'MacBook Pro 2021 (14\')',
+         'MacBook Pro 2021 (16\')',
+      ],
+      transistorCount: '337', // 亿
+      os: {
+         init: 'macOS Big Sur',
+         latest: 'macOS Big Sur'
+      }
+   },
+   {
+      name: 'M1 Max',
+      model: '',
+      tech: '5', // nm
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.5-A',
+      cpu: [
+         {fire:{rate: [], core: 8},ice: {rate: [], core: 2}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 24, info: '384 EUs, 3072 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 32, info: '512 EUs, 4096 ALUs @1278Mhz'},
+      ],
+      ai: {
+         core: '16',
+         rate: '11 TOPS'
+      },
+      release: '2020-10-19',
+      devices: [
+         'MacBook Pro 2021 (14\')',
+         'MacBook Pro 2021 (16\')',
+      ],
+      transistorCount: '337', // 亿
       os: {
          init: 'macOS Big Sur',
          latest: 'macOS Big Sur'
