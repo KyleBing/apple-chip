@@ -734,6 +734,7 @@ a.link:active {
   font-weight: bold;
 }
 .cpu .ice {
+  color: #6f6f6f;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
