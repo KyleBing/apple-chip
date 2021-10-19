@@ -13,7 +13,7 @@ const chipsModelA = [
       dieSize: '53.3', // mm
       isa: 'ARMv7',
       cpu: [
-         {fire: {rate: [0.8, 1.0], core: 1}, ice: {}}
+         {fire: {rate: 1.0, core: 1}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX535', core: 0, info: ''}
@@ -42,7 +42,7 @@ const chipsModelA = [
       dieSize: '122.2', // mm
       isa: 'ARMv7',
       cpu: [
-         {fire: {rate: [0.8, 1.0], core: 2}, ice: {}}
+         {fire: {rate: 1.0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
@@ -69,7 +69,7 @@ const chipsModelA = [
       dieSize: '69.6', // mm
       isa: 'ARMv7',
       cpu: [
-         {fire: {rate: [0.8, 1.0], core: 2}, ice: {}}
+         {fire: {rate: 1.0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
@@ -98,7 +98,7 @@ const chipsModelA = [
       dieSize: '37.8', // mm
       isa: 'ARMv7',
       cpu: [
-         {fire: {rate: [0.8, 1.0], core: 1}, ice: {}}
+         {fire: {rate: 1.0, core: 1}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX543MP2', core: 0, info: ''}
@@ -124,7 +124,7 @@ const chipsModelA = [
       dieSize: '165', // mm
       isa: 'ARMv7',
       cpu: [
-         {fire: {rate: [1.0], core: 2}, ice: {}}
+         {fire: {rate: 1.0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX543MP4', core: 0, info: ''}
@@ -150,7 +150,7 @@ const chipsModelA = [
       dieSize: '96.71', // mm
       isa: 'ARMv7s',
       cpu: [
-         {fire: {rate: [1.3], core: 2}, ice: {}}
+         {fire: {rate: 1.3, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX543MP3', core: 0, info: ''}
@@ -177,7 +177,7 @@ const chipsModelA = [
       dieSize: '123', // mm
       isa: 'ARMv7s',
       cpu: [
-         {fire: {rate: [1.4], core: 2}, ice: {}}
+         {fire: {rate: 1.4, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR SGX554MP4', core: 0, info: ''}
@@ -203,7 +203,7 @@ const chipsModelA = [
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.3], core: 2}, ice: {}}
+         {fire: {rate: 1.3, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR G6430', core: 0, info: ''}
@@ -232,7 +232,7 @@ const chipsModelA = [
       dieSize: '102', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.4], core: 2}, ice: {}}
+         {fire: {rate: 1.4, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR G6430', core: 0, info: ''}
@@ -259,7 +259,7 @@ const chipsModelA = [
       dieSize: '89', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.1, 1.5], core: 2}, ice: {}}
+         {fire: {rate: 1.5, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR GXA6450', core: 0, info: ''}
@@ -291,7 +291,7 @@ const chipsModelA = [
       dieSize: '128', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.5], core: 3}, ice: {}}
+         {fire: {rate: 1.5, core: 3}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR GXA6850', core: 0, info: ''}
@@ -318,7 +318,7 @@ const chipsModelA = [
       dieSize: '96', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.85], core: 2}, ice: {}}
+         {fire: {rate: 1.85, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR GT7600', core: 0, info: ''}
@@ -348,7 +348,7 @@ const chipsModelA = [
       dieSize: '104.5', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [1.85], core: 2}, ice: {}}
+         {fire: {rate: 1.85, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR GT7600', core: 0, info: ''}
@@ -378,7 +378,7 @@ const chipsModelA = [
       dieSize: '143.9', // mm
       isa: 'ARMv8.0-A',
       cpu: [
-         {fire: {rate: [2.16, 2.26], core: 2}, ice: {}}
+         {fire: {rate: 2.26, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR GTA7850', core: 0, info: ''}
@@ -406,7 +406,7 @@ const chipsModelA = [
       dieSize: '125', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {fire: {rate: [2.34], core: 2}, ice: {rate: [1.092], core: 4}}
+         {fire: {rate: 2.34, core: 2}, ice: {rate: 1.092, core: 4}}
       ],
       gpu: [
          {brand: 'PowerVR GT7600 Plus', core: 0, info: ''}
@@ -437,7 +437,7 @@ const chipsModelA = [
       dieSize: '96.4', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {fire: {rate: [2.36], core: 3}, ice: {rate: [1.3], core: 3}}
+         {fire: {rate: 2.36, core: 3}, ice: {rate: 1.3, core: 3}}
       ],
       gpu: [
          {brand: 'PowerVR GT7600 Plus', core: 0, info: ''}
@@ -466,7 +466,7 @@ const chipsModelA = [
       dieSize: '87.66', // mm
       isa: 'ARMv8.2-A',
       cpu: [
-         {fire: {rate: [2.39], core: 2}, ice: {rate: [1.19], core: 4}}
+         {fire: {rate: 2.39, core: 2}, ice: {rate: 1.19, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 3, info: ''}
@@ -495,7 +495,7 @@ const chipsModelA = [
       dieSize: '83.27', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {fire: {rate: [2.49], core: 2}, ice: {rate: [1.59], core: 4}}
+         {fire: {rate: 2.49, core: 2}, ice: {rate: 1.59, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 4, info: ''}
@@ -526,7 +526,7 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {fire: {rate: [2.49], core: 4}, ice: {rate: [1.59], core: 4}}
+         {fire: {rate: 2.49, core: 4}, ice: {rate: 1.59, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 6, info: ''}
@@ -554,7 +554,7 @@ const chipsModelA = [
       dieSize: '≈ 135', // mm
       isa: 'ARMv8.3-A',
       cpu: [
-         {fire: {rate: [2.49], core: 4}, ice: {rate: [1.59], core: 4}}
+         {fire: {rate: 2.49, core: 4}, ice: {rate: 1.59, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 8, info: ''}
@@ -582,7 +582,7 @@ const chipsModelA = [
       dieSize: '98.48', // mm
       isa: 'ARMv8.4-A',
       cpu: [
-         {fire: {rate: [2.65], core: 2}, ice: {rate: [1.8], core: 4}}
+         {fire: {rate: 2.65, core: 2}, ice: {rate: 1.8, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 4, info: ''}
@@ -613,7 +613,7 @@ const chipsModelA = [
       dieSize: '88', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire: {rate: [3.09], core: 2}, ice: {rate: [1.823], core: 4}}
+         {fire: {rate: 3.09, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 4, info: ''}
@@ -644,7 +644,7 @@ const chipsModelA = [
       dieSize: '--', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire: {rate: [3.2], core: 2}, ice: {rate: [1.823], core: 4}}
+         {fire: {rate: 3.2, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 5, info: ''}
@@ -677,7 +677,7 @@ const chipsModelS = [
       dieSize: '32', // mm
       isa: 'ARMv7k',
       cpu: [
-         {fire: {rate: [0.52], core: 1}, ice: {}}
+         {fire: {rate: 0.52, core: 1}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR Series 5', core: 0, info: ''}
@@ -703,7 +703,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {fire: {rate: [0.52], core: 2}, ice: {}}
+         {fire: {rate: 0.52, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR Series 6', core: 0, info: ''}
@@ -729,7 +729,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {fire: {rate: [0.52], core: 2}, ice: {}}
+         {fire: {rate: 0.52, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'PowerVR Series 6', core: 0, info: ''}
@@ -755,7 +755,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv7k',
       cpu: [
-         {fire: {rate: [], core: 2}, ice: {}}
+         {fire: {rate: 0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: '', core: 0, info: ''}
@@ -781,7 +781,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
-         {fire: {rate: [], core: 2}, ice: {}}
+         {fire: {rate: 0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'Apple G11M', core: 0, info: ''}
@@ -807,7 +807,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
-         {fire: {rate: [], core: 2}, ice: {}}
+         {fire: {rate: 0, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: 'Apple G11M', core: 0, info: ''}
@@ -834,7 +834,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {fire: {rate: [1.8], core: 2}, ice: {}}
+         {fire: {rate: 1.8, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: '', core: 0, info: ''}
@@ -860,7 +860,7 @@ const chipsModelS = [
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {fire: {rate: [1.8], core: 2}, ice: {}}
+         {fire: {rate: 1.8, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: '', core: 0, info: ''}
@@ -888,7 +888,7 @@ const chipsModelM = [
       dieSize: '119', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire:{rate: [0.6, 3.2], core: 4},ice: {rate: [0.6, 2.064], core: 4}}
+         {fire:{rate: 3.2, core: 4},ice: {rate: 2.064, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 7, info: '112 EUs, 896 ALUs @1278Mhz'},
@@ -914,14 +914,14 @@ const chipsModelM = [
    },
    {
       name: 'M1 Pro',
-      model: '',
+      model: '-',
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire:{rate: [], core: 6},ice: {rate: [], core: 2}},
-         {fire:{rate: [], core: 8},ice: {rate: [], core: 2}},
+         {fire:{rate: 0, core: 6},ice: {rate: 0, core: 2}},
+         {fire:{rate: 0, core: 8},ice: {rate: 0, core: 2}},
       ],
       gpu: [
          {brand: 'Apple', core: 14, info: '224 EUs, 1792 ALUs @1278Mhz'},
@@ -931,7 +931,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020-10-19',
+      release: '2021-10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
@@ -944,13 +944,13 @@ const chipsModelM = [
    },
    {
       name: 'M1 Max',
-      model: '',
+      model: '-',
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire:{rate: [], core: 8},ice: {rate: [], core: 2}},
+         {fire:{rate: 0, core: 8},ice: {rate: 0, core: 2}},
       ],
       gpu: [
          {brand: 'Apple', core: 24, info: '384 EUs, 3072 ALUs @1278Mhz'},
@@ -960,12 +960,12 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020-10-19',
+      release: '2021-10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
       ],
-      transistorCount: '337', // 亿
+      transistorCount: '570', // 亿
       os: {
          init: 'macOS Big Sur',
          latest: 'macOS Big Sur'

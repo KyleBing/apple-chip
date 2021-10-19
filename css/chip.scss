@@ -1,7 +1,5 @@
-@import "../../../lib/css/reset";
-@import "../../../lib/css/utility";
-@import "../../../lib/css/variables";
-
+@import "reset";
+@import "utility";
 @import "font";
 @import "variables";
 @import "switch";
@@ -144,6 +142,7 @@ a.link{
       text-align: right;
       letter-spacing: 0.5px;
       font-family: 'PTSans', sans-serif;
+
     }
     @if $show-value-dash {
       &::after{
@@ -181,6 +180,95 @@ a.link{
     color: $text-main;
   }
 }
+
+.cpu-gpu-group{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column nowrap;
+}
+
+
+.gpu-list, .cpu-list{
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  margin-bottom: 15px;
+  display: flex;
+  .gpu,.cpu{
+    flex-grow: 1;
+    @include border-radius(5px 0 5px 5px);
+    position: relative;
+    background-color: white;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid $color-border;
+    &:last-child{
+      margin-right: 0;
+    }
+
+    .tag{
+      @include border-radius(0 0 0 1px);
+      z-index: 100;
+      padding: 1px 3px;
+      position: absolute;
+      top: -1px;
+      right: -1px;
+      color: white;
+      font-size: $fz-info - 3;
+    }
+
+  }
+}
+
+.gpu{
+  padding: 10px 15px;
+
+  .brand{
+    font-size: $fz-title;
+  }
+  .info{
+    margin-top: 3px;
+    letter-spacing: 0;
+    font-weight: normal;
+    line-height: 1;
+    color: $text-info-comment;
+    font-size: $fz-info;
+  }
+  .tag{
+    background-color: $magenta;
+  }
+}
+
+.cpu{
+  padding: 10px 15px;
+  text-align: right;
+  font-size: $fz-title;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  //height: 70px;
+  .fire{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    color: $magenta;
+  }
+  .ice{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: $purple;
+    font-weight: bold;
+  }
+  .tag{
+    background-color: $blue;
+  }
+}
+
 
 .text-big{
   font-family: inherit;

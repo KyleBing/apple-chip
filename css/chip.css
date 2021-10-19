@@ -652,6 +652,93 @@ a.link:active {
   color: #202122;
 }
 
+.cpu-gpu-group {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: column nowrap;
+}
+
+.gpu-list, .cpu-list {
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  margin-bottom: 15px;
+  display: flex;
+}
+.gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
+  flex-grow: 1;
+  -webkit-border-radius: 5px 0 5px 5px;
+  -moz-border-radius: 5px 0 5px 5px;
+  border-radius: 5px 0 5px 5px;
+  position: relative;
+  background-color: white;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid #d7d7d7;
+}
+.gpu-list .gpu:last-child, .gpu-list .cpu:last-child, .cpu-list .gpu:last-child, .cpu-list .cpu:last-child {
+  margin-right: 0;
+}
+.gpu-list .gpu .tag, .gpu-list .cpu .tag, .cpu-list .gpu .tag, .cpu-list .cpu .tag {
+  -webkit-border-radius: 0 0 0 1px;
+  -moz-border-radius: 0 0 0 1px;
+  border-radius: 0 0 0 1px;
+  z-index: 100;
+  padding: 1px 3px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  color: white;
+  font-size: 7px;
+}
+
+.gpu {
+  padding: 10px 15px;
+}
+.gpu .brand {
+  font-size: 15px;
+}
+.gpu .info {
+  margin-top: 3px;
+  letter-spacing: 0;
+  font-weight: normal;
+  line-height: 1;
+  color: #aaaaaa;
+  font-size: 10px;
+}
+.gpu .tag {
+  background-color: #FF2D70;
+}
+
+.cpu {
+  padding: 10px 15px;
+  text-align: right;
+  font-size: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.cpu .fire {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  color: #FF2D70;
+}
+.cpu .ice {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: #5856D6;
+  font-weight: bold;
+}
+.cpu .tag {
+  background-color: #007AFF;
+}
+
 .text-big {
   font-family: inherit;
   font-size: 1.2rem;

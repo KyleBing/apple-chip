@@ -58,41 +58,51 @@
         <!-- CHIP LIST -->
         <div class="chip" v-for="(item, index) in chips" :key="`item.name-${index}`">
             <div v-if="model === 'A'" class="chip-img">
-                <img :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/A.png'" :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
             </div>
             <div v-else-if="model === 'S'" class="chip-img">
-                <img :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/S.png'" :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
             </div>
             <div v-else class="chip-img">
-                <img :src="`./imgs/chips/M/${item.name}.jpg`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/M.png'" :src="`./imgs/chips/M/${item.name}.jpg`" :alt="item.name">
             </div>
 
             <div class="chip-name">
                 <h2>{{item.name}}</h2>
-                <p>{{item.model}}</p>
+                <p>{{item.model || '-'}}</p>
             </div>
 
             <div class="info-list-group">
-                <div class="info-list">
-                    <div class="info-item">
-                        <div class="key">CPU</div>
-                        <div class="value-group">
-                            <div v-for="(cpu, index) in item.cpu" :key="index" class="value" v-if="cpu.rate.length > 1">
-                                <span class="text-big">{{cpu.rate[0]}}-{{cpu.rate[1]}}</span>GHz ×
-                                <span class="text-big">{{cpu.core}}</span>
+                <div class="cpu-gpu-group">
+                    <div class="cpu-list">
+                        <div class="cpu" v-for="(cpu,index) in item.cpu" :key="index">
+                            <div class="tag">C</div>
+                            <div class="fire">
+                                <div v-if="cpu.fire.rate">
+                                    <span class="text-big">{{cpu.fire.rate.toFixed(2)}}</span>GHz
+                                </div>
+                                <span class="text-big">&nbsp;× {{cpu.fire.core}}</span>
                             </div>
-                            <div class="value" v-else>
-                                <span class="text-big">{{cpu.rate[0]}}</span><span v-if="cpu.rate[0]"> GHz</span> ×
-                                <span class="text-big">{{cpu.core}}</span>
+                            <div class="ice" v-if="cpu.ice.core">
+                                <div v-if="cpu.ice.rate" >
+                                    <span class="text-big">{{cpu.ice.rate.toFixed(2)}}</span>GHz
+                                </div>
+                                <span class="text-big">&nbsp;× {{cpu.ice.core}}</span>
                             </div>
                         </div>
-
-                    </div>
-                    <div :class="['info-item', {'invalid': !item.gpu}]">
-                        <div class="key">GPU</div>
-                        <div class="value">{{item.gpu}}</div>
                     </div>
 
+                    <div class="gpu-list">
+                        <div class="gpu" v-for="(gpu,index) in item.gpu" :key="index">
+                            <div class="tag">G</div>
+                            <div class="brand"><span>{{gpu.brand || '-'}}</span><span v-if="gpu.core"> × {{gpu.core}}</span></div>
+                            <div class="info" v-if="gpu.info">{{gpu.info}}</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="info-list">
                     <div :class="['info-item',  {'invalid': !item.ai.rate}]">
                         <div class="key">AI</div>
                         <div class="value" v-if="item.ai.rate">× {{item.ai.core}} {{item.ai.rate}}</div>
