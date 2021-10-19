@@ -581,6 +581,12 @@ a.link:active {
   text-align: center;
   font-size: 2rem;
 }
+.chip:hover .gpu {
+  border-color: #FF2D70 !important;
+}
+.chip:hover .cpu {
+  border-color: #007AFF !important;
+}
 
 .info-list-group {
   padding: 10px 20px;
@@ -718,6 +724,7 @@ a.link:active {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  color: #202122;
 }
 .cpu .fire {
   display: flex;
@@ -725,14 +732,12 @@ a.link:active {
   justify-content: flex-end;
   align-items: center;
   font-weight: bold;
-  color: #FF2D70;
 }
 .cpu .ice {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  color: #5856D6;
   font-weight: bold;
 }
 .cpu .tag {

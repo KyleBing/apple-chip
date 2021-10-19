@@ -84,6 +84,14 @@ a.link{
     text-align: center;
     font-size: 2rem;
   }
+  &:hover{
+    .gpu{
+      border-color: $magenta !important;
+    }
+    .cpu{
+      border-color: $blue !important;
+    }
+  }
 }
 
 .info-list-group{
@@ -222,7 +230,6 @@ a.link{
 
 .gpu{
   padding: 10px 15px;
-
   .brand{
     font-size: $fz-title;
   }
@@ -247,21 +254,21 @@ a.link{
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  //height: 70px;
+  color: $text-main;
   .fire{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
     font-weight: bold;
-    color: $magenta;
+    //color: $magenta;
   }
   .ice{
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    color: $purple;
+    //color: $purple;
     font-weight: bold;
   }
   .tag{
