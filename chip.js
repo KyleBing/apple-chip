@@ -909,7 +909,7 @@ const chipsModelM = [
       transistorCount: '160', // 亿
       os: {
          init: 'macOS Big Sur',
-         latest: 'macOS Big Sur'
+         latest: latestOS
       }
    },
    {
@@ -938,8 +938,8 @@ const chipsModelM = [
       ],
       transistorCount: '337', // 亿
       os: {
-         init: 'macOS Big Sur',
-         latest: 'macOS Big Sur'
+         init: 'macOS Monterey',
+         latest: latestOS
       }
    },
    {
@@ -967,8 +967,8 @@ const chipsModelM = [
       ],
       transistorCount: '570', // 亿
       os: {
-         init: 'macOS Big Sur',
-         latest: 'macOS Big Sur'
+         init: 'macOS Monterey',
+         latest: latestOS
       }
    },
 ]
