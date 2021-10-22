@@ -581,12 +581,6 @@ a.link:active {
   text-align: center;
   font-size: 2rem;
 }
-.chip:hover .gpu {
-  border-color: #FF2D70 !important;
-}
-.chip:hover .cpu {
-  border-color: #007AFF !important;
-}
 
 .info-list-group {
   padding: 10px 20px;

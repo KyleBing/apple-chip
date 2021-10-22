@@ -84,14 +84,6 @@ a.link{
     text-align: center;
     font-size: 2rem;
   }
-  &:hover{
-    .gpu{
-      border-color: $magenta !important;
-    }
-    .cpu{
-      border-color: $blue !important;
-    }
-  }
 }
 
 .info-list-group{
