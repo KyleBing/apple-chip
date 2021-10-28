@@ -638,16 +638,17 @@ const chipsModelA = [
    },
    {
       name: 'A15 Bionic',
-      model: 'APL1W05',
+      model: 'APL1W07',
       tech: '5', // nm
       techCompany: '台积电 N5P',
-      dieSize: '--', // mm
+      dieSize: '107.68', // mm
       isa: 'ARMv8.5-A',
       cpu: [
          {fire: {rate: 3.2, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
       gpu: [
-         {brand: 'Apple', core: 5, info: ''}
+         {brand: 'Apple', core: 4, info: '512 ALUs @ 1200 MHz'},
+         {brand: 'Apple', core: 5, info: '640 ALUs @ 1200 MHz'}
       ],
       ai: {
          core: '16',
@@ -917,7 +918,7 @@ const chipsModelM = [
       model: '-',
       tech: '5', // nm
       techCompany: '台积电',
-      dieSize: '', // mm
+      dieSize: '≈245', // mm
       isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 0, core: 6},ice: {rate: 0, core: 2}},
@@ -947,7 +948,7 @@ const chipsModelM = [
       model: '-',
       tech: '5', // nm
       techCompany: '台积电',
-      dieSize: '', // mm
+      dieSize: '≈432', // mm
       isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 0, core: 8},ice: {rate: 0, core: 2}},
