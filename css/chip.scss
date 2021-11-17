@@ -5,7 +5,7 @@
 @import "switch";
 @import "copyright";
 
-$show-value-dash: false; // show key-value connect lines
+$show-value-dash: true; // show key-value connect lines
 
 body{
   background-color: $bg;
@@ -101,6 +101,12 @@ a.link{
     align-items: flex-start;
     display: flex;
     line-height: 1.8;
+    &:hover{
+      &:after{
+        border-bottom-color: $text-main;
+      }
+
+    }
     &.invalid{
       @if $show-value-dash {
         &::after{
@@ -142,15 +148,15 @@ a.link{
       text-align: right;
       letter-spacing: 0.5px;
       font-family: 'PTSans', sans-serif;
-
     }
     @if $show-value-dash {
       &::after{
         z-index: 1;
         content: '';
+        top: 50%;
         width: 100%;
         display: block;
-        border-bottom: 1px dashed #e4e4e4;
+        border-bottom: 1px dashed $color-border;
         position: absolute;
       }
     }
@@ -196,7 +202,7 @@ a.link{
   display: flex;
   .gpu,.cpu{
     flex-grow: 1;
-    @include border-radius(5px 0 5px 5px);
+    @include border-radius(5px);
     position: relative;
     background-color: white;
     margin-right: 10px;
@@ -207,12 +213,12 @@ a.link{
     }
 
     .tag{
-      @include border-radius(0 0 0 1px);
+      @include border-radius(5px);
       z-index: 100;
       padding: 1px 3px;
       position: absolute;
-      top: -1px;
-      right: -1px;
+      top: -2px;
+      right: -3px;
       color: white;
       font-size: $fz-info - 3;
     }
@@ -239,7 +245,7 @@ a.link{
 }
 
 .cpu{
-  padding: 10px 15px;
+  padding: 10px 5px;
   text-align: right;
   font-size: $fz-title;
   display: flex;

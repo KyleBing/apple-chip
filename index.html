@@ -6,7 +6,7 @@
     <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/chip.css?v=20211117164939">
+    <link rel="stylesheet" href="css/chip.css?v=20211117170537">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
@@ -76,16 +76,16 @@
                 <div class="cpu-gpu-group">
                     <div class="cpu-list">
                         <div class="cpu" v-for="(cpu,index) in item.cpu" :key="index">
-                            <div class="tag">C</div>
+                            <div class="tag">CPU</div>
                             <div class="fire">
                                 <div v-if="cpu.fire.rate">
-                                    <span class="text-big">{{cpu.fire.rate.toFixed(2)}}</span>GHz
+                                    <span class="text-big">{{cpu.fire.rate.toFixed(2)}}</span>
                                 </div>
                                 <span class="text-big">&nbsp;× {{cpu.fire.core}}</span>
                             </div>
                             <div class="ice" v-if="cpu.ice.core">
                                 <div v-if="cpu.ice.rate" >
-                                    <span class="text-big">{{cpu.ice.rate.toFixed(2)}}</span>GHz
+                                    <span class="text-big">{{cpu.ice.rate.toFixed(2)}}</span>
                                 </div>
                                 <span class="text-big">&nbsp;× {{cpu.ice.core}}</span>
                             </div>
@@ -94,7 +94,7 @@
 
                     <div class="gpu-list">
                         <div class="gpu" v-for="(gpu,index) in item.gpu" :key="index">
-                            <div class="tag">G</div>
+                            <div class="tag">GPU</div>
                             <div class="brand"><span>{{gpu.brand || '-'}}</span><span v-if="gpu.core"> × {{gpu.core}}</span></div>
                             <div class="info" v-if="gpu.info">{{gpu.info}}</div>
                         </div>
@@ -174,7 +174,7 @@
 </div>
 
 
-<script src="chip.js?v=20211117164939"></script>
+<script src="chip.js?v=20211117170537"></script>
 
 <script>
     setTimeout(() => {

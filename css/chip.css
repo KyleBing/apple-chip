@@ -600,6 +600,12 @@ a.link:active {
   display: flex;
   line-height: 1.8;
 }
+.info-list .info-item:hover:after {
+  border-bottom-color: #202122;
+}
+.info-list .info-item.invalid::after {
+  content: none;
+}
 .info-list .info-item.invalid .key {
   color: #d2d2d2;
 }
@@ -610,6 +616,9 @@ a.link:active {
   content: "--";
 }
 .info-list .info-item .key {
+  padding-right: 20px;
+  z-index: 10;
+  background-color: #F7F7F7;
   color: #6f6f6f;
   flex-shrink: 0;
 }
@@ -618,11 +627,23 @@ a.link:active {
   margin-bottom: 10px;
 }
 .info-list .info-item .value {
+  padding-left: 20px;
+  z-index: 10;
+  background-color: #F7F7F7;
   font-weight: bold;
   color: #202122;
   text-align: right;
   letter-spacing: 0.5px;
   font-family: "PTSans", sans-serif;
+}
+.info-list .info-item::after {
+  z-index: 1;
+  content: "";
+  top: 50%;
+  width: 100%;
+  display: block;
+  border-bottom: 1px dashed #d7d7d7;
+  position: absolute;
 }
 
 .device-title {
@@ -667,9 +688,9 @@ a.link:active {
 }
 .gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
   flex-grow: 1;
-  -webkit-border-radius: 5px 0 5px 5px;
-  -moz-border-radius: 5px 0 5px 5px;
-  border-radius: 5px 0 5px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   position: relative;
   background-color: white;
   margin-right: 10px;
@@ -680,14 +701,14 @@ a.link:active {
   margin-right: 0;
 }
 .gpu-list .gpu .tag, .gpu-list .cpu .tag, .cpu-list .gpu .tag, .cpu-list .cpu .tag {
-  -webkit-border-radius: 0 0 0 1px;
-  -moz-border-radius: 0 0 0 1px;
-  border-radius: 0 0 0 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   z-index: 100;
   padding: 1px 3px;
   position: absolute;
-  top: -1px;
-  right: -1px;
+  top: -2px;
+  right: -3px;
   color: white;
   font-size: 7px;
 }
@@ -711,7 +732,7 @@ a.link:active {
 }
 
 .cpu {
-  padding: 10px 15px;
+  padding: 10px 5px;
   text-align: right;
   font-size: 15px;
   display: flex;
