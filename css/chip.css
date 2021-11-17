@@ -558,7 +558,7 @@ a.link:active {
 }
 .chip-img img {
   display: block;
-  width: 100px;
+  height: 100%;
 }
 .chip-name {
   padding: 10px;

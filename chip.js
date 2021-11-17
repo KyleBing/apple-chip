@@ -915,14 +915,14 @@ const chipsModelM = [
    },
    {
       name: 'M1 Pro',
-      model: '-',
+      model: 'APL1103',
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈245', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire:{rate: 0, core: 6},ice: {rate: 0, core: 2}},
-         {fire:{rate: 0, core: 8},ice: {rate: 0, core: 2}},
+         {fire:{rate: 3.23, core: 6},ice: {rate: 2.06, core: 2}},
+         {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
       ],
       gpu: [
          {brand: 'Apple', core: 14, info: '224 EUs, 1792 ALUs @1278Mhz'},
@@ -951,7 +951,7 @@ const chipsModelM = [
       dieSize: '≈432', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire:{rate: 0, core: 8},ice: {rate: 0, core: 2}},
+         {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
       ],
       gpu: [
          {brand: 'Apple', core: 24, info: '384 EUs, 3072 ALUs @1278Mhz'},
