@@ -173,7 +173,7 @@ a.link{
 .device-list {
   padding: 10px 20px;
   .device-item {
-    font-weight: bold;
+    font-family: "Verdana";
     font-size: 0.8rem;
     @include border-radius(3px);
     line-height: 1.1;
@@ -227,6 +227,7 @@ a.link{
 }
 
 .gpu{
+  font-family: "Verdana";
   padding: 10px 15px;
   .brand{
     font-size: $fz-title;
@@ -245,6 +246,7 @@ a.link{
 }
 
 .cpu{
+  font-family: "Verdana";
   padding: 10px 5px;
   text-align: right;
   font-size: $fz-title;
@@ -258,7 +260,6 @@ a.link{
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
-    font-weight: bold;
     //color: $magenta;
   }
   .ice{
@@ -268,7 +269,6 @@ a.link{
     justify-content: flex-end;
     align-items: center;
     //color: $purple;
-    font-weight: bold;
   }
   .tag{
     background-color: $blue;
