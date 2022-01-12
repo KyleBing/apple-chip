@@ -945,7 +945,7 @@ const chipsModelM = [
    },
    {
       name: 'M1 Max',
-      model: '-',
+      model: 'APL1104',
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈432', // mm
