@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const latestOS = '最新';
+const latestOS = '最新'
 const chipsModelA = [
    {
       name: 'A4',
@@ -974,9 +974,9 @@ const chipsModelM = [
    },
 ]
 
-let chipsA = chipsModelA.reverse();
-let chipsS = chipsModelS.reverse();
-let chipsM = chipsModelM.reverse();
+let chipsA = chipsModelA.reverse()
+let chipsS = chipsModelS.reverse()
+let chipsM = chipsModelM.reverse()
 
 
 let app = new Vue({
@@ -995,40 +995,40 @@ let app = new Vue({
    },
    mounted(){
       // 全屏相关
-      let chromeCore = /Chrome/i.test(navigator.userAgent);
-      let mobileMode = /Mobile/i.test(navigator.userAgent);
-      this.portraitMode = window.innerWidth > window.innerHeight;
-      this.mobileMode = mobileMode;
-      this.showFullScreenBtn = chromeCore && !mobileMode;
+      let chromeCore = /Chrome/i.test(navigator.userAgent)
+      let mobileMode = /Mobile/i.test(navigator.userAgent)
+      this.portraitMode = window.innerWidth > window.innerHeight
+      this.mobileMode = mobileMode
+      this.showFullScreenBtn = chromeCore && !mobileMode
       this.relocate(); // relocate items
    },
 
    watch: {
       model() {
          switch (this.model) {
-            case 'A': this.chips = chipsA; break;
-            case 'S': this.chips = chipsS; break;
-            case 'M': this.chips = chipsM; break;
+            case 'A': this.chips = chipsA; break
+            case 'S': this.chips = chipsS; break
+            case 'M': this.chips = chipsM; break
          }
-         this.relocate();
+         this.relocate()
       }
    },
    methods: {
       // 全屏显示
       enterFullScreen(){
-         document.documentElement.requestFullscreen().then();
+         document.documentElement.requestFullscreen().then()
       },
       switchModels(model){
          this.model = model
       },
       relocate(){
-         this.heightApp = 0;
+         this.heightApp = 0
          this.$nextTick().then(() => {
-            let heightChip = document.querySelector('.chip').offsetHeight + 40;
+            let heightChip = document.querySelector('.chip').offsetHeight + 40
             console.log(heightChip)
             if (heightChip < innerHeight) { // .card 高度小于屏幕高度时
-               document.querySelector('.card-container').style.position = 'fixed';
-               this.heightApp = innerHeight;
+               document.querySelector('.card-container').style.position = 'fixed'
+               this.heightApp = innerHeight
                // pc
                if (!this.mobileMode){
                   document.querySelector('#app').style.height = innerHeight + 'px'
@@ -1036,18 +1036,22 @@ let app = new Vue({
                      console.log(event.deltaY)
                      let container = document.querySelector('.card-container')
                      let scrollLeft = container.scrollLeft; // 文档左卷的高度
-                     let direction = event.deltaY > 0 ? 1 : -1
                      let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
-                     let afterScrollLeft = scrollLeft > scrollSpace?  scrollLeft: scrollLeft + 100 * direction
-                     // console.log(scrollLeft, afterScrollLeft)
-                     container.scrollTo(afterScrollLeft, 0);
+                     let afterScrollLeft
+                     if (event.deltaY > 0){
+                        afterScrollLeft = scrollLeft > scrollSpace?  scrollLeft: scrollLeft + 100
+                     } else {
+                        afterScrollLeft =  scrollLeft + 100 * -1
+                     }
+                     // console.log(scrollLeft,scrollSpace, afterScrollLeft)
+                     container.scrollTo(afterScrollLeft, 0)
                   }
                } else {
                   window.onscroll = null
                }
             } else {
-               document.querySelector('body').style.height = 'auto';
-               document.querySelector('.card-container').style.position = 'relative';
+               document.querySelector('body').style.height = 'auto'
+               document.querySelector('.card-container').style.position = 'relative'
                window.onscroll = null
 
             }
@@ -1057,7 +1061,7 @@ let app = new Vue({
 })
 
 window.onresize = () => {
-   let heightChip = document.querySelector('.chip').offsetHeight + 40;
+   let heightChip = document.querySelector('.chip').offsetHeight + 40
    if (heightChip < innerHeight) { // pc
       app.heightApp = innerHeight
    }
