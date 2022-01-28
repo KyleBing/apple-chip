@@ -6,7 +6,7 @@
     <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/chip.css?v=20220112221506">
+    <link rel="stylesheet" href="css/chip.css?v=20220128134828">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
@@ -113,7 +113,7 @@
                     </div>
                     <div :class="['info-item', {'invalid': !item.dieSize}]">
                         <div class="key">内核大小</div>
-                        <div class="value">{{item.dieSize}} mm<sup>2</sup></div>
+                        <div class="value">{{item.dieSize}} <span class="unit">mm<sup>2</sup></span></div>
                     </div>
                     <div :class="['info-item', {'invalid': !item.tech}]">
                         <div class="key">技术工艺</div>
@@ -121,7 +121,7 @@
                     </div>
                     <div :class="['info-item', {'invalid': !item.transistorCount}]">
                         <div class="key">晶体管数</div>
-                        <div class="value" v-if="item.transistorCount">{{item.transistorCount}} 亿</div>
+                        <div class="value" v-if="item.transistorCount">{{item.transistorCount}}<span class="unit">亿</span></div>
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@
 </div>
 
 
-<script src="chip.js?v=20220112221506"></script>
+<script src="chip.js?v=20220128134828"></script>
 
 <script>
     setTimeout(() => {

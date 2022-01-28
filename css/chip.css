@@ -626,6 +626,11 @@ a.link:active {
   line-height: 1.4;
   margin-bottom: 10px;
 }
+.info-list .info-item .unit {
+  margin-left: 3px;
+  font-size: 0.7rem;
+  font-weight: normal;
+}
 .info-list .info-item .value {
   padding-left: 20px;
   z-index: 10;

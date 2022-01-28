@@ -136,6 +136,11 @@ a.link{
       line-height: 1.4;
       margin-bottom: 10px;
     }
+    .unit{
+      margin-left: 3px;
+      font-size: 0.7rem;
+      font-weight: normal;
+    }
 
     .value{
       @if $show-value-dash {

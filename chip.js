@@ -22,7 +22,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2010-03',
+      release: '2010.03',
       devices: [
          'iPad 1 ( 2010 )',
          'iPhone 4',
@@ -51,7 +51,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2011-03',
+      release: '2011.03',
       devices: [
          'iPad 2 ( 2011 )',
          'iPhone 4S'
@@ -78,7 +78,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2012-03',
+      release: '2012.03',
       devices: [
          'Apple TV ( 3代 )',
          'iPad 2 ( 2011 )',
@@ -107,7 +107,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2013-03',
+      release: '2013.03',
       devices: [
          'Apple TV ( 3代 )'
       ],
@@ -133,7 +133,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2012-03',
+      release: '2012.03',
       devices: [
          'iPad 3 ( 2012 )',
       ],
@@ -159,7 +159,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2012-09',
+      release: '2012.09',
       devices: [
          'iPhone 5',
          'iPhone 5C',
@@ -186,7 +186,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2012-10',
+      release: '2012.10',
       devices: [
          'iPad 4 ( 2012 )',
       ],
@@ -212,7 +212,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2013-09',
+      release: '2013.09',
       devices: [
          'iPhone 5S',
          'iPad Mini 2 ( 2013 )',
@@ -241,7 +241,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2013-10',
+      release: '2013.10',
       devices: [
          'iPad Air 1 ( 2013 )',
       ],
@@ -268,7 +268,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2014-09',
+      release: '2014.09',
       devices: [
          'iPhone 6',
          'iPhone 6 Plus',
@@ -300,7 +300,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2014-10',
+      release: '2014.10',
       devices: [
          'iPad Air 2 ( 2014 )'
       ],
@@ -327,7 +327,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2015-09',
+      release: '2015.09',
       devices: [
          'iPhone 6S',
          'iPhone 6S Plus',
@@ -357,7 +357,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2015-09',
+      release: '2015.09',
       devices: [
          'iPhone 6S',
          'iPhone 6S Plus',
@@ -387,7 +387,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2015-09',
+      release: '2015.09',
       devices: [
          'iPad Pro 1 ( 12.9寸 2015 )',
          'iPad Pro 1 ( 9.7寸 2016 )',
@@ -415,7 +415,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2016-09',
+      release: '2016.09',
       devices: [
          'iPhone 7',
          'iPhone 7 Plus',
@@ -446,7 +446,7 @@ const chipsModelA = [
          core: '',
          rate: ''
       },
-      release: '2017-06',
+      release: '2017.06',
       devices: [
          'iPad Pro 2 ( 10.5寸 2017 )',
          'iPad Pro 2 ( 12.9寸 2017 )',
@@ -475,7 +475,7 @@ const chipsModelA = [
          core: '2',
          rate: '600 GOPS'
       },
-      release: '2017-09',
+      release: '2017.09',
       devices: [
          'iPhone 8',
          'iPhone 8 Plus',
@@ -504,7 +504,7 @@ const chipsModelA = [
          core: '8',
          rate: '5TOPS'
       },
-      release: '2018-09',
+      release: '2018.09',
       devices: [
          'iPhone XS',
          'iPhone XS Max',
@@ -535,7 +535,7 @@ const chipsModelA = [
          core: '8',
          rate: '5TOPS'
       },
-      release: '2018-10',
+      release: '2018.10',
       devices: [
          'iPad Pro 3 ( 11寸 2018 )',
          'iPad Pro 3 ( 12.9寸 2018 )'
@@ -563,7 +563,7 @@ const chipsModelA = [
          core: '8',
          rate: '5TOPS'
       },
-      release: '2020-03',
+      release: '2020.03',
       devices: [
          'iPad Pro 4 ( 11寸 2020 )',
          'iPad Pro 4 ( 12.9寸 2020 )'
@@ -591,7 +591,7 @@ const chipsModelA = [
          core: '8',
          rate: '5 TOPS'
       },
-      release: '2019-09',
+      release: '2019.09',
       devices: [
          'iPhone 11',
          'iPhone 11 Pro',
@@ -622,7 +622,7 @@ const chipsModelA = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020-09',
+      release: '2020.09',
       devices: [
          'iPad Air 4 (2020 )',
          'iPhone 12',
@@ -654,7 +654,7 @@ const chipsModelA = [
          core: '16',
          rate: '15.8 TOPS'
       },
-      release: '2021-09',
+      release: '2021.09',
       devices: [
          'iPhone 13',
          'iPhone 13 Mini',
@@ -687,7 +687,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2015-04',
+      release: '2015.04',
       devices: [
          'Apple Watch (1代)',
       ],
@@ -713,7 +713,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2016-09',
+      release: '2016.09',
       devices: [
          'Apple Watch Series 1',
       ],
@@ -739,7 +739,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2016-09',
+      release: '2016.09',
       devices: [
          'Apple Watch Series 2',
       ],
@@ -765,7 +765,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2017-09',
+      release: '2017.09',
       devices: [
          'Apple Watch Series 3',
       ],
@@ -791,7 +791,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2018-09',
+      release: '2018.09',
       devices: [
          'Apple Watch Series 4',
       ],
@@ -817,7 +817,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2019-09',
+      release: '2019.09',
       devices: [
          'Apple Watch Series 5',
          'Apple Watch Series SE',
@@ -844,7 +844,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2020-09',
+      release: '2020.09',
       devices: [
          'Apple Watch Series 6',
       ],
@@ -870,7 +870,7 @@ const chipsModelS = [
          core: '',
          rate: ''
       },
-      release: '2021-09',
+      release: '2021.09',
       devices: [
          'Apple Watch Series 7',
       ],
@@ -899,7 +899,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020-11-17',
+      release: '2020.11-17',
       devices: [
          'MacBook Air 2020',
          'MacBook Pro 2020 (13\')',
@@ -932,7 +932,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021-10-19',
+      release: '2021.10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
@@ -961,7 +961,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021-10-19',
+      release: '2021.10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
