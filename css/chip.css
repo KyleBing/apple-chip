@@ -473,7 +473,8 @@ tt {
   justify-content: space-between;
   flex-flow: column nowrap;
   flex-shrink: 0;
-  padding: 60px 40px;
+  width: 300px;
+  padding: 60px 20px;
 }
 .copyright .title {
   display: flex;
