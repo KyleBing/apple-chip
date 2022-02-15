@@ -644,7 +644,8 @@ const chipsModelA = [
       dieSize: '107.68', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire: {rate: 3.2, core: 2}, ice: {rate: 1.823, core: 4}}
+         {fire: {rate: 3.23, core: 2}, ice: {rate: 1.823, core: 4}},
+         {fire: {rate: 2.93, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 4, info: '512 ALUs @ 1200 MHz'},

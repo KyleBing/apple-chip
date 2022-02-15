@@ -1,0 +1,114 @@
+$dark-bg: lighten(black, 10%);
+$dark-bg-title: lighten(black, 35%);
+$dark-bg-highlight: lighten(black, 25%);
+$dark-bg-card: lighten(black, 25%);
+$dark-bg-light: lighten(black, 18%);
+
+
+$dark-text: lighten(black, 80%);
+$dark-text-title: lighten(black, 95%);
+$dark-text-subtitle: lighten(black, 65%);
+
+$dark-border: lighten(black, 30%);
+$dark-border-item-list: lighten(black, 40%);
+$dark-border-light: lighten(black, 60%);
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background-color: $dark-bg;
+  }
+
+  .container{
+    background-color: $dark-bg;
+  }
+
+  // CHIP
+  .chip{
+    border-color: $dark-border;
+    background-color: $dark-bg-card;
+    &-name{
+      border-color: $dark-border;
+      background-color: $dark-bg-title;
+      h2{
+        color: $dark-text-title;
+      }
+      p{
+        color: $dark-text-subtitle;
+      }
+    }
+  }
+
+
+  .info-list{
+    .info-item{
+      &:hover{
+        &:after{
+          border-bottom-color: $dark-border-light;
+        }
+      }
+      &.invalid{
+        .key{
+          color: $dark-text-subtitle;
+        }
+        .value{
+          color: $dark-text-subtitle;
+        }
+      }
+      .key{
+        @if $show-value-dash {
+          background-color: $dark-bg-card;
+        }
+        color: $dark-text-subtitle;
+      }
+      .value-group{
+      }
+      .unit{
+        font-weight: normal;
+      }
+
+      .value{
+        @if $show-value-dash {
+          background-color: $dark-bg-card;
+        }
+        color: $dark-text-title;
+      }
+      @if $show-value-dash {
+        &::after{
+          border-bottom: 1px dashed $dark-border-item-list;
+        }
+      }
+    }
+  }
+
+
+
+
+  // LABEL
+  .rate{
+    background-color: transparent !important;
+  }
+
+
+  // SCROLL BAR
+  ::-webkit-scrollbar {
+    z-index: 50;
+    width: 8px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  :hover::-webkit-scrollbar-thumb {
+    border: 1px solid $dark-border;
+    background-color: $dark-bg-highlight;
+  }
+
+}
