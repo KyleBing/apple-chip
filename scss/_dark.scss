@@ -5,8 +5,8 @@ $dark-bg-card: lighten(black, 20%);
 $dark-bg-light: lighten(black, 18%);
 
 
-$dark-text: lighten(black, 65%);
-$dark-text-title: lighten(black, 90%);
+$dark-text: lighten(black, 70%);
+$dark-text-title: lighten(black, 80%);
 $dark-text-subtitle: lighten(black, 55%);
 $dark-text-invalid: lighten(black, 35%);
 
@@ -80,7 +80,7 @@ $dark-border-light: lighten(black, 60%);
         @if $show-value-dash {
           background-color: $dark-bg-card;
         }
-        color: $dark-text-title;
+        color: $dark-text;
       }
       @if $show-value-dash {
         &::after{
@@ -124,7 +124,7 @@ $dark-border-light: lighten(black, 60%);
 
   // DEVICE TITLE
   .device-title {
-    color: white;
+    color: $dark-text;
     background-color: $dark-bg-title;
     border-color: $dark-border;
   }

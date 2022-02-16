@@ -961,7 +961,7 @@ a.link:active {
     background-color: #474747;
   }
   .chip-name h2 {
-    color: #e6e6e6;
+    color: #cccccc;
   }
   .chip-name p {
     color: #8c8c8c;
@@ -986,7 +986,7 @@ a.link:active {
   .info-list .info-item .value {
     font-weight: normal;
     background-color: #333333;
-    color: #e6e6e6;
+    color: #b3b3b3;
   }
   .info-list .info-item::after {
     border-bottom: 1px dashed #4d4d4d;
@@ -1002,14 +1002,14 @@ a.link:active {
   }
 
   .cpu .fire {
-    color: #e6e6e6;
+    color: #cccccc;
   }
   .cpu .ice {
-    color: #a6a6a6;
+    color: #b3b3b3;
   }
 
   .gpu .brand {
-    color: #e6e6e6;
+    color: #cccccc;
   }
   .gpu .info {
     color: #8c8c8c;
@@ -1019,7 +1019,7 @@ a.link:active {
   }
 
   .device-title {
-    color: white;
+    color: #b3b3b3;
     background-color: #474747;
     border-color: #4d4d4d;
   }
@@ -1027,7 +1027,7 @@ a.link:active {
   .device-list .device-item {
     background-color: #474747;
     border: 1px solid #4d4d4d;
-    color: #a6a6a6;
+    color: #b3b3b3;
   }
 
   .rate {
@@ -1035,7 +1035,7 @@ a.link:active {
   }
 
   .copyright .title h1 {
-    color: #e6e6e6;
+    color: #cccccc;
   }
 
   .type-switch {
