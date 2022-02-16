@@ -1,16 +1,17 @@
 $dark-bg: lighten(black, 10%);
-$dark-bg-title: lighten(black, 35%);
+$dark-bg-title: lighten(black, 28%);
 $dark-bg-highlight: lighten(black, 25%);
-$dark-bg-card: lighten(black, 25%);
+$dark-bg-card: lighten(black, 20%);
 $dark-bg-light: lighten(black, 18%);
 
 
-$dark-text: lighten(black, 80%);
-$dark-text-title: lighten(black, 95%);
-$dark-text-subtitle: lighten(black, 65%);
+$dark-text: lighten(black, 65%);
+$dark-text-title: lighten(black, 90%);
+$dark-text-subtitle: lighten(black, 55%);
+$dark-text-invalid: lighten(black, 35%);
 
 $dark-border: lighten(black, 30%);
-$dark-border-item-list: lighten(black, 40%);
+$dark-border-chip: lighten(black, 20%);
 $dark-border-light: lighten(black, 60%);
 
 
@@ -25,8 +26,15 @@ $dark-border-light: lighten(black, 60%);
 
   // CHIP
   .chip{
-    border-color: $dark-border;
+    border-color: $dark-border-chip;
     background-color: $dark-bg-card;
+    &-img{
+      img{
+        border: 2px solid $dark-border;
+        display: block;
+        height: 100%;
+      }
+    }
     &-name{
       border-color: $dark-border;
       background-color: $dark-bg-title;
@@ -49,10 +57,10 @@ $dark-border-light: lighten(black, 60%);
       }
       &.invalid{
         .key{
-          color: $dark-text-subtitle;
+          color: $dark-text-invalid;
         }
         .value{
-          color: $dark-text-subtitle;
+          color: $dark-text-invalid;
         }
       }
       .key{
@@ -68,6 +76,7 @@ $dark-border-light: lighten(black, 60%);
       }
 
       .value{
+        font-weight: normal;
         @if $show-value-dash {
           background-color: $dark-bg-card;
         }
@@ -75,18 +84,81 @@ $dark-border-light: lighten(black, 60%);
       }
       @if $show-value-dash {
         &::after{
-          border-bottom: 1px dashed $dark-border-item-list;
+          border-bottom: 1px dashed $dark-border;
         }
       }
     }
   }
 
+  .gpu-list, .cpu-list{
+    .gpu,.cpu{
+      color: white;
+      background-color: $dark-bg-title;
+      border: 1px solid $dark-border;
+      .tag{
+        color: white;
+      }
+    }
+  }
+
+  .cpu{
+    .fire{
+      color: $dark-text-title;
+    }
+    .ice{
+      color: $dark-text;
+    }
+  }
+  .gpu{
+    .brand{
+      color: $dark-text-title;
+    }
+    .info{
+      color: $dark-text-subtitle;
+    }
+    .tag{
+      background-color: $magenta;
+    }
+  }
 
 
+  // DEVICE TITLE
+  .device-title {
+    color: white;
+    background-color: $dark-bg-title;
+    border-color: $dark-border;
+  }
+  .device-list {
+    .device-item {
+      background-color: $dark-bg-title;
+      border: 1px solid $dark-border ;
+      color: $dark-text;
+    }
+  }
 
   // LABEL
   .rate{
     background-color: transparent !important;
+  }
+
+
+  // COPYRIGHT
+  .copyright{
+    .title{
+      img{
+      }
+      h1{
+        color: $dark-text-title;
+      }
+    }
+  }
+
+  .type-switch{
+    border-color: $dark-border;
+  }
+
+  .author{
+    color: $text-copyright;
   }
 
 

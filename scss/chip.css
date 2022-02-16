@@ -948,46 +948,102 @@ a.link:active {
   }
 
   .chip {
-    border-color: #4d4d4d;
-    background-color: #404040;
+    border-color: #333333;
+    background-color: #333333;
+  }
+  .chip-img img {
+    border: 2px solid #4d4d4d;
+    display: block;
+    height: 100%;
   }
   .chip-name {
     border-color: #4d4d4d;
-    background-color: #595959;
+    background-color: #474747;
   }
   .chip-name h2 {
-    color: #f2f2f2;
+    color: #e6e6e6;
   }
   .chip-name p {
-    color: #a6a6a6;
+    color: #8c8c8c;
   }
 
   .info-list .info-item:hover:after {
     border-bottom-color: #999999;
   }
   .info-list .info-item.invalid .key {
-    color: #a6a6a6;
+    color: #595959;
   }
   .info-list .info-item.invalid .value {
-    color: #a6a6a6;
+    color: #595959;
   }
   .info-list .info-item .key {
-    background-color: #404040;
-    color: #a6a6a6;
+    background-color: #333333;
+    color: #8c8c8c;
   }
   .info-list .info-item .unit {
     font-weight: normal;
   }
   .info-list .info-item .value {
-    background-color: #404040;
-    color: #f2f2f2;
+    font-weight: normal;
+    background-color: #333333;
+    color: #e6e6e6;
   }
   .info-list .info-item::after {
-    border-bottom: 1px dashed #666666;
+    border-bottom: 1px dashed #4d4d4d;
+  }
+
+  .gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
+    color: white;
+    background-color: #474747;
+    border: 1px solid #4d4d4d;
+  }
+  .gpu-list .gpu .tag, .gpu-list .cpu .tag, .cpu-list .gpu .tag, .cpu-list .cpu .tag {
+    color: white;
+  }
+
+  .cpu .fire {
+    color: #e6e6e6;
+  }
+  .cpu .ice {
+    color: #a6a6a6;
+  }
+
+  .gpu .brand {
+    color: #e6e6e6;
+  }
+  .gpu .info {
+    color: #8c8c8c;
+  }
+  .gpu .tag {
+    background-color: #FF2D70;
+  }
+
+  .device-title {
+    color: white;
+    background-color: #474747;
+    border-color: #4d4d4d;
+  }
+
+  .device-list .device-item {
+    background-color: #474747;
+    border: 1px solid #4d4d4d;
+    color: #a6a6a6;
   }
 
   .rate {
     background-color: transparent !important;
+  }
+
+  .copyright .title h1 {
+    color: #e6e6e6;
+  }
+
+  .type-switch {
+    border-color: #4d4d4d;
+  }
+
+  .author {
+    color: #979797;
   }
 
   ::-webkit-scrollbar {
