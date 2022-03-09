@@ -900,7 +900,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020.11-17',
+      release: '2020-11-17',
       devices: [
          'MacBook Air 2020',
          'MacBook Pro 2020 (13\')',
@@ -933,7 +933,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021.10-19',
+      release: '2021-10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
@@ -962,12 +962,40 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021.10-19',
+      release: '2021-10-19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
       ],
       transistorCount: '570', // 亿
+      os: {
+         init: 'macOS Monterey',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M1 Ultra',
+      model: '-',
+      tech: '5', // nm
+      techCompany: '',
+      dieSize: '', // mm
+      isa: '',
+      cpu: [
+         {fire:{rate: 3.23, core: 16},ice: {rate: 2.06, core: 4}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 48, info: '384 EUs, 3072 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 64, info: '512 EUs, 4096 ALUs @1278Mhz'},
+      ],
+      ai: {
+         core: '32',
+         rate: '11 TOPS'
+      },
+      release: '2022-03-09',
+      devices: [
+         'Mac Studio',
+      ],
+      transistorCount: '', // 亿
       os: {
          init: 'macOS Monterey',
          latest: latestOS

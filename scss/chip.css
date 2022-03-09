@@ -44,8 +44,6 @@ tt {
 }
 
 ::-webkit-scrollbar-track {
-  border-bottom: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
   background-color: rgba(0, 0, 0, 0);
 }
 
