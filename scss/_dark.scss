@@ -155,6 +155,12 @@ $dark-border-light: lighten(black, 60%);
 
   .type-switch{
     border-color: $dark-border;
+    .switch{
+      &.active{
+        padding: 5px;
+        background-color: transparentize(white, 0.1);
+      }
+    }
   }
 
   .author{

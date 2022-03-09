@@ -6,7 +6,7 @@
     <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/chip.css?v=20220309134302">
+    <link rel="stylesheet" href="scss/chip.css?v=20220309135015">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
@@ -29,9 +29,9 @@
                 </div>
 
                 <div class="type-switch mb-6">
-                    <div @click="switchModels('A')" class="switch"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
-                    <div @click="switchModels('S')" class="switch"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
-                    <div @click="switchModels('M')" class="switch"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
+                    <div @click="switchModels('A')" :class="['switch', {active: model === 'A'}]"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
+                    <div @click="switchModels('S')" :class="['switch', {active: model === 'S'}]"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
+                    <div @click="switchModels('M')" :class="['switch', {active: model === 'M'}]"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
                 </div>
             </div>
 
@@ -177,7 +177,7 @@
 </div>
 
 
-<script src="chip.js?v=20220309134302"></script>
+<script src="chip.js?v=20220309135015"></script>
 
 <script>
     setTimeout(() => {

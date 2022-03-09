@@ -452,10 +452,14 @@ tt {
   justify-content: space-between;
 }
 .type-switch .switch {
+  padding: 5px;
   cursor: pointer;
-  margin-right: 10px;
-  width: 50px;
-  height: 50px;
+  margin-right: 5px;
+  width: 55px;
+  height: 55px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .type-switch .switch img {
   display: block;
@@ -1038,6 +1042,10 @@ a.link:active {
 
   .type-switch {
     border-color: #4d4d4d;
+  }
+  .type-switch .switch.active {
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .author {
