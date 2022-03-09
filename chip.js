@@ -661,6 +661,7 @@ const chipsModelA = [
          'iPhone 13 Mini',
          'iPhone 13 Pro',
          'iPhone 13 Pro Max',
+         'iPhone SE 3 (2022)',
          'iPad Mini 6 ( 2021 )',
       ],
       transistorCount: '150', // 亿
