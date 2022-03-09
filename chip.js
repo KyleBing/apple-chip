@@ -967,6 +967,7 @@ const chipsModelM = [
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
+         'Mac Studio (2022)',
       ],
       transistorCount: '570', // 亿
       os: {
@@ -994,7 +995,7 @@ const chipsModelM = [
       },
       release: '2022-03-09',
       devices: [
-         'Mac Studio',
+         'Mac Studio (2022)',
       ],
       transistorCount: '', // 亿
       os: {
