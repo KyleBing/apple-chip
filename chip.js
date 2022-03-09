@@ -987,8 +987,8 @@ const chipsModelM = [
          {fire:{rate: 3.23, core: 16},ice: {rate: 2.06, core: 4}},
       ],
       gpu: [
-         {brand: 'Apple', core: 48, info: '384 EUs, 3072 ALUs @1278Mhz'},
-         {brand: 'Apple', core: 64, info: '512 EUs, 4096 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 48, info: '768 EUs, 6144 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 64, info: '1024 EUs, 8192 ALUs @1278Mhz'},
       ],
       ai: {
          core: '32',

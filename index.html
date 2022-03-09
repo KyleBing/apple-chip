@@ -6,7 +6,7 @@
     <meta name='description' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/chip.css?v=20220309125654">
+    <link rel="stylesheet" href="scss/chip.css?v=20220309134302">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
@@ -78,7 +78,7 @@
             <div class="info-list-group">
                 <div class="cpu-gpu-group">
                     <div class="cpu-list">
-                        <div class="cpu" v-for="(cpu,index) in item.cpu" :key="index">
+                        <div class="cpu" v-for="(cpu,index) in item.cpu.reverse()" :key="index">
                             <div class="tag">CPU</div>
                             <div class="fire">
                                 <div v-if="cpu.fire.rate">
@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="gpu-list">
-                        <div class="gpu" v-for="(gpu,index) in item.gpu" :key="index">
+                        <div class="gpu" v-for="(gpu,index) in item.gpu.reverse()" :key="index">
                             <div class="tag">GPU</div>
                             <div class="brand"><span>{{gpu.brand || '-'}}</span><span v-if="gpu.core"> × {{gpu.core}}</span></div>
                             <div class="info" v-if="gpu.info">{{gpu.info}}</div>
@@ -177,7 +177,7 @@
 </div>
 
 
-<script src="chip.js?v=20220309125654"></script>
+<script src="chip.js?v=20220309134302"></script>
 
 <script>
     setTimeout(() => {
