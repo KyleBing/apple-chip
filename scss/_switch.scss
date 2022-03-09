@@ -1,7 +1,7 @@
 .type-switch{
   padding: 30px 20px;
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
+  border-top: 1px solid $color-border-copyright;
+  border-bottom: 1px solid $color-border-copyright;
   display: flex;
   justify-content: space-between;
   .switch{
@@ -10,7 +10,10 @@
     margin-right: 5px;
     width: 55px;
     height: 55px;
-    @include border-radius(5px);
+    @include border-radius(50px);
+    &.active{
+      background-color: transparentize($magenta, 0.7);
+    }
     img{
       display: block;
       width: 100%;

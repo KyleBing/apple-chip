@@ -446,8 +446,8 @@ tt {
 
 .type-switch {
   padding: 30px 20px;
-  border-top: 1px solid #d7d7d7;
-  border-bottom: 1px solid #d7d7d7;
+  border-top: 1px solid #a6a6a6;
+  border-bottom: 1px solid #a6a6a6;
   display: flex;
   justify-content: space-between;
 }
@@ -457,9 +457,12 @@ tt {
   margin-right: 5px;
   width: 55px;
   height: 55px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+.type-switch .switch.active {
+  background-color: rgba(255, 45, 112, 0.3);
 }
 .type-switch .switch img {
   display: block;
@@ -497,7 +500,7 @@ tt {
 
 .author {
   text-align: center;
-  color: #979797;
+  color: #7c7c7c;
   letter-spacing: 0.3px;
   line-height: 1.4;
   font-size: 0.7rem;
@@ -1044,12 +1047,11 @@ a.link:active {
     border-color: #4d4d4d;
   }
   .type-switch .switch.active {
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #c9f73c;
   }
 
   .author {
-    color: #979797;
+    color: #8c8c8c;
   }
 
   ::-webkit-scrollbar {

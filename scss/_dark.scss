@@ -9,6 +9,8 @@ $dark-text: lighten(black, 70%);
 $dark-text-title: lighten(black, 80%);
 $dark-text-subtitle: lighten(black, 55%);
 $dark-text-invalid: lighten(black, 35%);
+$dark-text-copyright: lighten(black, 55%);
+
 
 $dark-border: lighten(black, 30%);
 $dark-border-chip: lighten(black, 20%);
@@ -157,14 +159,13 @@ $dark-border-light: lighten(black, 60%);
     border-color: $dark-border;
     .switch{
       &.active{
-        padding: 5px;
-        background-color: transparentize(white, 0.1);
+        background-color: #c9f73c;
       }
     }
   }
 
   .author{
-    color: $text-copyright;
+    color: $dark-text-copyright;
   }
 
 
