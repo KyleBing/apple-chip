@@ -906,7 +906,8 @@ const chipsModelM = [
          'MacBook Pro 2020 (13\')',
          'Mac Mini 2020',
          'iPad Pro 5 ( 11寸 2021 )',
-         'iPad Pro 5 ( 12.9寸 2021 )'
+         'iPad Pro 5 ( 12.9寸 2021 )',
+         'iPad Air 5 ( 10.9寸 2022 )',
       ],
       transistorCount: '160', // 亿
       os: {
