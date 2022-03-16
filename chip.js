@@ -611,7 +611,7 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5',
       dieSize: '88', // mm
-      isa: 'ARMv8.5-A',
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire: {rate: 3.09, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
@@ -642,7 +642,7 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5P',
       dieSize: '107.68', // mm
-      isa: 'ARMv8.5-A',
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire: {rate: 3.23, core: 2}, ice: {rate: 1.823, core: 4}},
          {fire: {rate: 2.93, core: 2}, ice: {rate: 1.823, core: 4}}
@@ -889,7 +889,7 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '119', // mm
-      isa: 'ARMv8.5-A',
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire:{rate: 3.2, core: 4},ice: {rate: 2.064, core: 4}}
       ],
@@ -922,14 +922,14 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈245', // mm
-      isa: 'ARMv8.5-A',
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire:{rate: 3.23, core: 6},ice: {rate: 2.06, core: 2}},
          {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
       ],
       gpu: [
-         {brand: 'Apple', core: 14, info: '224 EUs, 1792 ALUs @1278Mhz'},
-         {brand: 'Apple', core: 16, info: '256 EUs, 2048 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 14, info: '224 EUs, 1792 ALUs @1296Mhz'},
+         {brand: 'Apple', core: 16, info: '256 EUs, 2048 ALUs @1296Mhz'},
       ],
       ai: {
          core: '16',
@@ -952,13 +952,13 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈432', // mm
-      isa: 'ARMv8.5-A',
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
       ],
       gpu: [
-         {brand: 'Apple', core: 24, info: '384 EUs, 3072 ALUs @1278Mhz'},
-         {brand: 'Apple', core: 32, info: '512 EUs, 4096 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 24, info: '384 EUs, 3072 ALUs @1296Mhz'},
+         {brand: 'Apple', core: 32, info: '512 EUs, 4096 ALUs @1296Mhz'},
       ],
       ai: {
          core: '16',
@@ -978,27 +978,27 @@ const chipsModelM = [
    },
    {
       name: 'M1 Ultra',
-      model: '-',
+      model: 'APL1105',
       tech: '5', // nm
       techCompany: '',
-      dieSize: '', // mm
-      isa: '',
+      dieSize: '864', // mm
+      isa: 'ARMv8.4-A',
       cpu: [
          {fire:{rate: 3.23, core: 16},ice: {rate: 2.06, core: 4}},
       ],
       gpu: [
-         {brand: 'Apple', core: 48, info: '768 EUs, 6144 ALUs @1278Mhz'},
-         {brand: 'Apple', core: 64, info: '1024 EUs, 8192 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 48, info: '768 EUs, 6144 ALUs @1296Mhz'},
+         {brand: 'Apple', core: 64, info: '1024 EUs, 8192 ALUs @1296Mhz'},
       ],
       ai: {
          core: '32',
-         rate: '11 TOPS'
+         rate: '22 TOPS'
       },
       release: '2022-03-09',
       devices: [
          'Mac Studio (2022)',
       ],
-      transistorCount: '', // 亿
+      transistorCount: '1140', // 亿
       os: {
          init: 'macOS Monterey',
          latest: latestOS
