@@ -529,7 +529,7 @@ const chipsModelA = [
          {fire: {rate: 2.49, core: 4}, ice: {rate: 1.59, core: 4}}
       ],
       gpu: [
-         {brand: 'Apple', core: 6, info: ''}
+         {brand: 'Apple', core: 7, info: ''}
       ],
       ai: {
          core: '8',
