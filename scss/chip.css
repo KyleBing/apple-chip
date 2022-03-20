@@ -457,9 +457,9 @@ tt {
   margin-right: 5px;
   width: 55px;
   height: 55px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 .type-switch .switch.active {
   background-color: rgba(255, 45, 112, 0.3);

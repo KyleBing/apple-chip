@@ -981,7 +981,7 @@ const chipsModelM = [
       model: 'APL1105',
       tech: '5', // nm
       techCompany: '',
-      dieSize: '864', // mm
+      dieSize: '≈864', // mm
       isa: 'ARMv8.4-A',
       cpu: [
          {fire:{rate: 3.23, core: 16},ice: {rate: 2.06, core: 4}},

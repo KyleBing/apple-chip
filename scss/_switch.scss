@@ -10,7 +10,7 @@
     margin-right: 5px;
     width: 55px;
     height: 55px;
-    @include border-radius(50px);
+    @include border-radius(10px);
     &.active{
       background-color: transparentize($magenta, 0.7);
     }
