@@ -611,7 +611,7 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5',
       dieSize: '88', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire: {rate: 3.09, core: 2}, ice: {rate: 1.823, core: 4}}
       ],
@@ -642,7 +642,7 @@ const chipsModelA = [
       tech: '5', // nm
       techCompany: '台积电 N5P',
       dieSize: '107.68', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire: {rate: 3.23, core: 2}, ice: {rate: 1.823, core: 4}},
          {fire: {rate: 2.93, core: 2}, ice: {rate: 1.823, core: 4}}
