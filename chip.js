@@ -978,7 +978,7 @@ const chipsModelM = [
    },
    {
       name: 'M1 Ultra',
-      model: 'APL1105',
+      model: 'APL1165',
       tech: '5', // nm
       techCompany: '',
       dieSize: '≈864', // mm
