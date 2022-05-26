@@ -88,7 +88,7 @@
             <div class="info-list-group">
                 <div class="cpu-gpu-group">
                     <div class="cpu-list">
-                        <div class="cpu" v-for="(cpu,index) in item.cpu.reverse()" :key="index">
+                        <div class="cpu" v-for="(cpu,index) in item.cpu" :key="index">
                             <div class="tag">CPU</div>
                             <div class="fire">
                                 <div v-if="cpu.fire.rate">

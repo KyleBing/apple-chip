@@ -1016,7 +1016,7 @@ let app = new Vue({
    data: {
       thumbsUpKey: 'apple-chip',
       heartActive: false,
-      thumbsUpCount: 20,
+      thumbsUpCount: 0,
 
       // full screen 相关
       showFullScreenBtn: false,
