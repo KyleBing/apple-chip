@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="thumbs-up">
+            <div class="thumbs-up" @click="thumbsUp">
                 <img v-if="heartActive" src="imgs/heart_active@3x.png?v=2022-05-26" alt="heart">
                 <img v-else src="imgs/heart_inactive_dark@3x.png?v=2022-05-26" alt="heart">
                 <h3 class="count" v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
