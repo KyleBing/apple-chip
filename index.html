@@ -6,10 +6,11 @@
     <meta name='description' content="苹果处理器,苹果芯片详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器,苹果芯片详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/chip.css?v=20220407144019">
+    <link rel="stylesheet" href="scss/chip.css?v=20220526225503">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
+    <script src="../../lib/js/axios.min.js"></script>
     <style>
         [v-cloak]{
             display: none;
@@ -33,6 +34,12 @@
                     <div @click="switchModels('S')" :class="['switch', {active: model === 'S'}]"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
                     <div @click="switchModels('M')" :class="['switch', {active: model === 'M'}]"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
                 </div>
+            </div>
+
+            <div class="thumbs-up">
+                <img v-if="heartActive" src="imgs/heart_active@3x.png?v=2022-05-26" alt="heart">
+                <img v-else src="imgs/heart_inactive_dark@3x.png?v=2022-05-26" alt="heart">
+                <h3 class="count" v-show="thumbsUpCount">{{thumbsUpCount}}</h3>
             </div>
 
 
@@ -180,7 +187,7 @@
 </div>
 
 
-<script src="chip.js?v=20220407144019"></script>
+<script src="chip.js?v=20220526225503"></script>
 
 <script>
     setTimeout(() => {

@@ -371,5 +371,23 @@ a.link{
   }
 }
 
+.thumbs-up{
+  @include transform(translateY(2px));
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  img{
+    width: 60px;
+    display: block;
+  }
+  .count{
+    font-size: $fz-info;
+    text-align: center;
+    color: $text-copyright;
+  }
+}
+
 @import "mobile";
 @import "dark";

@@ -446,8 +446,8 @@ tt {
 
 .type-switch {
   padding: 30px 20px;
-  border-top: 1px solid #a6a6a6;
-  border-bottom: 1px solid #a6a6a6;
+  border-top: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   display: flex;
   justify-content: space-between;
 }
@@ -462,7 +462,7 @@ tt {
   border-radius: 10px;
 }
 .type-switch .switch.active {
-  background-color: rgba(255, 45, 112, 0.3);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .type-switch .switch img {
   display: block;
@@ -861,6 +861,28 @@ a.link:active {
   bottom: 20px;
   font-size: 12px;
   color: #999;
+}
+
+.thumbs-up {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+}
+.thumbs-up img {
+  width: 60px;
+  display: block;
+}
+.thumbs-up .count {
+  font-size: 10px;
+  text-align: center;
+  color: #7c7c7c;
 }
 
 @media (max-width: 768px) {

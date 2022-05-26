@@ -1014,6 +1014,10 @@ let chipsM = chipsModelM.reverse()
 let app = new Vue({
    el: '#app',
    data: {
+      thumbsUpKey: 'apple-chip',
+      heartActive: false,
+      thumbsUpCount: 20,
+
       // full screen 相关
       showFullScreenBtn: false,
       didEnteredFullScreen: false,
@@ -1033,6 +1037,9 @@ let app = new Vue({
       this.mobileMode = mobileMode
       this.showFullScreenBtn = chromeCore && !mobileMode
       this.relocate(); // relocate items
+
+      this.websocketInit()
+      this.getInitThumbsUpCount()
    },
 
    watch: {
@@ -1053,7 +1060,7 @@ let app = new Vue({
       switchModels(model){
          this.model = model
       },
-      relocate(){
+      relocate() {
          this.heightApp = 0
          this.$nextTick().then(() => {
             let heightChip = document.querySelector('.chip').offsetHeight + 40
@@ -1062,7 +1069,7 @@ let app = new Vue({
                document.querySelector('.card-container').style.position = 'fixed'
                this.heightApp = innerHeight
                // pc
-               if (!this.mobileMode){
+               if (!this.mobileMode) {
                   document.querySelector('#app').style.height = innerHeight + 'px'
                   window.onwheel = event => {
                      console.log(event.deltaY)
@@ -1070,10 +1077,10 @@ let app = new Vue({
                      let scrollLeft = container.scrollLeft; // 文档左卷的高度
                      let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
                      let afterScrollLeft
-                     if (event.deltaY > 0){
-                        afterScrollLeft = scrollLeft > scrollSpace?  scrollLeft: scrollLeft + 100
+                     if (event.deltaY > 0) {
+                        afterScrollLeft = scrollLeft > scrollSpace ? scrollLeft : scrollLeft + 100
                      } else {
-                        afterScrollLeft =  scrollLeft + 100 * -1
+                        afterScrollLeft = scrollLeft + 100 * -1
                      }
                      // console.log(scrollLeft,scrollSpace, afterScrollLeft)
                      container.scrollTo(afterScrollLeft, 0)
@@ -1088,8 +1095,53 @@ let app = new Vue({
 
             }
          })
-      }
-   }
+      },
+      // 点赞功能
+      getInitThumbsUpCount(){
+         axios.get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
+             .then(res => {
+                if (res.data && res.data.data){
+                   this.thumbsUpCount = res.data.data
+                }
+             })
+      },
+      websocketInit(){
+         this.websocket = new WebSocket('wss://kylebing.cn/ws')
+         this.websocket.onopen = this.websocketOnOpen
+         this.websocket.onmessage = this.websocketOnMessage
+         this.websocket.onerror = this.websocketOnError
+         this.websocket.onclose = this.websocketClose
+      },
+      websocketOnOpen() {
+         this.portStatus = 'success'
+         console.log('websocket has been opened')
+      },
+      websocketOnMessage(res) {
+         let receivedMessage = JSON.parse(res.data)
+         this.thumbsUpCount = receivedMessage.count
+      },
+      websocketOnError() {
+         this.portStatus = 'error'
+         this.websocket.send('on error')
+      },
+      websocketClose() {
+         this.portStatus = 'closed'
+         console.log('socket has closed')
+      },
+
+      thumbsUp(){
+         this.sendMessage(this.thumbsUpKey)
+      },
+
+      sendMessage(key){
+         if (this.websocket){
+            this.heartActive = true
+            this.websocket.send(JSON.stringify({
+               key: key
+            }))
+         }
+      },
+    }
 })
 
 window.onresize = () => {
