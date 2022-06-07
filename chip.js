@@ -1004,6 +1004,34 @@ const chipsModelM = [
          latest: latestOS
       }
    },
+   {
+      name: 'M2',
+      model: '',
+      tech: '', // nm
+      techCompany: '台积电',
+      dieSize: '', // mm
+      // isa: 'ARMv8.4-A',
+      cpu: [
+         // {fire:{rate: 3.2, core: 4},ice: {rate: 2.064, core: 4}}
+      ],
+      gpu: [
+         // {brand: 'Apple', core: 7, info: '112 EUs, 896 ALUs @1278Mhz'},
+         // {brand: 'Apple', core: 8, info: '128 EUs, 1024 ALUs @1278Mhz'},
+      ],
+      ai: {
+         core: '16',
+         rate: '15.6 TOPS'
+      },
+      release: '2022-06-07',
+      devices: [
+         'MacBook Air 2022'
+      ],
+      transistorCount: '200', // 亿
+      os: {
+         init: 'macOS Monterey',
+         latest: latestOS
+      }
+   },
 ]
 
 let chipsA = chipsModelA.reverse()
@@ -1015,7 +1043,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.05.27',
+      dateEnd: '2022.06.07',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
