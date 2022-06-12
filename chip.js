@@ -1102,20 +1102,15 @@ let app = new Vue({
                this.heightApp = innerHeight
                // pc
                if (!this.mobileMode) {
-                  document.querySelector('#app').style.height = innerHeight + 'px'
-                  window.onwheel = event => {
-                     console.log(event.deltaY)
-                     let container = document.querySelector('.card-container')
-                     let scrollLeft = container.scrollLeft; // 文档左卷的高度
+                  let scrollFull = 200 * this.chips.length;
+                  let heightPage = scrollFull + innerHeight; // 计算可滚动长度
+                  document.querySelector('body').style.height = heightPage + 'px';
+                  window.onscroll = () => {
+                     let scrollTop = document.documentElement.scrollTop; // 文档上卷的高度
+                     let container = document.querySelector('.card-container');
                      let scrollSpace = container.scrollWidth - window.innerWidth; // 横向滚动范围
-                     let afterScrollLeft
-                     if (event.deltaY > 0) {
-                        afterScrollLeft = scrollLeft > scrollSpace ? scrollLeft : scrollLeft + 100
-                     } else {
-                        afterScrollLeft = scrollLeft + 100 * -1
-                     }
-                     // console.log(scrollLeft,scrollSpace, afterScrollLeft)
-                     container.scrollTo(afterScrollLeft, 0)
+                     let scrollLeft = (scrollTop / scrollFull) * scrollSpace
+                     container.scrollTo(scrollLeft, 0);
                   }
                } else {
                   window.onscroll = null
