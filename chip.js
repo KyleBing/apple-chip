@@ -307,7 +307,7 @@ const chipsModelA = [
       transistorCount: '≈ 30', // 亿
       os: {
          init: 'iOS 8.1',
-         latest: 'iOS 12, iPadOS 13'
+         latest: 'iPadOS 15.5'
       }
    },
    {
@@ -1007,7 +1007,7 @@ const chipsModelM = [
    {
       name: 'M2',
       model: '',
-      tech: '', // nm
+      tech: '5', // nm
       techCompany: '台积电',
       dieSize: '', // mm
       // isa: 'ARMv8.4-A',
@@ -1043,7 +1043,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.06.07',
+      dateEnd: '2022.06.15',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
