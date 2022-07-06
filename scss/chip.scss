@@ -64,17 +64,17 @@ a.link{
     }
   }
   &-name{
-    padding: 10px;
+    padding: 8px 10px;
     text-align: center;
     background-color: white;
     border-bottom: 1px solid $color-border-light;
     border-top: 1px solid $color-border-light;
+    line-height: 1.3;
     h2{
       font-size: $fz-chip-title;
       color: black;
       font-weight: normal;
       font-family: 'LLPixel', sans-serif;
-      margin-bottom: 5px;
     }
     p{
       font-size: $fz-chip-subtitle;
@@ -85,7 +85,8 @@ a.link{
 }
 
 .info-list-group{
-  padding: 20px 20px;
+  margin: 15px 0;
+  padding: 0 20px;
 }
 .info-list{
   font-size: $fz-info;
@@ -197,17 +198,18 @@ a.link{
 }
 
 .cpu-gpu-group{
+  margin-top: 15px;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-flow: column nowrap;
 }
 
-
 .gpu-list, .cpu-list{
   flex-flow: row nowrap;
   justify-content: stretch;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex;
   .gpu,.cpu{
     flex-grow: 1;

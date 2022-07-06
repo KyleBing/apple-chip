@@ -567,27 +567,28 @@ a.link:active {
   height: 100%;
 }
 .chip-name {
-  padding: 10px;
+  padding: 8px 10px;
   text-align: center;
   background-color: white;
   border-bottom: 1px solid #EDEDED;
   border-top: 1px solid #EDEDED;
+  line-height: 1.3;
 }
 .chip-name h2 {
-  font-size: 24px;
+  font-size: 23px;
   color: black;
   font-weight: normal;
   font-family: "LLPixel", sans-serif;
-  margin-bottom: 5px;
 }
 .chip-name p {
-  font-size: 16px;
+  font-size: 15px;
   color: #6f6f6f;
   font-family: "PrestigeEliteStd", sans-serif;
 }
 
 .info-list-group {
-  padding: 20px 20px;
+  margin: 15px 0;
+  padding: 0 20px;
 }
 
 .info-list {
@@ -690,6 +691,8 @@ a.link:active {
 }
 
 .cpu-gpu-group {
+  margin-top: 15px;
+  padding: 0 15px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -699,7 +702,7 @@ a.link:active {
 .gpu-list, .cpu-list {
   flex-flow: row nowrap;
   justify-content: stretch;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex;
 }
 .gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
