@@ -11,7 +11,7 @@ $gray           : #8E8E93;
 
 $text-info-invalid: #d2d2d2;
 $text-info: #6f6f6f;
-$text-info-comment: #aaaaaa;
+$text-info-comment: #939393;
 $text-main: #202122;
 $text-title: #3D3D40;
 $text-copyright: #7c7c7c;
@@ -24,11 +24,26 @@ $color-border-cpu: #e7e7e7;
 $bg-card: #F7F7F7;
 $bg: #EDEDED;
 
-$fz-info: 10px;
 $fz: 13px;
 $fz-title: 15px;
 
+$fz-chip-title: 24px;
+$fz-chip-subtitle: 16px;
 
+$fz-info: 12px;
+$fz-info-sup: 10px;
+
+$fz-cpu: 16px;
+$fz-cpu-tag: 8px;
+$fz-cpu-desc: 9px;
+
+$fz-gpu: 15px;
+
+
+$fz-device: 12px;
+$fz-device-list-title: 14px;
+
+$cpu-img-height: 170px;
 
 
 $timer: 10px;

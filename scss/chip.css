@@ -560,7 +560,7 @@ a.link:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
+  height: 170px;
 }
 .chip-img img {
   display: block;
@@ -574,26 +574,24 @@ a.link:active {
   border-top: 1px solid #EDEDED;
 }
 .chip-name h2 {
+  font-size: 24px;
   color: black;
   font-weight: normal;
   font-family: "LLPixel", sans-serif;
   margin-bottom: 5px;
 }
 .chip-name p {
+  font-size: 16px;
   color: #6f6f6f;
   font-family: "PrestigeEliteStd", sans-serif;
 }
-.chip .title {
-  text-align: center;
-  font-size: 2rem;
-}
 
 .info-list-group {
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .info-list {
-  font-size: 0.75rem;
+  font-size: 12px;
   margin-bottom: 15px;
 }
 .info-list:last-child {
@@ -634,7 +632,7 @@ a.link:active {
 }
 .info-list .info-item .unit {
   margin-left: 3px;
-  font-size: 0.7rem;
+  font-size: 10px;
   font-weight: normal;
 }
 .info-list .info-item .value {
@@ -658,6 +656,7 @@ a.link:active {
 }
 
 .device-title {
+  font-size: 14px;
   background-color: white;
   text-align: center;
   padding: 10px 0;
@@ -670,7 +669,7 @@ a.link:active {
 }
 .device-list .device-item {
   font-family: "Verdana";
-  font-size: 0.8rem;
+  font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -679,9 +678,15 @@ a.link:active {
   margin-right: 10px;
   margin-bottom: 5px;
   display: inline-block;
-  padding: 6px 10px;
+  padding: 4px 8px;
   border: 1px solid #EDEDED;
   color: #202122;
+}
+.device-list .device-item:hover {
+  cursor: cell;
+  border-color: #202122;
+  background-color: #202122;
+  color: white;
 }
 
 .cpu-gpu-group {
@@ -721,7 +726,7 @@ a.link:active {
   top: -2px;
   right: -3px;
   color: white;
-  font-size: 7px;
+  font-size: 8px;
 }
 
 .gpu {
@@ -734,10 +739,10 @@ a.link:active {
 .gpu .info {
   margin-top: 3px;
   letter-spacing: 0;
-  font-weight: normal;
-  line-height: 1;
-  color: #aaaaaa;
-  font-size: 10px;
+  font-weight: 200;
+  line-height: 1.2;
+  color: #939393;
+  font-size: 9px;
 }
 .gpu .tag {
   background-color: #FF2D70;
@@ -747,7 +752,7 @@ a.link:active {
   font-family: "Verdana";
   padding: 10px 5px;
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -769,11 +774,6 @@ a.link:active {
 }
 .cpu .tag {
   background-color: #007AFF;
-}
-
-.text-big {
-  font-family: inherit;
-  font-size: 1.2rem;
 }
 
 .btns {
@@ -880,7 +880,7 @@ a.link:active {
   display: block;
 }
 .thumbs-up .count {
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
   color: #7c7c7c;
 }

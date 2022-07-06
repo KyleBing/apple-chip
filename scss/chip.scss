@@ -57,7 +57,7 @@ a.link{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 180px;
+    height: $cpu-img-height;
     img{
       display: block;
       height: 100%;
@@ -70,27 +70,25 @@ a.link{
     border-bottom: 1px solid $color-border-light;
     border-top: 1px solid $color-border-light;
     h2{
+      font-size: $fz-chip-title;
       color: black;
       font-weight: normal;
       font-family: 'LLPixel', sans-serif;
       margin-bottom: 5px;
     }
     p{
+      font-size: $fz-chip-subtitle;
       color: $text-info;
       font-family: 'PrestigeEliteStd', sans-serif;
     }
   }
-  .title{
-    text-align: center;
-    font-size: 2rem;
-  }
 }
 
 .info-list-group{
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 .info-list{
-  font-size: 0.75rem;
+  font-size: $fz-info;
   margin-bottom: 15px;
   &:last-child{
     margin-bottom: 0;
@@ -137,7 +135,7 @@ a.link{
     }
     .unit{
       margin-left: 3px;
-      font-size: 0.7rem;
+      font-size: $fz-info-sup;
       font-weight: normal;
     }
 
@@ -168,6 +166,7 @@ a.link{
 }
 
 .device-title {
+  font-size: $fz-device-list-title;
   background-color: white;
   text-align: center;
   padding: 10px 0;
@@ -178,16 +177,22 @@ a.link{
   padding: 10px 20px;
   .device-item {
     font-family: "Verdana";
-    font-size: 0.8rem;
+    font-size: $fz-device;
     @include border-radius(3px);
     line-height: 1.1;
     background-color: white;
     margin-right: 10px;
     margin-bottom: 5px;
     display: inline-block;
-    padding: 6px 10px;
+    padding: 4px 8px;
     border: 1px solid $color-border-light;
     color: $text-main;
+    &:hover{
+      cursor: cell;
+      border-color: $text-main;
+      background-color: $text-main;
+      color: white;
+    }
   }
 }
 
@@ -224,7 +229,7 @@ a.link{
       top: -2px;
       right: -3px;
       color: white;
-      font-size: $fz-info - 3;
+      font-size: $fz-cpu-tag;
     }
 
   }
@@ -234,15 +239,15 @@ a.link{
   font-family: "Verdana";
   padding: 10px 15px;
   .brand{
-    font-size: $fz-title;
+    font-size: $fz-gpu;
   }
   .info{
     margin-top: 3px;
     letter-spacing: 0;
-    font-weight: normal;
-    line-height: 1;
+    font-weight: 200;
+    line-height: 1.2;
     color: $text-info-comment;
-    font-size: $fz-info;
+    font-size: $fz-cpu-desc;
   }
   .tag{
     background-color: $magenta;
@@ -253,7 +258,7 @@ a.link{
   font-family: "Verdana";
   padding: 10px 5px;
   text-align: right;
-  font-size: $fz-title;
+  font-size: $fz-cpu;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -279,11 +284,6 @@ a.link{
   }
 }
 
-
-.text-big{
-  font-family: inherit;
-  font-size: 1.2rem;
-}
 
 
 .btns{
