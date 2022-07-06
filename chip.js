@@ -889,7 +889,7 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '119', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 3.2, core: 4},ice: {rate: 2.064, core: 4}}
       ],
@@ -922,7 +922,7 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈245', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 3.23, core: 6},ice: {rate: 2.06, core: 2}},
          {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
@@ -952,7 +952,7 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '台积电',
       dieSize: '≈432', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 3.23, core: 8},ice: {rate: 2.06, core: 2}},
       ],
@@ -982,7 +982,7 @@ const chipsModelM = [
       tech: '5', // nm
       techCompany: '',
       dieSize: '≈864', // mm
-      isa: 'ARMv8.4-A',
+      isa: 'ARMv8.5-A',
       cpu: [
          {fire:{rate: 3.23, core: 16},ice: {rate: 2.06, core: 4}},
       ],
@@ -1007,20 +1007,23 @@ const chipsModelM = [
    {
       name: 'M2',
       model: '',
-      tech: '5', // nm
+      tech: '5p', // nm
       techCompany: '台积电',
-      dieSize: '', // mm
-      // isa: 'ARMv8.4-A',
+      dieSize: '155.25', // mm
+      isa: 'ARMv8.5-A',
       cpu: [
-         // {fire:{rate: 3.2, core: 4},ice: {rate: 2.064, core: 4}}
+         {
+            fire:{rate: 3.49, core: 4},
+            ice: {rate: 0, core: 4}
+         }
       ],
       gpu: [
-         // {brand: 'Apple', core: 7, info: '112 EUs, 896 ALUs @1278Mhz'},
-         // {brand: 'Apple', core: 8, info: '128 EUs, 1024 ALUs @1278Mhz'},
+         {brand: 'Apple', core: 8, info: '256 EUs, 2048 ALUs @-Mhz'},
+         {brand: 'Apple', core: 10, info: '320 EUs, 2560 ALUs @-Mhz'},
       ],
       ai: {
          core: '16',
-         rate: '15.6 TOPS'
+         rate: '15.8 TOPS'
       },
       release: '2022-06-07',
       devices: [
