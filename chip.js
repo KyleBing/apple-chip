@@ -1006,7 +1006,7 @@ const chipsModelM = [
    },
    {
       name: 'M2',
-      model: '',
+      model: 'APL1109',
       tech: '5p', // nm
       techCompany: '台积电',
       dieSize: '155.25', // mm
@@ -1014,7 +1014,7 @@ const chipsModelM = [
       cpu: [
          {
             fire:{rate: 3.49, core: 4},
-            ice: {rate: 0, core: 4}
+            ice: {rate: 2.42, core: 4}
          }
       ],
       gpu: [
@@ -1027,7 +1027,8 @@ const chipsModelM = [
       },
       release: '2022-06-07',
       devices: [
-         'MacBook Air 2022'
+         'MacBook Air 2022',
+         'MacBook Pro 13\' 2022(bar)',
       ],
       transistorCount: '200', // 亿
       os: {
@@ -1046,7 +1047,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.07.06',
+      dateEnd: '2022.07.25',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
