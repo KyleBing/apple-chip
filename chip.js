@@ -1,6 +1,6 @@
 /*****************************
  Create Date: 20200605175639
- Update Date: 20220706102552
+ Update Date: 20210904091940
  *****************************/
 
 const latestOS = '最新'
@@ -1047,7 +1047,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.07.25',
+      dateEnd: '2022.09.04',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
