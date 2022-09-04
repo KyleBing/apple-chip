@@ -6,7 +6,7 @@
     <meta name='description' content="苹果处理器,苹果芯片详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name='keywords' content="苹果处理器,苹果芯片详细参数汇总,参数对比,iPad Pro,iPad Air,iPad Mini,iPad">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/chip.css?v=20220613041529">
+    <link rel="stylesheet" href="scss/chip.css?v=20220904224048">
     <link rel="shortcut icon" href="imgs/logo_black.png" type="image/png">
     <link rel="apple-touch-icon" href="imgs/logo_black.png">
     <script src="../../lib/js/vue_2.66.js"></script>
@@ -30,9 +30,9 @@
                 </div>
 
                 <div class="type-switch mb-6">
-                    <div @click="switchModels('A')" :class="['switch', {active: model === 'A'}]"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=1' " alt="A"></div>
-                    <div @click="switchModels('S')" :class="['switch', {active: model === 'S'}]"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=1' " alt="S"></div>
-                    <div @click="switchModels('M')" :class="['switch', {active: model === 'M'}]"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=1' " alt="M"></div>
+                    <div @click="switchModels('A')" :class="['switch', {active: model === 'A'}]"><img :src="model === 'A'? 'imgs/icon/A/active.png': 'imgs/icon/A/default.png?v=2' " alt="A"></div>
+                    <div @click="switchModels('S')" :class="['switch', {active: model === 'S'}]"><img :src="model === 'S'? 'imgs/icon/S/active.png': 'imgs/icon/S/default.png?v=2' " alt="S"></div>
+                    <div @click="switchModels('M')" :class="['switch', {active: model === 'M'}]"><img :src="model === 'M'? 'imgs/icon/M/active.png': 'imgs/icon/M/default.png?v=2' " alt="M"></div>
                 </div>
             </div>
 
@@ -71,13 +71,13 @@
         <!-- CHIP LIST -->
         <div class="chip" v-for="(item, index) in chips" :key="`item.name-${index}`">
             <div v-if="model === 'A'" class="chip-img">
-                <img onerror="this.src = './imgs/logo/A.png'" :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/A.png?v=2'" :src="`./imgs/chips/A/${item.name.replace(' ', '_')}_${item.model}.jpg`" :alt="item.name">
             </div>
             <div v-else-if="model === 'S'" class="chip-img">
-                <img onerror="this.src = './imgs/logo/S.png'" :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/S.png?v=2'" :src="`./imgs/chips/S/${item.name}.png`" :alt="item.name">
             </div>
             <div v-else class="chip-img">
-                <img onerror="this.src = './imgs/logo/M.png'" :src="`./imgs/chips/M/${item.name.replace(' ', '_')}.jpg`" :alt="item.name">
+                <img onerror="this.src = './imgs/logo/M.png?v=2'" :src="`./imgs/chips/M/${item.name.replace(' ', '_')}.jpg`" :alt="item.name">
             </div>
 
             <div class="chip-name">
@@ -187,7 +187,7 @@
 </div>
 
 
-<script src="chip.js?v=20220613041529"></script>
+<script src="chip.js?v=20220904224048"></script>
 
 <script>
     setTimeout(() => {
