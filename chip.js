@@ -669,6 +669,34 @@ const chipsModelA = [
          init: 'iOS 15',
          latest: latestOS
       }
+   },
+   {
+      name: 'A16 Bionic',
+      model: '-',
+      tech: '4', // nm
+      techCompany: '-',
+      dieSize: '-', // mm
+      isa: '-',
+      cpu: [
+         {fire: {rate: 0, core: 2}, ice: {rate: 0, core: 4}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 5, info: ''}
+      ],
+      ai: {
+         core: '-',
+         rate: '-'
+      },
+      release: '2022.09',
+      devices: [
+         'iPhone 14 Pro',
+         'iPhone 14 Pro Max'
+      ],
+      transistorCount: '0', // 亿
+      os: {
+         init: 'iOS 16',
+         latest: latestOS
+      }
    }
 ]
 const chipsModelS = [
