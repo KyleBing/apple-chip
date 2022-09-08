@@ -663,6 +663,8 @@ const chipsModelA = [
          'iPhone 13 Pro Max',
          'iPhone SE 3 (2022)',
          'iPad Mini 6 ( 2021 )',
+         'iPhone 14',
+         'iPhone 14 Plus',
       ],
       transistorCount: '150', // 亿
       os: {
