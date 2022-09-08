@@ -1075,7 +1075,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.09.04',
+      dateEnd: '2022.09.08',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
