@@ -644,8 +644,8 @@ const chipsModelA = [
       dieSize: '107.68', // mm
       isa: 'ARMv8.5-A',
       cpu: [
-         {fire: {rate: 3.23, core: 2}, ice: {rate: 1.823, core: 4}},
-         {fire: {rate: 2.93, core: 2}, ice: {rate: 1.823, core: 4}}
+         {fire: {rate: 3.23, core: 2}, ice: {rate: 2.02, core: 4}},
+         {fire: {rate: 2.93, core: 2}, ice: {rate: 2.02, core: 4}}
       ],
       gpu: [
          {brand: 'Apple', core: 4, info: '512 ALUs @ 1200 MHz'},
@@ -675,26 +675,26 @@ const chipsModelA = [
    {
       name: 'A16 Bionic',
       model: '-',
-      tech: '4', // nm
-      techCompany: '-',
+      tech: '5', // nm
+      techCompany: 'N4',
       dieSize: '-', // mm
-      isa: '-',
+      isa: 'ARMv9',
       cpu: [
-         {fire: {rate: 0, core: 2}, ice: {rate: 0, core: 4}},
+         {fire: {rate: 3.46, core: 2}, ice: {rate: 2.02, core: 4}},
       ],
       gpu: [
-         {brand: 'Apple', core: 5, info: ''}
+         {brand: 'Apple', core: 6, info: ''}
       ],
       ai: {
-         core: '-',
-         rate: '-'
+         core: '16',
+         rate: '17 TOPS'
       },
       release: '2022.09',
       devices: [
          'iPhone 14 Pro',
          'iPhone 14 Pro Max'
       ],
-      transistorCount: '0', // 亿
+      transistorCount: '160', // 亿
       os: {
          init: 'iOS 16',
          latest: latestOS
@@ -1077,7 +1077,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.09.08',
+      dateEnd: '2022.09.13',
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
