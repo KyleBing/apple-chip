@@ -3,6 +3,8 @@
  Update Date: 20210904091940
  *****************************/
 
+const dateLastEdit = '2022.09.20'
+
 const latestOS = '最新'
 const chipsModelA = [
    {
@@ -911,6 +913,34 @@ const chipsModelS = [
          latest: latestOS
       }
    },
+   {
+      name: 'S8',
+      model: '',
+      tech: '', // nm
+      techCompany: '',
+      dieSize: '', // mm
+      isa: '',
+      cpu: [
+         {fire: {rate: 0, core: 0}, ice: {}}
+      ],
+      gpu: [
+         {brand: '', core: 0, info: ''}
+      ],
+      ai: {
+         core: '',
+         rate: ''
+      },
+      release: '2022.09',
+      devices: [
+         'Apple Watch Series 8',
+         'Apple Watch Ultra',
+         'Apple Watch Series SE(2)',
+      ],
+      os: {
+         init: 'watchOS 9.0',
+         latest: latestOS
+      }
+   },
 ]
 const chipsModelM = [
    {
@@ -1077,7 +1107,7 @@ let app = new Vue({
    el: '#app',
    data: {
       // date
-      dateEnd: '2022.09.13',
+      dateEnd: dateLastEdit,
       // thumb up
       pingPongInterval: null,
       thumbsUpKey: 'apple-chip',
