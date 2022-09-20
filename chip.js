@@ -1067,7 +1067,8 @@ const chipsModelM = [
    {
       name: 'M2',
       model: 'APL1109',
-      tech: '5p', // nm
+      tech: 'N5P', // nm
+      part: 'T6002',
       techCompany: '台积电',
       dieSize: '155.25', // mm
       isa: 'ARMv8.5-A',
