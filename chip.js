@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2022.09.20'
+const dateLastEdit = '2022.10.12'
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -676,11 +676,11 @@ const chipsModelA = [
    },
    {
       name: 'A16 Bionic',
-      model: '-',
+      model: 'APL1W10',
       tech: '5', // nm
       techCompany: 'N4',
       dieSize: '-', // mm
-      isa: 'ARMv9',
+      isa: 'ARMv8.6-A',
       cpu: [
          {fire: {rate: 3.46, core: 2}, ice: {rate: 2.02, core: 4}},
       ],
