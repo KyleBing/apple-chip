@@ -80,44 +80,28 @@ tt {
 }
 
 @font-face {
-  font-family: "Impact";
-  src: url("../font/ImpactPureNumber.ttf");
-}
-@font-face {
   font-family: "DS Digital";
   src: url("../font/DSDigital.ttf");
-}
-@font-face {
-  font-family: "Roboto Mono";
-  src: url("../font/RobotoMono.ttf");
 }
 @font-face {
   font-family: "PrestigeEliteStd";
   src: url("../font/PrestigeEliteStd-Bd.otf");
 }
 @font-face {
+  font-family: "JetBrainsMonoPureNumber";
+  src: url("../font/JetBrainsMono-Regular.otf");
+}
+@font-face {
+  font-family: "VerdanaPureNumber";
+  src: url("../font/VerdanaPureNumber.ttf");
+}
+@font-face {
   font-family: "LLPixel";
   src: url("../font/LLPixel_only_Letter.ttf");
 }
-@font-face {
-  font-family: "PTSans";
-  src: url("../font/PTSans-Caption.ttf");
-}
-.roboto-mono {
-  font-family: "Roboto Mono", sans-serif !important;
-}
-
 .number {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-family: "DS Digital", sans-serif !important;
-}
-
-.impact {
-  font-family: "Impact", sans-serif !important;
-}
-
-.code {
-  font-family: "Roboto Mono", sans-serif;
 }
 
 .bold {
@@ -578,11 +562,11 @@ a.link:active {
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .chip-img {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
+  height: 150px;
 }
 .chip-img img {
   display: block;
@@ -597,7 +581,7 @@ a.link:active {
   line-height: 1.3;
 }
 .chip-name h2 {
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   font-weight: normal;
   font-family: "LLPixel", sans-serif;
@@ -666,7 +650,7 @@ a.link:active {
   color: #202122;
   text-align: right;
   letter-spacing: 0.5px;
-  font-family: "PTSans", sans-serif;
+  font-family: "JetBrainsMonoPureNumber", sans-serif;
 }
 .info-list .info-item::after {
   z-index: 1;
@@ -682,7 +666,7 @@ a.link:active {
   font-size: 14px;
   background-color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #EDEDED;
   border-top: 1px solid #EDEDED;
 }
@@ -691,7 +675,7 @@ a.link:active {
   padding: 10px 20px;
 }
 .device-list .device-item {
-  font-family: "Verdana";
+  font-family: sans-serif;
   font-size: 12px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -707,8 +691,8 @@ a.link:active {
 }
 .device-list .device-item:hover {
   cursor: cell;
-  border-color: #202122;
-  background-color: #202122;
+  border-color: #FF2D70;
+  background-color: #FF2D70;
   color: white;
 }
 
@@ -728,6 +712,7 @@ a.link:active {
   display: flex;
 }
 .gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
+  font-family: "JetBrainsMonoPureNumber", sans-serif;
   flex-grow: 1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -755,11 +740,11 @@ a.link:active {
 }
 
 .gpu {
-  font-family: "Verdana";
+  font-family: "JetBrains Mono";
   padding: 10px 15px;
 }
 .gpu .brand {
-  font-size: 15px;
+  font-size: 14px;
 }
 .gpu .info {
   margin-top: 3px;
@@ -774,10 +759,10 @@ a.link:active {
 }
 
 .cpu {
-  font-family: "Verdana";
+  font-family: "VerdanaPureNumber";
   padding: 10px 5px;
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
