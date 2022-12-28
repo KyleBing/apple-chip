@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2022-11-30'
+const dateLastEdit = '2022-12-28'
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -811,8 +811,8 @@ const chipsModelS = [
    {
       name: 'S4',
       model: '',
-      tech: '', // nm
-      techCompany: '',
+      tech: '7', // nm
+      techCompany: 'TSMC',
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
@@ -837,8 +837,8 @@ const chipsModelS = [
    {
       name: 'S5',
       model: '',
-      tech: '', // nm
-      techCompany: '',
+      tech: '7', // nm
+      techCompany: 'TSMC',
       dieSize: '', // mm
       isa: 'ARMv8-A ILP32',
       cpu: [
@@ -864,8 +864,8 @@ const chipsModelS = [
    {
       name: 'S6',
       model: '',
-      tech: '', // nm
-      techCompany: '',
+      tech: 'N7P', // nm
+      techCompany: 'TSMC',
       dieSize: '', // mm
       isa: '',
       cpu: [
@@ -890,8 +890,8 @@ const chipsModelS = [
    {
       name: 'S7',
       model: '',
-      tech: '', // nm
-      techCompany: '',
+      tech: 'N7P', // nm
+      techCompany: 'TSMC',
       dieSize: '', // mm
       isa: '',
       cpu: [
@@ -916,12 +916,12 @@ const chipsModelS = [
    {
       name: 'S8',
       model: '',
-      tech: '', // nm
-      techCompany: '',
+      tech: 'N7P', // nm
+      techCompany: 'TSMC',
       dieSize: '', // mm
       isa: '',
       cpu: [
-         {fire: {rate: 0, core: 0}, ice: {}}
+         {fire: {rate: 1.8, core: 2}, ice: {}}
       ],
       gpu: [
          {brand: '', core: 0, info: ''}
