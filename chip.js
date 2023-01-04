@@ -1098,6 +1098,9 @@ const chipsModelM = [
       }
    },
 ]
+const contributors = [
+   'KyleBing','Zgc.Seven','皇家电脑','金东焕（麒麟，嗯就这名）','辉','梁育铭','Meipo','wrj1215', 'Kirin КуaкmБaпрасзenвын'
+]
 
 let chipsA = chipsModelA.reverse()
 let chipsS = chipsModelS.reverse()
