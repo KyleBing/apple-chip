@@ -1090,6 +1090,7 @@ const chipsModelM = [
       devices: [
          'MacBook Air 2022',
          'MacBook Pro 13\' 2022(bar)',
+         'Mac Mini 2023',
       ],
       transistorCount: '200', // 亿
       os: {
