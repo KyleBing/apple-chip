@@ -408,7 +408,7 @@ const chipsModelA = [
       dieSize: '125', // mm
       isa: 'ARMv8.1-A',
       cpu: [
-         {fire: {rate: 2.34, core: 2}, ice: {rate: 1.092, core: 4}}
+         {fire: {rate: 2.34, core: 2}, ice: {rate: 1.092, core: 2}}
       ],
       gpu: [
          {brand: 'PowerVR GT7600 Plus', core: 0, info: ''}
