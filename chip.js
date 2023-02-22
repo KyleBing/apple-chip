@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2023.01.06'
+const dateLastEdit = '2023-02-22'
 
 const latestOS = '最新'
 const chipsModelA = [
