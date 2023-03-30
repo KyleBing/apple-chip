@@ -89,7 +89,7 @@ a.link{
   padding: 0 20px;
 }
 .info-list{
-  font-size: $fz-info;
+  font-size: $fz;
   margin-bottom: 15px;
   &:last-child{
     margin-bottom: 0;
@@ -167,7 +167,7 @@ a.link{
 }
 
 .device-title {
-  font-size: $fz-device-list-title;
+  font-size: $fz;
   background-color: white;
   text-align: center;
   padding: 8px 0;
@@ -212,7 +212,7 @@ a.link{
   margin-bottom: 10px;
   display: flex;
   .gpu,.cpu{
-    font-family: "JetBrainsMonoPureNumber", sans-serif;
+    font-family: 'Galvji', sans-serif;
     flex-grow: 1;
     @include border-radius(5px);
     position: relative;
@@ -239,8 +239,8 @@ a.link{
 }
 
 .gpu{
-  font-family: "JetBrains Mono";
-  padding: 10px 15px;
+  font-family: "JetBrains Mono", sans-serif;
+  padding: 10px 5px;
   .brand{
     font-size: $fz-gpu;
   }
@@ -258,7 +258,7 @@ a.link{
 }
 
 .cpu{
-  font-family: "VerdanaPureNumber";
+  font-family: "Galvji", sans-serif;
   padding: 10px 5px;
   text-align: right;
   font-size: $fz-cpu;
