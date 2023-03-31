@@ -471,8 +471,8 @@ tt {
   align-items: center;
 }
 .copyright .title img {
-  width: 85px;
-  height: 85px;
+  width: 110px;
+  height: 110px;
   margin-bottom: 30px;
 }
 .copyright .title h1 {
@@ -877,7 +877,6 @@ a.link:active {
   .card-container {
     padding: 10px;
   }
-
   .chip {
     width: 250px;
   }
@@ -898,11 +897,9 @@ a.link:active {
   .chip-name p {
     font-size: 0.8rem;
   }
-
   .info-list-group {
     padding: 10px 15px;
   }
-
   .info-list {
     font-size: 0.7rem;
     margin-bottom: 10px;
@@ -911,22 +908,18 @@ a.link:active {
     line-height: 1.8;
     margin-bottom: 0;
   }
-
   .device-list {
     padding: 10px 15px;
   }
   .device-list .device-item {
     font-size: 0.7rem;
   }
-
   .device-title {
     font-size: 0.9rem;
   }
-
   .text-big {
     font-size: 1rem;
   }
-
   .copyright {
     padding: 60px 30px 30px;
   }
@@ -938,13 +931,11 @@ a.link:active {
   .copyright .title h1 {
     font-size: 1.3rem;
   }
-
   .author {
     letter-spacing: 0.3px;
     line-height: 1.4;
     font-size: 0.7rem;
   }
-
   .type-switch {
     padding: 20px 15px;
   }
@@ -957,11 +948,9 @@ a.link:active {
   body {
     background-color: #1a1a1a;
   }
-
   .container {
     background-color: #1a1a1a;
   }
-
   .chip {
     border-color: #333333;
     background-color: #333333;
@@ -980,7 +969,6 @@ a.link:active {
   .chip-name p {
     color: #8c8c8c;
   }
-
   .info-list .info-item:hover:after {
     border-bottom-color: #999999;
   }
@@ -1005,7 +993,6 @@ a.link:active {
   .info-list .info-item::after {
     border-bottom: 1px dashed #4d4d4d;
   }
-
   .gpu-list .gpu, .gpu-list .cpu, .cpu-list .gpu, .cpu-list .cpu {
     color: white;
     background-color: #474747;
@@ -1014,14 +1001,12 @@ a.link:active {
   .gpu-list .gpu .tag, .gpu-list .cpu .tag, .cpu-list .gpu .tag, .cpu-list .cpu .tag {
     color: white;
   }
-
   .cpu .fire {
     color: #cccccc;
   }
   .cpu .ice {
     color: #b3b3b3;
   }
-
   .gpu .brand {
     color: #cccccc;
   }
@@ -1031,54 +1016,44 @@ a.link:active {
   .gpu .tag {
     background-color: #FF2D70;
   }
-
   .device-title {
     color: #b3b3b3;
     background-color: #474747;
     border-color: #4d4d4d;
   }
-
   .device-list .device-item {
     background-color: #474747;
     border: 1px solid #4d4d4d;
     color: #b3b3b3;
   }
-
   .rate {
     background-color: transparent !important;
   }
-
   .copyright .title h1 {
     color: #cccccc;
   }
-
   .type-switch {
     border-color: #4d4d4d;
   }
   .type-switch .switch.active {
     background-color: #c9f73c;
   }
-
   .author {
     color: #8c8c8c;
   }
-
   ::-webkit-scrollbar {
     z-index: 50;
     width: 8px;
     height: 10px;
   }
-
   ::-webkit-scrollbar-track {
     border: none;
     background-color: rgba(0, 0, 0, 0);
   }
-
   ::-webkit-scrollbar-thumb {
     border-color: transparent;
     background-color: transparent;
   }
-
   :hover::-webkit-scrollbar-thumb {
     border: 1px solid #4d4d4d;
     background-color: #404040;
