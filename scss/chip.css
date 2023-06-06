@@ -561,18 +561,18 @@ a.link:active {
   -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.chip-img {
+.chip .chip-img {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
 }
-.chip-img img {
+.chip .chip-img img {
   display: block;
   height: 100%;
 }
-.chip-name {
+.chip .chip-name {
   padding: 8px 10px;
   text-align: center;
   background-color: white;
@@ -580,13 +580,13 @@ a.link:active {
   border-top: 1px solid #EDEDED;
   line-height: 1.3;
 }
-.chip-name h2 {
-  font-size: 20px;
-  color: black;
-  font-weight: normal;
+.chip .chip-name h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #202122;
   font-family: "LLPixel", sans-serif;
 }
-.chip-name p {
+.chip .chip-name p {
   font-size: 15px;
   color: #666;
   font-family: "PrestigeEliteStd", sans-serif;
@@ -727,11 +727,14 @@ a.link:active {
   margin-right: 0;
 }
 .gpu-list .gpu .tag, .gpu-list .cpu .tag, .cpu-list .gpu .tag, .cpu-list .cpu .tag {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: "Microsoft Yahei", "PingFang SC", sans-serif;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   z-index: 100;
-  padding: 1px 3px;
+  padding: 2px 4px;
   position: absolute;
   top: -2px;
   right: -3px;
@@ -751,7 +754,7 @@ a.link:active {
   letter-spacing: 0;
   font-weight: 200;
   line-height: 1.2;
-  color: #939393;
+  color: #808080;
   font-size: 10px;
 }
 .gpu .tag {

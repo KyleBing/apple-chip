@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2023.03.30' // 2023.03.30
+const dateLastEdit = '2023-06-06' // 2023.03.30
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -961,7 +961,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2020-11-17',
+      release: '2020.11.17',
       devices: [
          'MacBook Air 2020',
          'MacBook Pro 2020 (13\')',
@@ -995,7 +995,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021-10-19',
+      release: '2021.10.19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
@@ -1024,7 +1024,7 @@ const chipsModelM = [
          core: '16',
          rate: '11 TOPS'
       },
-      release: '2021-10-19',
+      release: '2021.10.19',
       devices: [
          'MacBook Pro 2021 (14\')',
          'MacBook Pro 2021 (16\')',
@@ -1054,7 +1054,7 @@ const chipsModelM = [
          core: '32',
          rate: '22 TOPS'
       },
-      release: '2022-03-09',
+      release: '2022.03.09',
       devices: [
          'Mac Studio (2022)',
       ],
@@ -1086,15 +1086,118 @@ const chipsModelM = [
          core: '16',
          rate: '15.8 TOPS'
       },
-      release: '2022-06-07',
+      release: '2022.06.07',
       devices: [
          'MacBook Air 2022',
          'MacBook Pro 13\' 2022(bar)',
          'Mac Mini 2023',
+         'MacBook Air 15\'(2023)',
       ],
       transistorCount: '200', // 亿
       os: {
          init: 'macOS Monterey',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M2 Pro',
+      model: '',
+      tech: 'N5P', // nm
+      part: 'T6020',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.5-A',
+      cpu: [
+         {
+            fire:{rate: 3.49, core: 6},
+            ice: {rate: 2.42, core: 4}
+         },
+         {
+            fire:{rate: 3.49, core: 8},
+            ice: {rate: 2.42, core: 4}
+         }
+      ],
+      gpu: [
+         {brand: 'Apple', core: 16, info: ''},
+         {brand: 'Apple', core: 19, info: ''},
+      ],
+      ai: {
+      },
+      release: '2023.01.17',
+      devices: [
+         'MacBook Pro 14\' 2023',
+         'MacBook Pro 16\' 2023',
+         'Mac Mini 2023',
+      ],
+      transistorCount: '400', // 亿
+      os: {
+         init: 'macOS Ventura',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M2 Max',
+      model: '',
+      tech: 'N5P', // nm
+      part: 'T6020',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.5-A',
+      cpu: [
+         {
+            fire:{rate: 3.49, core: 8},
+            ice: {rate: 2.42, core: 4}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 30, info: ''},
+         {brand: 'Apple', core: 38, info: ''},
+      ],
+      ai: {
+      },
+      release: '2023.01.17',
+      devices: [
+         'MacBook Pro 14\' 2023',
+         'MacBook Pro 16\' 2023',
+         'Mac Studio(2023)',
+      ],
+      transistorCount: '670', // 亿
+      os: {
+         init: 'macOS Ventura',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M2 Ultra',
+      model: '',
+      tech: 'N5P', // nm
+      part: 'T6020',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.5-A',
+      cpu: [
+         {
+            fire:{rate: 3.49, core: 16},
+            ice: {rate: 2.42, core: 8}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 60, info: ''},
+         {brand: 'Apple', core: 76, info: ''},
+      ],
+      ai: {
+         core: '32',
+      },
+      release: '2023.06.05',
+      devices: [
+         'MacBook Pro 14\' 2023',
+         'MacBook Pro 16\' 2023',
+         'Mac Studio(2023)',
+         'Mac Pro(2023)',
+      ],
+      transistorCount: '1340', // 亿
+      os: {
+         init: 'macOS Sonoma',
          latest: latestOS
       }
    },
@@ -1110,6 +1213,20 @@ let chipsM = chipsModelM.reverse()
 
 let app = new Vue({
    el: '#app',
+   computed: {
+      portraitMode(){
+         return window.innerWidth > window.innerHeight
+      },
+      isInMobileMode(){
+         return /Mobile/i.test(navigator.userAgent)
+      },
+      isInChromeCore(){
+         return /Chrome/i.test(navigator.userAgent)
+      },
+      isShowFullScreenBtn(){
+         return this.isInChromeCore && !this.isInMobileMode
+      }
+   },
    data: {
       // date
       dateEnd: dateLastEdit,
@@ -1120,25 +1237,17 @@ let app = new Vue({
       thumbsUpCount: 0,
 
       // full screen 相关
-      showFullScreenBtn: false,
       didEnteredFullScreen: false,
-      // 浏览器参数
-      portraitMode: false,
-      mobileMode: false,
+
       model: 'A',
+
+      // 浏览器参数
       heightApp: 0,
-      inMobile: false,
       chips: chipsA
    },
    mounted(){
       // 全屏相关
-      let chromeCore = /Chrome/i.test(navigator.userAgent)
-      let mobileMode = /Mobile/i.test(navigator.userAgent)
-      this.portraitMode = window.innerWidth > window.innerHeight
-      this.mobileMode = mobileMode
-      this.showFullScreenBtn = chromeCore && !mobileMode
-      this.relocate(); // relocate items
-
+      this.relocate() // relocate items
       this.websocketInit()
       this.getInitThumbsUpCount()
    },
@@ -1163,14 +1272,17 @@ let app = new Vue({
       },
       relocate() {
          this.heightApp = 0
-         this.$nextTick().then(() => {
+         this.$nextTick(() => {
             let heightChip = document.querySelector('.chip').offsetHeight + 40
             console.log(heightChip)
             if (heightChip < innerHeight) { // .card 高度小于屏幕高度时
                document.querySelector('.card-container').style.position = 'fixed'
                this.heightApp = innerHeight
-               // pc
-               if (!this.mobileMode) {
+
+               // Mobile
+               if (this.isInMobileMode) {
+                  window.onscroll = null
+               } else { // PC
                   let scrollFull = 200 * this.chips.length;
                   let heightPage = scrollFull + innerHeight; // 计算可滚动长度
                   document.querySelector('body').style.height = heightPage + 'px';
@@ -1181,8 +1293,6 @@ let app = new Vue({
                      let scrollLeft = (scrollTop / scrollFull) * scrollSpace
                      container.scrollTo(scrollLeft, 0);
                   }
-               } else {
-                  window.onscroll = null
                }
             } else {
                document.querySelector('body').style.height = 'auto'
@@ -1194,7 +1304,8 @@ let app = new Vue({
       },
       // 点赞功能
       getInitThumbsUpCount(){
-         axios.get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
+         axios
+             .get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
              .then(res => {
                 if (res.data && res.data.data){
                    this.thumbsUpCount = res.data.data

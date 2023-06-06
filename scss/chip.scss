@@ -52,7 +52,7 @@ a.link{
   border: 1px solid $color-border;
   @include box-shadow(1px 2px 5px rgba(0,0,0,0.1));
 
-  &-img{
+  .chip-img{
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -63,7 +63,7 @@ a.link{
       height: 100%;
     }
   }
-  &-name{
+  .chip-name{
     padding: 8px 10px;
     text-align: center;
     background-color: white;
@@ -72,8 +72,8 @@ a.link{
     line-height: 1.3;
     h2{
       font-size: $fz-chip-title;
-      color: black;
-      font-weight: normal;
+      line-height: 1.5;
+      color: $text-main;
       font-family: 'LLPixel', sans-serif;
     }
     p{
@@ -225,9 +225,12 @@ a.link{
     }
 
     .tag{
-      @include border-radius(5px);
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-family: 'Microsoft Yahei', 'PingFang SC', sans-serif;
+      @include border-radius(2px);
       z-index: 100;
-      padding: 1px 3px;
+      padding: 2px 4px;
       position: absolute;
       top: -2px;
       right: -3px;
