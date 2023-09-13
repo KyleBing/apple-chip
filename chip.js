@@ -696,11 +696,41 @@ const chipsModelA = [
       release: '2022.09',
       devices: [
          'iPhone 14 Pro',
-         'iPhone 14 Pro Max'
+         'iPhone 14 Pro Max',
+         'iPhone 15',
+         'iPhone 15 Plus',
       ],
       transistorCount: '160', // 亿
       os: {
          init: 'iOS 16',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'A17 Pro',
+      model: '',
+      tech: '', // nm
+      techCompany: '',
+      dieSize: '-', // mm
+      isa: '',
+      cpu: [
+         {fire: {rate: 0, core: 2}, ice: {rate: 0, core: 4}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 6, info: ''}
+      ],
+      ai: {
+         core: '',
+         rate: ''
+      },
+      release: '2023.09',
+      devices: [
+         'iPhone 15 Pro',
+         'iPhone 15 Pro Max'
+      ],
+      transistorCount: '', // 亿
+      os: {
+         init: 'iOS 17',
          latest: latestOS
       }
    }
@@ -1205,7 +1235,7 @@ const chipsModelM = [
    },
 ]
 const contributors = [
-   'KyleBing','Zgc.Seven','皇家电脑','金东焕（麒麟，嗯就这名）','辉','梁育铭','Meipo','wrj1215', 'Kirin КуaкmБaпрасзenвын'
+   'KyleBing','Zgc.Seven','皇家电脑','金东焕（麒麟，嗯就这名）','辉','梁育铭','Meipo','wrj1215', 'Kirin КуaкmБaпрасзenвын', 'Jiawen Geng'
 ]
 
 let chipsA = chipsModelA.reverse()
