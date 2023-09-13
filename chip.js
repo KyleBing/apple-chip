@@ -512,7 +512,8 @@ const chipsModelA = [
          'iPhone XS Max',
          'iPhone XR',
          'iPad Air 3 ( 2019 )',
-         'iPad Mini 5 ( 2019 )'
+         'iPad Mini 5 ( 2019 )',
+         'Apple TV 4k ( 2代 )',
       ],
       transistorCount: '69', // 亿
       os: {
@@ -667,6 +668,7 @@ const chipsModelA = [
          'iPad Mini 6 ( 2021 )',
          'iPhone 14',
          'iPhone 14 Plus',
+         'Apple TV 4k ( 3代 )',
       ],
       transistorCount: '150', // 亿
       os: {
