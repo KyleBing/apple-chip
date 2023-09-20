@@ -687,7 +687,7 @@ const chipsModelA = [
          {fire: {rate: 3.46, core: 2}, ice: {rate: 2.02, core: 4}},
       ],
       gpu: [
-         {brand: 'Apple', core: 6, info: ''}
+         {brand: 'Apple', core: 5, info: '640 ALUs @ 1398Mhz'}
       ],
       ai: {
          core: '16',
@@ -973,6 +973,33 @@ const chipsModelS = [
          latest: latestOS
       }
    },
+   {
+      name: 'S9',
+      model: '',
+      tech: '', // nm
+      techCompany: '',
+      dieSize: '', // mm
+      isa: '',
+      cpu: [
+         {fire: {rate: 0, core: 0}, ice: {}}
+      ],
+      gpu: [
+         {brand: '', core: 0, info: ''}
+      ],
+      ai: {
+         core: '',
+         rate: ''
+      },
+      release: '2023.09',
+      devices: [
+         'Apple Watch Series 9',
+         'Apple Watch Ultra 2',
+      ],
+      os: {
+         init: 'watchOS 10.0',
+         latest: latestOS
+      }
+   },
 ]
 const chipsModelM = [
    {
@@ -1235,7 +1262,8 @@ const chipsModelM = [
    },
 ]
 const contributors = [
-   'KyleBing','Zgc.Seven','皇家电脑','金东焕（麒麟，嗯就这名）','辉','梁育铭','Meipo','wrj1215', 'Kirin КуaкmБaпрасзenвын', 'Jiawen Geng'
+   'KyleBing','Zgc.Seven','皇家电脑','金东焕（麒麟，嗯就这名）','辉','梁育铭','Meipo','wrj1215', 'Kirin КуaкmБaпрасзenвын','Jiawen Geng',
+    'MPFB'
 ]
 
 let chipsA = chipsModelA.reverse()
