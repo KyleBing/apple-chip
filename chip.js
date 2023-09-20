@@ -709,19 +709,19 @@ const chipsModelA = [
    {
       name: 'A17 Pro',
       model: '',
-      tech: '', // nm
+      tech: '3', // nm
       techCompany: '',
       dieSize: '-', // mm
       isa: '',
       cpu: [
-         {fire: {rate: 0, core: 2}, ice: {rate: 0, core: 4}},
+         {fire: {rate: 3.78, core: 2}, ice: {rate: 2.11, core: 4}},
       ],
       gpu: [
-         {brand: 'Apple', core: 6, info: ''}
+         {brand: 'Apple', core: 6, info: '768 ALUs @ 1398Mhz'}
       ],
       ai: {
-         core: '',
-         rate: ''
+         core: '16',
+         rate: '35 TOPS'
       },
       release: '2023.09',
       devices: [
