@@ -728,7 +728,7 @@ const chipsModelA = [
          'iPhone 15 Pro',
          'iPhone 15 Pro Max'
       ],
-      transistorCount: '', // 亿
+      transistorCount: '190', // 亿
       os: {
          init: 'iOS 17',
          latest: latestOS
