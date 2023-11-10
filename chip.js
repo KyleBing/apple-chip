@@ -1287,7 +1287,7 @@ const chipsModelM = [
          core: '16',
          rate: '35 TOPS'
       },
-      release: '2022.06.07',
+      release: '2023.10.30',
       devices: [
           'iMac 2023',
          'MacBook Pro 14\' late 2023',
@@ -1325,7 +1325,7 @@ const chipsModelM = [
          core: '16',
          rate: '35 TOPS'
       },
-      release: '2023.01.17',
+      release: '2023.10.30',
       devices: [
          'MacBook Pro 14\' late 2023',
          'MacBook Pro 16\' late 2023'
@@ -1362,7 +1362,7 @@ const chipsModelM = [
          core: '16',
          rate: '35 TOPS'
       },
-      release: '2023.01.17',
+      release: '2023.10.30',
       devices: [
          'MacBook Pro 14\' late 2023',
          'MacBook Pro 16\' late 2023'
