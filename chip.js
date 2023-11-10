@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2023.11.09' // 2023.03.30
+const dateLastEdit = '2023.11.10' // 2023.03.30
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -1295,7 +1295,7 @@ const chipsModelM = [
       ],
       transistorCount: '250', // 亿
       os: {
-         init: 'macOS Monterey',
+         init: 'macOS Sonoma',
          latest: latestOS
       }
    },
@@ -1332,7 +1332,7 @@ const chipsModelM = [
       ],
       transistorCount: '370', // 亿
       os: {
-         init: 'macOS Ventura',
+         init: 'macOS Sonoma',
          latest: latestOS
       }
    },
@@ -1369,7 +1369,7 @@ const chipsModelM = [
       ],
       transistorCount: '920', // 亿
       os: {
-         init: 'macOS Ventura',
+         init: 'macOS Sonoma',
          latest: latestOS
       }
    },
