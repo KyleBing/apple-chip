@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2023.11.10' // 2023.03.30
+const dateLastEdit = '2024.10.16' // 2023.03.30
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -712,7 +712,7 @@ const chipsModelA = [
       tech: '3', // nm
       techCompany: 'N3B',
       dieSize: '103.8', // mm
-      isa: '',
+      isa: 'ARMv8.6-A',
       cpu: [
          {fire: {rate: 3.78, core: 2}, ice: {rate: 2.11, core: 4}},
       ],
@@ -731,6 +731,62 @@ const chipsModelA = [
       transistorCount: '190', // 亿
       os: {
          init: 'iOS 17',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'A18',
+      model: 'APL1V08',
+      tech: '3', // nm
+      techCompany: 'N3E',
+      dieSize: '90', // mm
+      isa: 'ARMv9.2-A',
+      cpu: [
+         {fire: {rate: 4.05, core: 2}, ice: {rate: 2.42, core: 4}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 5, info: '640 ALUs @ 1398Mhz'}
+      ],
+      ai: {
+         core: '16',
+         rate: '35 TOPS'
+      },
+      release: '2024.09',
+      devices: [
+         'iPhone 16',
+         'iPhone 16 plus'
+      ],
+      transistorCount: '', // 亿
+      os: {
+         init: 'iOS 18',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'A18 Pro',
+      model: 'APL1V07',
+      tech: '3', // nm
+      techCompany: 'N3E',
+      dieSize: '90', // mm
+      isa: 'ARMv9.2-A',
+      cpu: [
+         {fire: {rate: 4.05, core: 2}, ice: {rate: 2.42, core: 4}},
+      ],
+      gpu: [
+         {brand: 'Apple', core: 6, info: '768 ALUs @ 1450Mhz'}
+      ],
+      ai: {
+         core: '16',
+         rate: '35 TOPS'
+      },
+      release: '2024.09',
+      devices: [
+         'iPhone 16 Pro',
+         'iPhone 16 Pro Max'
+      ],
+      transistorCount: '', // 亿
+      os: {
+         init: 'iOS 18',
          latest: latestOS
       }
    }
@@ -1301,9 +1357,9 @@ const chipsModelM = [
    },
    {
       name: 'M3 Pro',
-      model: '',
+      model: 'APL1203',
       tech: 'N3B', // nm
-      part: 'T6020',
+      part: 'T6030',
       techCompany: '台积电',
       dieSize: '', // mm
       isa: 'ARMv8.6-A',
@@ -1338,9 +1394,9 @@ const chipsModelM = [
    },
    {
       name: 'M3 Max',
-      model: '',
+      model: 'APL1204',
       tech: 'N3B', // nm
-      part: 'T6020',
+      part: 'T6034',
       techCompany: '台积电',
       dieSize: '', // mm
       isa: 'ARMv8.6-A',
@@ -1349,18 +1405,13 @@ const chipsModelM = [
             fire:{rate: 4.05, core: 10},
             ice: {rate: 2.75, core: 4}
          },
-         {
-            fire:{rate: 4.05, core: 12},
-            ice: {rate: 2.75, core: 4}
-         },
       ],
       gpu: [
          {brand: 'Apple', core: 30, info: '480 EUs, 3840 ALUs @1600Mhz'},
-         {brand: 'Apple', core: 40, info: '640 EUs, 5120 ALUs @1600Mhz'},
       ],
       ai: {
          core: '16',
-         rate: '35 TOPS'
+         rate: '18 TOPS'
       },
       release: '2023.10.30',
       devices: [
@@ -1370,6 +1421,76 @@ const chipsModelM = [
       transistorCount: '920', // 亿
       os: {
          init: 'macOS Sonoma',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M3 Max',
+      model: 'APL1204',
+      tech: 'N3B', // nm
+      part: 'T6031',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv8.6-A',
+      cpu: [
+         {
+            fire:{rate: 4.05, core: 12},
+            ice: {rate: 2.75, core: 4}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 40, info: '640 EUs, 5120 ALUs @1600Mhz'},
+      ],
+      ai: {
+         core: '16',
+         rate: '18 TOPS'
+      },
+      release: '2023.10.30',
+      devices: [
+         'MacBook Pro 14\' late 2023',
+         'MacBook Pro 16\' late 2023'
+      ],
+      transistorCount: '920', // 亿
+      os: {
+         init: 'macOS Sonoma',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M4',
+      model: 'APL1206',
+      tech: 'N3E', // nm
+      part: 'T8132',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv9',
+      cpu: [
+         {
+            fire:{rate: 4.40, core: 3},
+            ice: {rate: 2.85, core: 6}
+         },
+         {
+            fire:{rate: 4.40, core: 4},
+            ice: {rate: 2.85, core: 6}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 10, info: '160 EUs, 1280 ALUs @1470Mhz'},
+      ],
+      ai: {
+         core: '16',
+         rate: '38 TOPS'
+      },
+      release: '2024.05.15',
+      devices: [
+         'MacBook Pro 14\' late 2023',
+         'Mac Mini',
+         'iMac',
+         'iPad Pro 7'
+      ],
+      transistorCount: '280', // 亿
+      os: {
+         init: 'macOS Sequoia',
          latest: latestOS
       }
    },
