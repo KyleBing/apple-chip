@@ -1415,8 +1415,6 @@ const chipsModelM = [
       },
       release: '2023.10.30',
       devices: [
-         'MacBook Pro 14\' late 2023',
-         'MacBook Pro 16\' late 2023'
       ],
       transistorCount: '920', // 亿
       os: {
@@ -1447,8 +1445,6 @@ const chipsModelM = [
       },
       release: '2023.10.30',
       devices: [
-         'MacBook Pro 14\' late 2023',
-         'MacBook Pro 16\' late 2023'
       ],
       transistorCount: '920', // 亿
       os: {
@@ -1483,7 +1479,7 @@ const chipsModelM = [
       },
       release: '2024.05.15',
       devices: [
-         'MacBook Pro 14\' late 2023',
+         'MacBook Pro',
          'Mac Mini',
          'iMac',
          'iPad Pro 7'
