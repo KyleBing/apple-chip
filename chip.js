@@ -3,7 +3,7 @@
  Update Date: 20210904091940
  *****************************/
 
-const dateLastEdit = '2024.10.16' // 2023.03.30
+const dateLastEdit = '2024.11.09' // 2023.03.30
 
 const latestOS = '最新'
 const chipsModelA = [
@@ -742,7 +742,7 @@ const chipsModelA = [
       dieSize: '90', // mm
       isa: 'ARMv9.2-A',
       cpu: [
-         {fire: {rate: 4.05, core: 2}, ice: {rate: 2.42, core: 4}},
+         {fire: {rate: 3.78, core: 2}, ice: {rate: 2.0, core: 4}},
       ],
       gpu: [
          {brand: 'Apple', core: 5, info: '640 ALUs @ 1398Mhz'}
@@ -770,7 +770,7 @@ const chipsModelA = [
       dieSize: '90', // mm
       isa: 'ARMv9.2-A',
       cpu: [
-         {fire: {rate: 4.05, core: 2}, ice: {rate: 2.42, core: 4}},
+         {fire: {rate: 4.04, core: 2}, ice: {rate: 2.2, core: 4}},
       ],
       gpu: [
          {brand: 'Apple', core: 6, info: '768 ALUs @ 1450Mhz'}
@@ -1485,6 +1485,78 @@ const chipsModelM = [
          'iPad Pro 7'
       ],
       transistorCount: '280', // 亿
+      os: {
+         init: 'macOS Sequoia',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M4 Pro',
+      model: '',
+      tech: 'N3E', // nm
+      part: '',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv9',
+      cpu: [
+         {
+            fire:{rate: 0, core: 8},
+            ice: {rate: 0, core: 4}
+         },
+         {
+            fire:{rate: 0, core: 10},
+            ice: {rate: 0, core: 4}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 16, info: '256 EUs, 2048 ALUs'},
+         {brand: 'Apple', core: 20, info: '320 EUs, 2560 ALUs'},
+      ],
+      ai: {
+         core: '16',
+         rate: '38 TOPS'
+      },
+      release: '2024.05.15',
+      devices: [
+
+      ],
+      transistorCount: '', // 亿
+      os: {
+         init: 'macOS Sequoia',
+         latest: latestOS
+      }
+   },
+   {
+      name: 'M4 Max',
+      model: '',
+      tech: 'N3E', // nm
+      part: '',
+      techCompany: '台积电',
+      dieSize: '', // mm
+      isa: 'ARMv9',
+      cpu: [
+         {
+            fire:{rate: 0, core: 10},
+            ice: {rate: 0, core: 4}
+         },
+         {
+            fire:{rate: 0, core: 12},
+            ice: {rate: 0, core: 4}
+         },
+      ],
+      gpu: [
+         {brand: 'Apple', core: 32, info: '512 EUs, 4096 ALUs'},
+         {brand: 'Apple', core: 40, info: '640 EUs, 5120 ALUs'},
+      ],
+      ai: {
+         core: '16',
+         rate: '38 TOPS'
+      },
+      release: '2024.05.15',
+      devices: [
+
+      ],
+      transistorCount: '', // 亿
       os: {
          init: 'macOS Sequoia',
          latest: latestOS
