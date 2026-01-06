@@ -1,0 +1,1147 @@
+[
+    {
+      "name": "A18 Pro",
+      "model": "APL1V07",
+      "tech": "3",
+      "techCompany": "N3E",
+      "dieSize": "90",
+      "isa": "ARMv9.2-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 4.04,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2.2,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 6,
+          "info": "768 ALUs @ 1450Mhz"
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "35 TOPS"
+      },
+      "release": "2024.09",
+      "devices": [
+        "iPhone 16 Pro",
+        "iPhone 16 Pro Max"
+      ],
+      "os": {
+        "init": "iOS 18",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A18",
+      "model": "APL1V08",
+      "tech": "3",
+      "techCompany": "N3E",
+      "dieSize": "90",
+      "isa": "ARMv9.2-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 3.78,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 5,
+          "info": "640 ALUs @ 1398Mhz"
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "35 TOPS"
+      },
+      "release": "2024.09",
+      "devices": [
+        "iPhone 16",
+        "iPhone 16 plus"
+      ],
+      "os": {
+        "init": "iOS 18",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A17 Pro",
+      "model": "APL1V02",
+      "tech": "3",
+      "techCompany": "N3B",
+      "dieSize": "103.8",
+      "isa": "ARMv8.6-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 3.78,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2.11,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 6,
+          "info": "768 ALUs @ 1398Mhz"
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "35 TOPS"
+      },
+      "release": "2023.09",
+      "devices": [
+        "iPhone 15 Pro",
+        "iPhone 15 Pro Max"
+      ],
+      "os": {
+        "init": "iOS 17",
+        "latest": "最新"
+      },
+      "transistorCount": "190"
+    },
+    {
+      "name": "A16 Bionic",
+      "model": "APL1W10",
+      "tech": "5",
+      "techCompany": "N4",
+      "dieSize": "-",
+      "isa": "ARMv8.6-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 3.46,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2.02,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 5,
+          "info": "640 ALUs @ 1398Mhz"
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "17 TOPS"
+      },
+      "release": "2022.09",
+      "devices": [
+        "iPhone 14 Pro",
+        "iPhone 14 Pro Max",
+        "iPhone 15",
+        "iPhone 15 Plus"
+      ],
+      "os": {
+        "init": "iOS 16",
+        "latest": "最新"
+      },
+      "transistorCount": "160"
+    },
+    {
+      "name": "A15 Bionic",
+      "model": "APL1W07",
+      "tech": "5",
+      "techCompany": "台积电 N5P",
+      "dieSize": "107.68",
+      "isa": "ARMv8.5-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 3.23,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2.02,
+            "core": 4
+          }
+        },
+        {
+          "fire": {
+            "rate": 2.93,
+            "core": 2
+          },
+          "ice": {
+            "rate": 2.02,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 5,
+          "info": "640 ALUs @ 1200 MHz"
+        },
+        {
+          "brand": "Apple",
+          "core": 4,
+          "info": "512 ALUs @ 1200 MHz"
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "15.8 TOPS"
+      },
+      "release": "2021.09",
+      "devices": [
+        "iPhone 13",
+        "iPhone 13 Mini",
+        "iPhone 13 Pro",
+        "iPhone 13 Pro Max",
+        "iPhone SE 3 (2022)",
+        "iPad Mini 6 ( 2021 )",
+        "iPhone 14",
+        "iPhone 14 Plus",
+        "Apple TV 4k ( 3代 )"
+      ],
+      "os": {
+        "init": "iOS 15",
+        "latest": "最新"
+      },
+      "transistorCount": "150"
+    },
+    {
+      "name": "A14 Bionic",
+      "model": "APL1W87",
+      "tech": "5",
+      "techCompany": "台积电 N5",
+      "dieSize": "88",
+      "isa": "ARMv8.5-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 3.09,
+            "core": 2
+          },
+          "ice": {
+            "rate": 1.823,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 4,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "16",
+        "rate": "11 TOPS"
+      },
+      "release": "2020.09",
+      "devices": [
+        "iPad Air 4 (2020 )",
+        "iPhone 12",
+        "iPhone 12 Mini",
+        "iPhone 12 Pro",
+        "iPhone 12 Pro Max"
+      ],
+      "os": {
+        "init": "iOS 14",
+        "latest": "最新"
+      },
+      "transistorCount": "118"
+    },
+    {
+      "name": "A13 Bionic",
+      "model": "APL1W85",
+      "tech": "7",
+      "techCompany": "台积电 N7P",
+      "dieSize": "98.48",
+      "isa": "ARMv8.4-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.65,
+            "core": 2
+          },
+          "ice": {
+            "rate": 1.8,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 4,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "8",
+        "rate": "5 TOPS"
+      },
+      "release": "2019.09",
+      "devices": [
+        "iPhone 11",
+        "iPhone 11 Pro",
+        "iPhone 11 Pro Max",
+        "iPhone SE ( 2代 2020 )",
+        "iPad 9 ( 2021 )"
+      ],
+      "os": {
+        "init": "iOS 13",
+        "latest": "最新"
+      },
+      "transistorCount": "85"
+    },
+    {
+      "name": "A12Z Bionic",
+      "model": "APL1083",
+      "tech": "7",
+      "techCompany": "台积电 N7",
+      "dieSize": "≈ 135",
+      "isa": "ARMv8.3-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.49,
+            "core": 4
+          },
+          "ice": {
+            "rate": 1.59,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 8,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "8",
+        "rate": "5TOPS"
+      },
+      "release": "2020.03",
+      "devices": [
+        "iPad Pro 4 ( 11寸 2020 )",
+        "iPad Pro 4 ( 12.9寸 2020 )"
+      ],
+      "os": {
+        "init": "iPadOS 13.4.1",
+        "latest": "最新"
+      },
+      "transistorCount": "100"
+    },
+    {
+      "name": "A12X Bionic",
+      "model": "APL1083",
+      "tech": "7",
+      "techCompany": "台积电 N7",
+      "dieSize": "≈ 135",
+      "isa": "ARMv8.3-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.49,
+            "core": 4
+          },
+          "ice": {
+            "rate": 1.59,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 7,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "8",
+        "rate": "5TOPS"
+      },
+      "release": "2018.10",
+      "devices": [
+        "iPad Pro 3 ( 11寸 2018 )",
+        "iPad Pro 3 ( 12.9寸 2018 )"
+      ],
+      "os": {
+        "init": "iOS 12.1",
+        "latest": "最新"
+      },
+      "transistorCount": "100"
+    },
+    {
+      "name": "A12 Bionic",
+      "model": "APL1W81",
+      "tech": "7",
+      "techCompany": "台积电 N7",
+      "dieSize": "83.27",
+      "isa": "ARMv8.3-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.49,
+            "core": 2
+          },
+          "ice": {
+            "rate": 1.59,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 4,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "8",
+        "rate": "5TOPS"
+      },
+      "release": "2018.09",
+      "devices": [
+        "iPhone XS",
+        "iPhone XS Max",
+        "iPhone XR",
+        "iPad Air 3 ( 2019 )",
+        "iPad Mini 5 ( 2019 )",
+        "Apple TV 4k ( 2代 )"
+      ],
+      "os": {
+        "init": "iOS 12",
+        "latest": "最新"
+      },
+      "transistorCount": "69"
+    },
+    {
+      "name": "A11 Bionic",
+      "model": "APL1W72",
+      "tech": "10",
+      "techCompany": "台积电",
+      "dieSize": "87.66",
+      "isa": "ARMv8.2-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.39,
+            "core": 2
+          },
+          "ice": {
+            "rate": 1.19,
+            "core": 4
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "Apple",
+          "core": 3,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "2",
+        "rate": "600 GOPS"
+      },
+      "release": "2017.09",
+      "devices": [
+        "iPhone 8",
+        "iPhone 8 Plus",
+        "iPhone X"
+      ],
+      "os": {
+        "init": "iOS 11",
+        "latest": "最新"
+      },
+      "transistorCount": "43"
+    },
+    {
+      "name": "A10X Fusion",
+      "model": "APL1071",
+      "tech": "10",
+      "techCompany": "台积电",
+      "dieSize": "96.4",
+      "isa": "ARMv8.1-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.36,
+            "core": 3
+          },
+          "ice": {
+            "rate": 1.3,
+            "core": 3
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GT7600 Plus",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2017.06",
+      "devices": [
+        "iPad Pro 2 ( 10.5寸 2017 )",
+        "iPad Pro 2 ( 12.9寸 2017 )",
+        "Apple TV 4k"
+      ],
+      "os": {
+        "init": "iOS 10.3.2",
+        "latest": "最新"
+      },
+      "transistorCount": "> 40"
+    },
+    {
+      "name": "A10 Fusion",
+      "model": "APL1W24",
+      "tech": "16",
+      "techCompany": "台积电",
+      "dieSize": "125",
+      "isa": "ARMv8.1-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.34,
+            "core": 2
+          },
+          "ice": {
+            "rate": 1.092,
+            "core": 2
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GT7600 Plus",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2016.09",
+      "devices": [
+        "iPhone 7",
+        "iPhone 7 Plus",
+        "iPod Touch ( 7代 )",
+        "iPad 6 ( 2018 )",
+        "iPad 7 ( 2019 )"
+      ],
+      "os": {
+        "init": "iOS 10",
+        "latest": "最新"
+      },
+      "transistorCount": "33"
+    },
+    {
+      "name": "A9X",
+      "model": "APL1021",
+      "tech": "16",
+      "techCompany": "台积电",
+      "dieSize": "143.9",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 2.26,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GTA7850",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2015.09",
+      "devices": [
+        "iPad Pro 1 ( 12.9寸 2015 )",
+        "iPad Pro 1 ( 9.7寸 2016 )"
+      ],
+      "os": {
+        "init": "iOS 9.1",
+        "latest": "最新"
+      },
+      "transistorCount": "> 30"
+    },
+    {
+      "name": "A9",
+      "model": "APL1022",
+      "tech": "16",
+      "techCompany": "台积电",
+      "dieSize": "104.5",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.85,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GT7600",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2015.09",
+      "devices": [
+        "iPhone 6S",
+        "iPhone 6S Plus",
+        "iPhone SE ( 1代 )",
+        "iPad 5 ( 2017 )"
+      ],
+      "os": {
+        "init": "iOS 9.0",
+        "latest": "最新"
+      },
+      "transistorCount": "> 20"
+    },
+    {
+      "name": "A9",
+      "model": "APL0898",
+      "tech": "14",
+      "techCompany": "三星",
+      "dieSize": "96",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.85,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GT7600",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2015.09",
+      "devices": [
+        "iPhone 6S",
+        "iPhone 6S Plus",
+        "iPhone SE ( 1代 )",
+        "iPad 5 ( 2017 )"
+      ],
+      "os": {
+        "init": "iOS 9.0",
+        "latest": "最新"
+      },
+      "transistorCount": "> 20"
+    },
+    {
+      "name": "A8X",
+      "model": "APL1012",
+      "tech": "20",
+      "techCompany": "台积电",
+      "dieSize": "128",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.5,
+            "core": 3
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GXA6850",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2014.10",
+      "devices": [
+        "iPad Air 2 ( 2014 )"
+      ],
+      "os": {
+        "init": "iOS 8.1",
+        "latest": "iPadOS 15.5"
+      },
+      "transistorCount": "≈ 30"
+    },
+    {
+      "name": "A8",
+      "model": "APL1011",
+      "tech": "20",
+      "techCompany": "台积电",
+      "dieSize": "89",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.5,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR GXA6450",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2014.09",
+      "devices": [
+        "iPhone 6",
+        "iPhone 6 Plus",
+        "iPad Touch ( 6代 )",
+        "iPad Mini 4",
+        "Apple TV ( 4代 )",
+        "HomePod"
+      ],
+      "os": {
+        "init": "iOS 8.0",
+        "latest": "iOS 12, iPadOS 13"
+      },
+      "transistorCount": "≈ 20"
+    },
+    {
+      "name": "A7",
+      "model": "APL5698",
+      "tech": "28",
+      "techCompany": "HKMG",
+      "dieSize": "102",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.4,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR G6430",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2013.10",
+      "devices": [
+        "iPad Air 1 ( 2013 )"
+      ],
+      "os": {
+        "init": "iOS 7.03",
+        "latest": "iPadOS 12"
+      },
+      "transistorCount": "≈ 10"
+    },
+    {
+      "name": "A7",
+      "model": "APL0698",
+      "tech": "28",
+      "techCompany": "HKMG",
+      "dieSize": "102",
+      "isa": "ARMv8.0-A",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.3,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR G6430",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2013.09",
+      "devices": [
+        "iPhone 5S",
+        "iPad Mini 2 ( 2013 )",
+        "iPad Mini 3 ( 2014 )"
+      ],
+      "os": {
+        "init": "iOS 7.0",
+        "latest": "iOS 12, iPadOS 13"
+      },
+      "transistorCount": "≈ 10"
+    },
+    {
+      "name": "A6X",
+      "model": "APL5598",
+      "tech": "32",
+      "techCompany": "HKMG",
+      "dieSize": "123",
+      "isa": "ARMv7s",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.4,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX554MP4",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2012.10",
+      "devices": [
+        "iPad 4 ( 2012 )"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A6",
+      "model": "APL0598",
+      "tech": "32",
+      "techCompany": "HKMG",
+      "dieSize": "96.71",
+      "isa": "ARMv7s",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1.3,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX543MP3",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2012.09",
+      "devices": [
+        "iPhone 5",
+        "iPhone 5C"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A5X",
+      "model": "APL5498",
+      "tech": "45",
+      "techCompany": "",
+      "dieSize": "165",
+      "isa": "ARMv7",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX543MP4",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2012.03",
+      "devices": [
+        "iPad 3 ( 2012 )"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A5",
+      "model": "APL7498",
+      "tech": "32",
+      "techCompany": "HKMG",
+      "dieSize": "37.8",
+      "isa": "ARMv7",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1,
+            "core": 1
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX543MP2",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2013.03",
+      "devices": [
+        "Apple TV ( 3代 )"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A5",
+      "model": "APL2498",
+      "tech": "32",
+      "techCompany": "HKMG",
+      "dieSize": "69.6",
+      "isa": "ARMv7",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX543MP2",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2012.03",
+      "devices": [
+        "Apple TV ( 3代 )",
+        "iPad 2 ( 2011 )",
+        "iPod Touch ( 5代 )",
+        "iPad Mini 1 ( 2012 )"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A5",
+      "model": "APL0498",
+      "tech": "45",
+      "techCompany": "",
+      "dieSize": "122.2",
+      "isa": "ARMv7",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1,
+            "core": 2
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX543MP2",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2011.03",
+      "devices": [
+        "iPad 2 ( 2011 )",
+        "iPhone 4S"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    },
+    {
+      "name": "A4",
+      "model": "APL0398",
+      "tech": "45",
+      "techCompany": "",
+      "dieSize": "53.3",
+      "isa": "ARMv7",
+      "cpu": [
+        {
+          "fire": {
+            "rate": 1,
+            "core": 1
+          },
+          "ice": {
+            "rate": 0,
+            "core": 0
+          }
+        }
+      ],
+      "gpu": [
+        {
+          "brand": "PowerVR SGX535",
+          "core": 0,
+          "info": ""
+        }
+      ],
+      "ai": {
+        "core": "",
+        "rate": ""
+      },
+      "release": "2010.03",
+      "devices": [
+        "iPad 1 ( 2010 )",
+        "iPhone 4",
+        "iPod Touch ( 4代 )",
+        "Apple TV ( 2代 )"
+      ],
+      "os": {
+        "init": "",
+        "latest": "最新"
+      }
+    }
+  ]
