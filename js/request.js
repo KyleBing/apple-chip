@@ -76,8 +76,8 @@ class ResponseEntity {
 function request(method, params = null, requestData = null, url, timeout = 30000) {
     // Determine base URL based on environment
     const BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
-        ? 'http://kylebing.cn/portal/' 
-        : 'http://kylebing.cn/portal/';
+        ? 'https://kylebing.cn/portal/' 
+        : 'https://kylebing.cn/portal/';
 
     let headers = {
         'Content-Type': 'application/json'

@@ -17,7 +17,7 @@ class ChipDataLoader {
         };
         this.latestOS = '最新';
         this.dateLastEdit = '2024.11.09';
-        this.serverUrl = 'http://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword';
+        this.serverUrl = 'https://kylebing.cn/portal/diary/get-latest-public-diary-with-keyword';
     }
 
     /**

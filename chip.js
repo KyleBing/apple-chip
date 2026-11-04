@@ -132,7 +132,7 @@ let app = new Vue({
       // 点赞功能
       getInitThumbsUpCount(){
          axios
-             .get('../../portal/thumbs-up?key=' + this.thumbsUpKey)
+             .get('../../portal/thumbs-up/?key=' + this.thumbsUpKey)
              .then(res => {
                 if (res.data && res.data.data){
                    this.thumbsUpCount = res.data.data
@@ -140,7 +140,7 @@ let app = new Vue({
              })
       },
       websocketInit(){
-         this.websocket = new WebSocket('ws://kylebing.cn/ws')
+         this.websocket = new WebSocket('wss://kylebing.cn/ws')
          this.websocket.onopen = this.websocketOnOpen
          this.websocket.onmessage = this.websocketOnMessage
          this.websocket.onerror = this.websocketOnError
